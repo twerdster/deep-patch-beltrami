@@ -1,0 +1,720 @@
+{
+  "compute": "gpu",
+  "low_power_mode": false,
+  "os_version": "18.0.1",
+  "platform": "physical iOS device",
+  "precision": "fp32",
+  "records": [
+    {
+      "channels": 1,
+      "cold_ms": 62.120333,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 1,
+      "id": "h1-w1",
+      "max_absolute_error": 0,
+      "max_tolerance": 0.05,
+      "median_ms": 3.479709,
+      "output_file": "h1-w1-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 3.479709
+      },
+      "warm_ms": [
+        3.479709
+      ],
+      "width": 1
+    },
+    {
+      "channels": 1,
+      "cold_ms": 39.351042,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 1,
+      "id": "h1-w17",
+      "max_absolute_error": 0.017009735107421875,
+      "max_tolerance": 0.05,
+      "median_ms": 11.205709,
+      "output_file": "h1-w17-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00444179002774219,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 11.205709
+      },
+      "warm_ms": [
+        11.205709
+      ],
+      "width": 17
+    },
+    {
+      "channels": 1,
+      "cold_ms": 37.238042,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 19,
+      "id": "h19-w1",
+      "max_absolute_error": 0.0227508544921875,
+      "max_tolerance": 0.05,
+      "median_ms": 11.644583,
+      "output_file": "h19-w1-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.008782644117265868,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 11.644583
+      },
+      "warm_ms": [
+        11.644583
+      ],
+      "width": 1
+    },
+    {
+      "channels": 1,
+      "cold_ms": 31.302916,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 2,
+      "id": "h2-w3",
+      "max_absolute_error": 0.00045013427734375,
+      "max_tolerance": 0.05,
+      "median_ms": 6.774709,
+      "output_file": "h2-w3-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0001934619496628718,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 6.774709
+      },
+      "warm_ms": [
+        6.774709
+      ],
+      "width": 3
+    },
+    {
+      "channels": 1,
+      "cold_ms": 30.739333,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 7,
+      "id": "h7-w9",
+      "max_absolute_error": 0.0017547607421875,
+      "max_tolerance": 0.05,
+      "median_ms": 9.748166,
+      "output_file": "h7-w9-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00043040360913193846,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 9.748166
+      },
+      "warm_ms": [
+        9.748166
+      ],
+      "width": 9
+    },
+    {
+      "channels": 1,
+      "cold_ms": 75.298042,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 31,
+      "id": "h31-w47",
+      "max_absolute_error": 0.0035552978515625,
+      "max_tolerance": 0.05,
+      "median_ms": 32.69725,
+      "output_file": "h31-w47-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0005073466553207068,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 32.69725
+      },
+      "warm_ms": [
+        32.69725
+      ],
+      "width": 47
+    },
+    {
+      "channels": 1,
+      "cold_ms": 304.251958,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 127,
+      "id": "h127-w129",
+      "max_absolute_error": 0.0037384033203125,
+      "max_tolerance": 0.05,
+      "median_ms": 262.596791,
+      "output_file": "h127-w129-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0004646754655224306,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 262.596791
+      },
+      "warm_ms": [
+        262.596791
+      ],
+      "width": 129
+    },
+    {
+      "channels": 1,
+      "cold_ms": 298.211417,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 129,
+      "id": "h129-w127",
+      "max_absolute_error": 0.0052642822265625,
+      "max_tolerance": 0.05,
+      "median_ms": 254.30325,
+      "output_file": "h129-w127-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00048797286966889217,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 254.30325
+      },
+      "warm_ms": [
+        254.30325
+      ],
+      "width": 127
+    },
+    {
+      "channels": 1,
+      "cold_ms": 291.2605,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 128,
+      "id": "h128-w128",
+      "max_absolute_error": 0.003265380859375,
+      "max_tolerance": 0.05,
+      "median_ms": 250.738833,
+      "output_file": "h128-w128-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00048284752611403125,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 250.738833
+      },
+      "warm_ms": [
+        250.738833
+      ],
+      "width": 128
+    },
+    {
+      "channels": 1,
+      "cold_ms": 1276.923208,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 256,
+      "id": "h256-w256",
+      "max_absolute_error": 0.0048065185546875,
+      "max_tolerance": 0.05,
+      "median_ms": 1229.148791,
+      "output_file": "h256-w256-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.000469355621906595,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 1229.148791
+      },
+      "warm_ms": [
+        1229.148791
+      ],
+      "width": 256
+    },
+    {
+      "channels": 1,
+      "cold_ms": 2789.342791,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 321,
+      "id": "h321-w481",
+      "max_absolute_error": 0.005523681640625,
+      "max_tolerance": 0.05,
+      "median_ms": 2843.024416,
+      "output_file": "h321-w481-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00046293277098873595,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 2843.024416
+      },
+      "warm_ms": [
+        2843.024416
+      ],
+      "width": 481
+    },
+    {
+      "channels": 1,
+      "cold_ms": 905.318709,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma5-gray-h193-w257",
+      "max_absolute_error": 0.007415771484375,
+      "max_tolerance": 0.05,
+      "median_ms": 908.86675,
+      "output_file": "sigma5-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0006330639373980373,
+      "rms_tolerance": 0.01,
+      "sigma": 5,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma5_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 908.86675
+      },
+      "warm_ms": [
+        908.86675
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 922.408708,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma10-gray-h193-w257",
+      "max_absolute_error": 0.006256103515625,
+      "max_tolerance": 0.05,
+      "median_ms": 924.330792,
+      "output_file": "sigma10-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0005587050186711556,
+      "rms_tolerance": 0.01,
+      "sigma": 10,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma10_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 924.330792
+      },
+      "warm_ms": [
+        924.330792
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 925.39925,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma15-gray-h193-w257",
+      "max_absolute_error": 0.004486083984375,
+      "max_tolerance": 0.05,
+      "median_ms": 936.793833,
+      "output_file": "sigma15-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00038905555460750583,
+      "rms_tolerance": 0.01,
+      "sigma": 15,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma15_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 936.793833
+      },
+      "warm_ms": [
+        936.793833
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 939.346833,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma20-gray-h193-w257",
+      "max_absolute_error": 0.00420379638671875,
+      "max_tolerance": 0.05,
+      "median_ms": 941.207708,
+      "output_file": "sigma20-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00040893517459006054,
+      "rms_tolerance": 0.01,
+      "sigma": 20,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma20_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 941.207708
+      },
+      "warm_ms": [
+        941.207708
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 937.771041,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma25-gray-h193-w257",
+      "max_absolute_error": 0.0048828125,
+      "max_tolerance": 0.05,
+      "median_ms": 956.883458,
+      "output_file": "sigma25-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00041530390073163506,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 956.883458
+      },
+      "warm_ms": [
+        956.883458
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 967.579875,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma30-gray-h193-w257",
+      "max_absolute_error": 0.0040283203125,
+      "max_tolerance": 0.05,
+      "median_ms": 956.43875,
+      "output_file": "sigma30-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0004214890411418268,
+      "rms_tolerance": 0.01,
+      "sigma": 30,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma30_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 956.43875
+      },
+      "warm_ms": [
+        956.43875
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 948.540208,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma40-gray-h193-w257",
+      "max_absolute_error": 0.0045928955078125,
+      "max_tolerance": 0.05,
+      "median_ms": 968.539917,
+      "output_file": "sigma40-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0003671584027930859,
+      "rms_tolerance": 0.01,
+      "sigma": 40,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma40_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 968.539917
+      },
+      "warm_ms": [
+        968.539917
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 967.486167,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma50-gray-h193-w257",
+      "max_absolute_error": 0.0025482177734375,
+      "max_tolerance": 0.05,
+      "median_ms": 965.286916,
+      "output_file": "sigma50-gray-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00025233214638629655,
+      "rms_tolerance": 0.01,
+      "sigma": 50,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma50_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 965.286916
+      },
+      "warm_ms": [
+        965.286916
+      ],
+      "width": 257
+    },
+    {
+      "channels": 3,
+      "cold_ms": 27.283375,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 2,
+      "id": "sigma25-rgb-h2-w3",
+      "max_absolute_error": 0.00409698486328125,
+      "max_tolerance": 0.05,
+      "median_ms": 8.928,
+      "output_file": "sigma25-rgb-h2-w3-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.0017245265705276235,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 3,
+        "wallMilliseconds": 8.928
+      },
+      "warm_ms": [
+        8.928
+      ],
+      "width": 3
+    },
+    {
+      "channels": 3,
+      "cold_ms": 513.559208,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 79,
+      "id": "sigma25-rgb-h79-w111",
+      "max_absolute_error": 0.0034942626953125,
+      "max_tolerance": 0.05,
+      "median_ms": 509.749625,
+      "output_file": "sigma25-rgb-h79-w111-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00032770098114754217,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 3,
+        "wallMilliseconds": 509.749625
+      },
+      "warm_ms": [
+        509.749625
+      ],
+      "width": 111
+    },
+    {
+      "channels": 3,
+      "cold_ms": 3044.109958,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma25-rgb-h193-w257",
+      "max_absolute_error": 0.0059051513671875,
+      "max_tolerance": 0.05,
+      "median_ms": 3034.048833,
+      "output_file": "sigma25-rgb-h193-w257-fp32-gpu.f32",
+      "reference_passed": true,
+      "rms_error": 0.00031257170920929615,
+      "rms_tolerance": 0.01,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "gpu",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 3,
+        "wallMilliseconds": 3034.048833
+      },
+      "warm_ms": [
+        3034.048833
+      ],
+      "width": 257
+    }
+  ],
+  "schema": 1,
+  "thermal_current": 1,
+  "thermal_start": 1,
+  "hardware": {
+    "model": "iPhone 12",
+    "soc": "A14 Bionic"
+  }
+}

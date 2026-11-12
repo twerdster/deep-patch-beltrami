@@ -16,3 +16,9 @@ jobs:
       - run: python -m pytest
       - run: deep-patch-beltrami --help
       - run: python -m deep_patch_beltrami --help
+
+  ios-build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: ios/scripts/build_ios.sh --compile-only

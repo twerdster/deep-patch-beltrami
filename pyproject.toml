@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deep-patch-beltrami"
-version = "1.0.0"
+version = "1.1.0"
 description = "Deep Patch-Beltrami inference and reproducible thesis denoising experiments"
 readme = "README.md"
 requires-python = ">=3.10"

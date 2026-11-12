@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "application": "DeepBeltramiApp",
+  "app_display_name": "Deep Beltrami",
+  "hardware": {
+    "model": "iPhone 12",
+    "soc": "A14 Bionic",
+    "os": "iOS 18.0.1"
+  },
+  "configuration": {
+    "model": "DeepBeltrami_sigma25_mixed16_masked256",
+    "precision": "mixed",
+    "compute_units": "all",
+    "case": "performance-256x256c1",
+    "requested_repeats": 40
+  },
+  "trace": {
+    "recording_seconds": 18.389602,
+    "complete_predictions_captured": 32,
+    "requested_repeat_count_not_fully_captured": true,
+    "recording_started_utc": "2026-11-12T09:08:25.348Z",
+    "capture_note": "The time-limited capture includes 32 complete predictions and part of another, rather than all 40 requested benchmark repetitions. Instrumented timings are separate from warmed benchmark timings."
+  },
+  "conclusion": {
+    "gpu_execution_observed": true,
+    "app_ane_runtime_evaluation_observed": true,
+    "ane_hardware_activity_observed": true,
+    "app_ane_evaluation_samples_overlap_ane_hardware": true,
+    "interpretation": "The app actually enters Core ML ANE evaluation/send paths tightly correlated with Neural Engine hardware activity, and submits model-labeled work executed on the GPU. This supports hybrid ANE/GPU execution, beyond anticipated compute-plan placement.",
+    "limit": "The hardware ANE table has no process/correlation field. Device-global ANE intervals are not attributed individually to the app, and their total duration/count must not be reported as app utilization. Sampling counts below are not invocation counts or operation counts."
+  },
+  "coreml": {
+    "event_counts": {
+      "Data Cast": 426,
+      "GPU Request": 194,
+      "Input Validation": 33,
+      "Load (cached)": 5,
+      "Output Transformation": 32,
+      "Prediction": 32,
+      "Prepare GPU Request": 195
+    },
+    "complete_prediction_duration_ms": {
+      "minimum": 418.58425,
+      "median": 519.8840625,
+      "maximum": 554.475166
+    },
+    "ane_backend_event_label_available": false
+  },
+  "gpu": {
+    "process_filter_applied": true,
+    "model_label_filter_applied": true,
+    "active_compute_interval_count": 519,
+    "active_compute_interval_union_ms": 8910.42525,
+    "channels": {
+      "Compute": 519
+    },
+    "states": {
+      "Active": 519
+    },
+    "model_event_labels": {
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op12_MpsGraphInference++:Compute Command 0": 33,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op12_MpsGraphInference+:Compute Command 0": 33,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op12_MpsGraphInference:Compute Command 0": 33,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op16_MpsGraphInference++:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op16_MpsGraphInference+:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op16_MpsGraphInference:Compute Command 0": 33,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op20_MpsGraphInference++:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op20_MpsGraphInference+:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op20_MpsGraphInference:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op24_MpsGraphInference++:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op24_MpsGraphInference+:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op24_MpsGraphInference:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op28_MpsGraphInference:Compute Command 0": 32,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op8_MpsGraphInference++:Compute Command 0": 33,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op8_MpsGraphInference+:Compute Command 0": 33,
+      "DeepBeltrami_sigma25_mixed16_masked256_main__Op8_MpsGraphInference:Compute Command 0": 33
+    }
+  },
+  "app_ane_callstack_evidence": {
+    "process_filter_applied": true,
+    "sample_count": 240,
+    "sample_weight_sum_ms": 240.0,
+    "marker_sample_counts": {
+      "ANE evaluation request": 240,
+      "ANE direct evaluation": 234,
+      "ANE program processing": 221,
+      "ANE program send": 208,
+      "ANE frame completion": 3
+    },
+    "samples_inside_complete_prediction_intervals": 238,
+    "complete_predictions_with_samples": 32,
+    "samples_inside_device_ane_hardware_intervals": 3,
+    "ane_program_send_samples": 208,
+    "ane_program_send_sample_distance_to_nearest_device_ane_interval_ms": {
+      "minimum": 0.0,
+      "median": 0.388792,
+      "maximum": 0.800166,
+      "within_1ms_count": 208,
+      "within_2ms_count": 208
+    },
+    "observed_runtime_symbols": [
+      "AneInferenceOperationImplUsingAnefAPIs::EvaluateANERequest",
+      "-[_ANEClient doEvaluateDirectWithModel:",
+      "H11ANEProgramProcessRequestDirect",
+      "H11ANEDevice::ANE_ProgramSendRequest",
+      "H11ANEFrameReceiver::syncFrameDone"
+    ]
+  },
+  "device_ane_context": {
+    "scope": "device-global; not app-attributed",
+    "hardware_interval_count": 508,
+    "pre_model_load_activity_present": true
+  },
+  "methods": {
+    "source_tables": [
+      "coreml-os-signpost",
+      "metal-gpu-intervals",
+      "time-profile",
+      "ane-hw-intervals-internal"
+    ],
+    "strict_app_filter": "Resolve XML process references and match the recorded application process; additionally filter GPU labels to the evaluated Deep model.",
+    "hardware_correlation": "Resolve nanosecond timestamps and check whether app ANE evaluation/send/completion samples fall within ANE hardware active intervals.",
+    "privacy": "Raw exports and process/device identifiers are retained privately; this file contains only sanitized app-level and explicitly global context aggregates."
+  },
+  "private_source_export_sha256": {
+    "coreml-signposts-retry.xml": "47cd504ee4299a9a88d386ceb6b6d07bfc061426c2785308dc687116e132cbb7",
+    "metal-gpu.xml": "7b5ec7f52ae58169ced5765300cf5a9032eb336379fe446d8929211182334db4",
+    "app-time-profile.xml": "463ad18c15c700b6950e9c8297ae5acb92e327d819d1664b80991712250bc62d",
+    "ane-hardware-retry.xml": "32a77de3d064daa0ab4da0a1a782c206e1e4238ebc966d888ce8cbcdc65787b8"
+  },
+  "release_model_identity": {
+    "tag": "v1.1.0",
+    "asset": "deep-beltrami-coreml-sigma25-v1.1.0.tar.gz",
+    "asset_sha256": "838a03f0994047b4150ad0bcac74a56d2b465529d6bc8689a6ec52dd2aa80a6a",
+    "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma25-v1.1.0.tar.gz",
+    "package": "DeepBeltrami_sigma25_mixed16_masked256.mlpackage",
+    "package_sha256": "8cb4d7d18df5971ad0bd4f66856dd434ebe0159413cb216350ea853417481c29",
+    "original_checkpoint_sha256": "07a9438eb26fc0e70c425d31a460cf2d493f53ebf8044893e1e3a9d94fcede50",
+    "learned_tensors_sha256": "a554a6e216de8208f75f6331d39fa905dabf3848ecc0c9269a3d4860f10f4c0d",
+    "identity_scope": "The model name is observed directly in the trace. Package identity is recorded from the independently hash-verified release archive used for the installed build."
+  }
+}

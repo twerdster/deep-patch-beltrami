@@ -1,5 +1,7 @@
 # Deep Patch-Beltrami
 
+![Deep Patch-Beltrami running on an iPhone 12](docs/images/ios-demo.png)
+
 **Unrolled geometric image denoising from the original trained models.**
 
 Deep Patch-Beltrami turns the differential operators of patch-space Beltrami
@@ -9,6 +11,40 @@ parameters and a complete reproduction of the BSD68 results in Aaron Wetzler's
 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4 §4.5.
 
 ![Deep Patch-Beltrami denoising of a synthetic image](docs/images/demo.png)
+
+
+## iPhone app
+
+Run the original five-stage denoiser locally with **Core ML**, full-resolution
+photo import and a draggable before/after view. On the tested iPhone 12,
+256×256 grayscale takes **536 ms** (median of three warm filter runs).
+The fast mixed mode uses
+validated accelerator paths; accurate FP32 remains selectable. All eight
+noise-specific checkpoints are included in the model download. Grayscale and
+RGB images can have odd, non-square or larger-than-tile dimensions.
+
+```bash
+# macOS, Xcode 16.1+; download, verify and compile all eight model sets.
+python3 ios/scripts/fetch_models.py
+open ios/DeepBeltramiApp.xcodeproj
+```
+
+In Xcode choose your Apple signing team and an **iOS 18+** iPhone, then Run.
+No PyTorch installation is needed to build the app from released Core ML
+models. The download is about **182 MiB**. To compile from the command line:
+
+```bash
+TEAM_ID=YOUR_TEAM_ID ios/scripts/build_ios.sh
+```
+
+[Installation, precision modes and measured performance](ios/README.md) ·
+[Numerical and hardware evidence](ios/VALIDATION.md)
+
+The demo above was processed on a physical iPhone 12. Instruments verifies
+actual GPU and Neural Engine execution for the released fast 256-pixel model.
+Larger images use exact context halos, and RGB processes three channels;
+large-photo filtering takes longer. Accurate Core ML also reproduces all
+**544 BSD68 cases / eight printed thesis means** in the native Mac check.
 
 ## Quick start
 

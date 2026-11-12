@@ -3,7 +3,7 @@
 `deep-patch-beltrami` is a standalone Python/PyTorch inference and reproduction
 package for the original Deep Patch-Beltrami models from Aaron Wetzler's
 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4 §4.5.
-The preferred citation is the thesis. Package version: 1.0.0.
+The preferred citation is the thesis. Package version: 1.1.0.
 
 ## Implementation and commands
 
@@ -80,3 +80,57 @@ Tests use synthetic arrays; the full numerical benchmark is an explicit command.
   PyTorch 2.7.1 and h5py 3.12.1.
 - `CITATION.cff`, including its preferred thesis citation, validates against
   the official Citation File Format 1.2.0 schema.
+
+## Native iOS release 1.1.0
+
+- `ios/DeepBeltramiApp.xcodeproj` builds the iOS 18+ SwiftUI app with Xcode
+  16.1+. It supports full-resolution upright RGB photos, procedural samples,
+  noise/precision/compute selection, comparison and sharing. Imported photos
+  are not automatically retained as diagnostic files.
+- `ios/DeepBeltramiCoreML/` provides a serialized reusable Core ML engine.
+  Accurate FP32 preserves the original graph. Fast mixed precision casts
+  only ten heavy 80-to-80 convolutions; sensitive metric/determinant/update
+  arithmetic remains FP32. No model is retrained or determinant clamped.
+- Eight SHA256-pinned release archives in `ios/models.json` contain three
+  portable `.mlpackage` variants per sigma: flexible FP32, masked256 and
+  masked512 mixed. `ios/scripts/fetch_models.py` verifies downloads and
+  compiles all 24 locally using Xcode, without requiring PyTorch.
+- Exact 45-pixel context halos and per-stage masks preserve arbitrary image
+  rectangles and true boundaries. Small/narrow images use the FP32 fallback.
+  A physical A14 masked512+ANE parity failure caused that route to be
+  excluded: Automatic/CPU+ANE use masked256; CPU+GPU may select masked512.
+- The accurate native Mac run verified all 544 original BSD68 inputs,
+  produced finite predictions, and reproduced all eight printed thesis
+  means. Maximum per-case difference from public PyTorch PSNR was
+  3.60965e-5 dB. The sanitized audit is `ios/benchmarks/bsd68-coreml-mac.json`.
+- Physical-phone checks cover 22 cases: 11 sigma-25 geometries, eight
+  grayscale noise-specific models and three RGB sizes. Fast/accurate modes
+  have declared pixel tolerances; benchmark records distinguish requested
+  compute settings from actual returned model/precision and planned devices.
+- Actual GPU/ANE execution is measured with Instruments for the final
+  masked256 mixed/all graph. Only sanitized app aggregates are published;
+  global ANE hardware totals are not reported as application utilization.
+- The UI image adapter checks eight orientations at two scales with exact
+  pixel/corner/round-trip assertions. UI input/settings are held during work.
+- Native documentation and the top README demo describe installation,
+  limitations and measured phone timings. Python inference/protocol/model
+  and noise release pins remain unchanged. CI includes unsigned iOS compilation.
+
+- Boundary-aware tile partitions retain the true-edge margins and use the
+  minimum window count; 512x512 fast Automatic needs 9 predictions instead
+  of 16. Exhaustive axis coverage/context checks and seam/RGB checks passed.
+- The portable full Mac command is `ios/Tests/run_bsd68_coreml.sh`; it checks
+  original input hashes at preparation and inference, label hashes, finite
+  predictions and the eight means. Datasets/results may use external storage;
+  Swift builds default to the native `.build-ios/bsd68-native` directory.
+- Physical-device optimized benchmark: all 28 cases finite, all 22 references
+  pass; three warm samples per case, thermal nominal at start and fair at end.
+  256x256 fast Automatic median 536.27 ms, 512x512 4,780.68 ms, 1024x768 16,082.26 ms.
+  These are filter times, not model-load/UI times or sustained/tail estimates.
+
+- The final public Mac harness rerun passed all 544 cases;
+  per-image PSNR values were identical to the independently audited native
+  record. The final-source summary records source/model/report hashes.
+- The actual phone procedural demo at 384x320, sigma 25, fast Automatic
+  improved raw-float PSNR from 20.18 to 41.21 dB in 2,056 ms of filter work.
+  Its app-view capture and metrics are published beside the top README figure.

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "tag": "v1.1.0",
+  "assets": {
+    "deep-beltrami-coreml-sigma5-v1.1.0.tar.gz": {
+      "sigma": 5,
+      "size": 23776213,
+      "sha256": "fbd4d0409d658140572719f1cb6f8c157ccad03851310716a80e7b1d14d523a9",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma5-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma10-v1.1.0.tar.gz": {
+      "sigma": 10,
+      "size": 23766888,
+      "sha256": "bb53f6574874693bfbe12213dccc68c70eafe4ef75f6d108c25f1f4af306d826",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma10-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma15-v1.1.0.tar.gz": {
+      "sigma": 15,
+      "size": 23792544,
+      "sha256": "e81fb9d398ceeae56ad4afaaea6ab191fc58ac28f9f0ee9cf471735b373fb4b3",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma15-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma20-v1.1.0.tar.gz": {
+      "sigma": 20,
+      "size": 23777852,
+      "sha256": "210df1e95a78d6e9cd6102de3b5861c9511e22844f940b437a1afca7c691ed62",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma20-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma25-v1.1.0.tar.gz": {
+      "sigma": 25,
+      "size": 23769876,
+      "sha256": "838a03f0994047b4150ad0bcac74a56d2b465529d6bc8689a6ec52dd2aa80a6a",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma25-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma30-v1.1.0.tar.gz": {
+      "sigma": 30,
+      "size": 23796100,
+      "sha256": "b3b574f344940ee03e2b0065d1445c498d8ee8838845f34b872c03c3b5b2b8b5",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma30-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma40-v1.1.0.tar.gz": {
+      "sigma": 40,
+      "size": 23810875,
+      "sha256": "2b81f90dbf329bcfdb0fbb26abed982efac01e9d976cdcc6097c7b26386fd443",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma40-v1.1.0.tar.gz"
+    },
+    "deep-beltrami-coreml-sigma50-v1.1.0.tar.gz": {
+      "sigma": 50,
+      "size": 23886396,
+      "sha256": "1a3b455f3dcc1dc8cb40d5cc3566addad711b72da38800f556f414f53f1e6e05",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.1.0/deep-beltrami-coreml-sigma50-v1.1.0.tar.gz"
+    }
+  }
+}

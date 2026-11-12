@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+"archiveVersion" = "1";
+"classes" = {
+};
+"objectVersion" = "56";
+"objects" = {
+"04B694C1E7E6F3A173B5AE22" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "DeepBeltramiApp/App.swift";
+"sourceTree" = "<group>";
+};
+"02410CC914492364BB800771" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "04B694C1E7E6F3A173B5AE22";
+};
+"46F2ED9988605CD0D7BB637A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "DeepBeltramiApp/ContentView.swift";
+"sourceTree" = "<group>";
+};
+"1C0CB34EA9168AC779A80868" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "46F2ED9988605CD0D7BB637A";
+};
+"4DDB5EA77A90FAE9461C7A37" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "DeepBeltramiApp/ImageRaster.swift";
+"sourceTree" = "<group>";
+};
+"B76032316C006F02BEDD030F" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "4DDB5EA77A90FAE9461C7A37";
+};
+"03D65D097AF2466740295623" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "DeepBeltramiApp/ProcessingEngine.swift";
+"sourceTree" = "<group>";
+};
+"686310673F38637B4F268DFF" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "03D65D097AF2466740295623";
+};
+"5F97E1F78C934EC22BA28E29" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "DeepBeltramiApp/DenoisingController.swift";
+"sourceTree" = "<group>";
+};
+"C7F1CFA78D6C573470955192" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "5F97E1F78C934EC22BA28E29";
+};
+"2B627D9C55E4C15F76B45CE6" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "DeepBeltramiCoreML/DeepBeltramiCoreML.swift";
+"sourceTree" = "<group>";
+};
+"5F2C1047D229CFA296CC311F" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "2B627D9C55E4C15F76B45CE6";
+};
+"F1CEC08B2D48D5DFD2369EC1" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "folder";
+"path" = "DeepBeltramiApp/Fixtures";
+"sourceTree" = "<group>";
+};
+"F3D7ABC4EFEE2F2C5B8009A3" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "F1CEC08B2D48D5DFD2369EC1";
+};
+"3E188281533184187D129009" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "folder";
+"path" = "DeepBeltramiApp/ModelAssets";
+"sourceTree" = "<group>";
+};
+"4FA6F148B97FCC8D62373005" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "3E188281533184187D129009";
+};
+"BD026055D8F0C154471ACA47" = {
+"isa" = "PBXFileReference";
+"explicitFileType" = "wrapper.application";
+"includeInIndex" = "0";
+"path" = "DeepBeltramiApp.app";
+"sourceTree" = "BUILT_PRODUCTS_DIR";
+};
+"1BB21EFB7C988A9DE171E099" = {
+"isa" = "PBXGroup";
+"children" = ("BD026055D8F0C154471ACA47");
+"name" = "Products";
+"sourceTree" = "<group>";
+};
+"66474652908ED2E0775E04A9" = {
+"isa" = "PBXGroup";
+"children" = ("04B694C1E7E6F3A173B5AE22","46F2ED9988605CD0D7BB637A","4DDB5EA77A90FAE9461C7A37","03D65D097AF2466740295623","5F97E1F78C934EC22BA28E29","2B627D9C55E4C15F76B45CE6","F1CEC08B2D48D5DFD2369EC1","3E188281533184187D129009","1BB21EFB7C988A9DE171E099");
+"sourceTree" = "<group>";
+};
+"878A52FC5FF6A57D50B7B870" = {
+"isa" = "PBXSourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ("02410CC914492364BB800771","1C0CB34EA9168AC779A80868","B76032316C006F02BEDD030F","686310673F38637B4F268DFF","C7F1CFA78D6C573470955192","5F2C1047D229CFA296CC311F");
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"E2AA269EB967A8853A258BFA" = {
+"isa" = "PBXFrameworksBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ();
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"41D311A605520FC7B8B9A980" = {
+"isa" = "PBXResourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = ("F3D7ABC4EFEE2F2C5B8009A3","4FA6F148B97FCC8D62373005");
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"DFC1D21D28438E531F817435" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"ALWAYS_SEARCH_USER_PATHS" = "NO";
+"CLANG_ENABLE_MODULES" = "YES";
+"CLANG_ENABLE_OBJC_ARC" = "YES";
+"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+"IPHONEOS_DEPLOYMENT_TARGET" = "18.0";
+"SDKROOT" = "iphoneos";
+"MTL_FAST_MATH" = "NO";
+"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+"DEBUG_INFORMATION_FORMAT" = "dwarf";
+"SWIFT_COMPILATION_MODE" = "singlefile";
+};
+"name" = "Debug";
+};
+"6C7EFF6369083C8E1F2B1994" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"CODE_SIGN_STYLE" = "Automatic";
+"CURRENT_PROJECT_VERSION" = "2";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"INFOPLIST_FILE" = "DeepBeltramiApp/Info.plist";
+"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)","@executable_path/Frameworks");
+"MARKETING_VERSION" = "1.1.0";
+"PRODUCT_BUNDLE_IDENTIFIER" = "org.twerdster.DeepPatchBeltrami";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"SWIFT_VERSION" = "5.0";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEEP_BELTRAMI";
+};
+"name" = "Debug";
+};
+"A1E97C491A309D8FE8E303CF" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"ALWAYS_SEARCH_USER_PATHS" = "NO";
+"CLANG_ENABLE_MODULES" = "YES";
+"CLANG_ENABLE_OBJC_ARC" = "YES";
+"GCC_C_LANGUAGE_STANDARD" = "gnu17";
+"IPHONEOS_DEPLOYMENT_TARGET" = "18.0";
+"SDKROOT" = "iphoneos";
+"MTL_FAST_MATH" = "NO";
+"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+"SWIFT_COMPILATION_MODE" = "wholemodule";
+};
+"name" = "Release";
+};
+"DD75E2CB1C510A828AC72D96" = {
+"isa" = "XCBuildConfiguration";
+"buildSettings" = {
+"CODE_SIGN_STYLE" = "Automatic";
+"CURRENT_PROJECT_VERSION" = "2";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"INFOPLIST_FILE" = "DeepBeltramiApp/Info.plist";
+"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)","@executable_path/Frameworks");
+"MARKETING_VERSION" = "1.1.0";
+"PRODUCT_BUNDLE_IDENTIFIER" = "org.twerdster.DeepPatchBeltrami";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"SWIFT_VERSION" = "5.0";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEEP_BELTRAMI";
+};
+"name" = "Release";
+};
+"C631E4B921CE4474D0AB93BD" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = ("DFC1D21D28438E531F817435","A1E97C491A309D8FE8E303CF");
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Release";
+};
+"E4258A205610D5937B99C201" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = ("6C7EFF6369083C8E1F2B1994","DD75E2CB1C510A828AC72D96");
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Release";
+};
+"BEF32D2C315A289576F2A682" = {
+"isa" = "PBXNativeTarget";
+"buildConfigurationList" = "E4258A205610D5937B99C201";
+"buildPhases" = ("878A52FC5FF6A57D50B7B870","E2AA269EB967A8853A258BFA","41D311A605520FC7B8B9A980");
+"buildRules" = ();
+"dependencies" = ();
+"name" = "DeepBeltramiApp";
+"productName" = "DeepBeltramiApp";
+"productReference" = "BD026055D8F0C154471ACA47";
+"productType" = "com.apple.product-type.application";
+};
+"244210E48437B6556980A702" = {
+"isa" = "PBXProject";
+"attributes" = {
+"LastUpgradeCheck" = "1610";
+"TargetAttributes" = {
+"BEF32D2C315A289576F2A682" = {
+"CreatedOnToolsVersion" = "16.1";
+"ProvisioningStyle" = "Automatic";
+};
+};
+};
+"buildConfigurationList" = "C631E4B921CE4474D0AB93BD";
+"compatibilityVersion" = "Xcode 14.0";
+"developmentRegion" = "en";
+"hasScannedForEncodings" = "0";
+"knownRegions" = ("en","Base");
+"mainGroup" = "66474652908ED2E0775E04A9";
+"productRefGroup" = "1BB21EFB7C988A9DE171E099";
+"projectDirPath" = "";
+"projectRoot" = "";
+"targets" = ("BEF32D2C315A289576F2A682");
+};
+};
+"rootObject" = "244210E48437B6556980A702";
+}

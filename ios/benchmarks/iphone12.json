@@ -1,0 +1,958 @@
+{
+  "compute": "all",
+  "low_power_mode": false,
+  "os_version": "18.0.1",
+  "platform": "physical iOS device",
+  "precision": "mixed",
+  "records": [
+    {
+      "channels": 1,
+      "cold_ms": 49.703666,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 1,
+      "id": "h1-w1",
+      "max_absolute_error": 0,
+      "max_tolerance": 1,
+      "median_ms": 3.2825,
+      "output_file": "h1-w1-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 3.282125
+      },
+      "warm_ms": [
+        3.469125,
+        3.2825,
+        3.282125
+      ],
+      "width": 1
+    },
+    {
+      "channels": 1,
+      "cold_ms": 33.414125,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 1,
+      "id": "h1-w17",
+      "max_absolute_error": 0.017009735107421875,
+      "max_tolerance": 1,
+      "median_ms": 8.394708,
+      "output_file": "h1-w17-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.00444179002774219,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 8.394708
+      },
+      "warm_ms": [
+        8.524417,
+        8.306834,
+        8.394708
+      ],
+      "width": 17
+    },
+    {
+      "channels": 1,
+      "cold_ms": 34.333583,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 19,
+      "id": "h19-w1",
+      "max_absolute_error": 0.0227508544921875,
+      "max_tolerance": 1,
+      "median_ms": 8.887583,
+      "output_file": "h19-w1-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.008782644117265868,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 8.829292
+      },
+      "warm_ms": [
+        9.170042,
+        8.887583,
+        8.829292
+      ],
+      "width": 1
+    },
+    {
+      "channels": 1,
+      "cold_ms": 31.369875,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 2,
+      "id": "h2-w3",
+      "max_absolute_error": 0.00045013427734375,
+      "max_tolerance": 1,
+      "median_ms": 6.130042,
+      "output_file": "h2-w3-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0001934619496628718,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 6.028375
+      },
+      "warm_ms": [
+        6.225708,
+        6.130042,
+        6.028375
+      ],
+      "width": 3
+    },
+    {
+      "channels": 1,
+      "cold_ms": 30.488667,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 7,
+      "id": "h7-w9",
+      "max_absolute_error": 0.0017547607421875,
+      "max_tolerance": 1,
+      "median_ms": 9.442042,
+      "output_file": "h7-w9-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.00043040360913193846,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 9.442042
+      },
+      "warm_ms": [
+        9.586542,
+        9.329,
+        9.442042
+      ],
+      "width": 9
+    },
+    {
+      "channels": 1,
+      "cold_ms": 75.838292,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 31,
+      "id": "h31-w47",
+      "max_absolute_error": 0.0035552978515625,
+      "max_tolerance": 1,
+      "median_ms": 27.817209,
+      "output_file": "h31-w47-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0005073466553207068,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 24.514209
+      },
+      "warm_ms": [
+        32.86075,
+        27.817209,
+        24.514209
+      ],
+      "width": 47
+    },
+    {
+      "channels": 1,
+      "cold_ms": 296.083208,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 127,
+      "id": "h127-w129",
+      "max_absolute_error": 0.0037384033203125,
+      "max_tolerance": 1,
+      "median_ms": 254.103708,
+      "output_file": "h127-w129-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0004646754655224306,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 252.53425
+      },
+      "warm_ms": [
+        254.103708,
+        255.30775,
+        252.53425
+      ],
+      "width": 129
+    },
+    {
+      "channels": 1,
+      "cold_ms": 292.23025,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 129,
+      "id": "h129-w127",
+      "max_absolute_error": 0.0052642822265625,
+      "max_tolerance": 1,
+      "median_ms": 264.628625,
+      "output_file": "h129-w127-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.00048797286966889217,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 269.129125
+      },
+      "warm_ms": [
+        258.777458,
+        264.628625,
+        269.129125
+      ],
+      "width": 127
+    },
+    {
+      "channels": 1,
+      "cold_ms": 291.16175,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 128,
+      "id": "h128-w128",
+      "max_absolute_error": 0.003265380859375,
+      "max_tolerance": 1,
+      "median_ms": 262.593375,
+      "output_file": "h128-w128-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.00048284752611403125,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 265.498334
+      },
+      "warm_ms": [
+        262.593375,
+        262.5675,
+        265.498334
+      ],
+      "width": 128
+    },
+    {
+      "channels": 1,
+      "cold_ms": 389.328625,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 256,
+      "id": "h256-w256",
+      "max_absolute_error": 0.0134124755859375,
+      "max_tolerance": 1,
+      "median_ms": 514.110125,
+      "output_file": "h256-w256-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.001253974741584458,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 1,
+        "wallMilliseconds": 514.110125
+      },
+      "warm_ms": [
+        505.680667,
+        563.654833,
+        514.110125
+      ],
+      "width": 256
+    },
+    {
+      "channels": 1,
+      "cold_ms": 3182.25825,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 321,
+      "id": "h321-w481",
+      "max_absolute_error": 0.0099029541015625,
+      "max_tolerance": 1,
+      "median_ms": 3208.892459,
+      "output_file": "h321-w481-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0012318405202561872,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 6,
+        "wallMilliseconds": 3208.892459
+      },
+      "warm_ms": [
+        3216.39875,
+        3135.606917,
+        3208.892459
+      ],
+      "width": 481
+    },
+    {
+      "channels": 1,
+      "cold_ms": 856.92525,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma5-gray-h193-w257",
+      "max_absolute_error": 0.00897216796875,
+      "max_tolerance": 1,
+      "median_ms": 1080.835708,
+      "output_file": "sigma5-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0008718878934269412,
+      "rms_tolerance": 0.05,
+      "sigma": 5,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma5_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1058.223375
+      },
+      "warm_ms": [
+        1095.427334,
+        1080.835708,
+        1058.223375
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 866.810459,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma10-gray-h193-w257",
+      "max_absolute_error": 0.0059356689453125,
+      "max_tolerance": 1,
+      "median_ms": 1057.619375,
+      "output_file": "sigma10-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0009267471079792111,
+      "rms_tolerance": 0.05,
+      "sigma": 10,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma10_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1062.235
+      },
+      "warm_ms": [
+        1030.60725,
+        1057.619375,
+        1062.235
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 928.104375,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma15-gray-h193-w257",
+      "max_absolute_error": 0.027435302734375,
+      "max_tolerance": 1,
+      "median_ms": 1070.421833,
+      "output_file": "sigma15-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0010287154899884818,
+      "rms_tolerance": 0.05,
+      "sigma": 15,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma15_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1088.235833
+      },
+      "warm_ms": [
+        1070.421833,
+        987.592958,
+        1088.235833
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 860.568542,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma20-gray-h193-w257",
+      "max_absolute_error": 0.0113067626953125,
+      "max_tolerance": 1,
+      "median_ms": 1025.043917,
+      "output_file": "sigma20-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0010800252169513955,
+      "rms_tolerance": 0.05,
+      "sigma": 20,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma20_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1040.529917
+      },
+      "warm_ms": [
+        999.035416,
+        1025.043917,
+        1040.529917
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 862.669292,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma25-gray-h193-w257",
+      "max_absolute_error": 0.011627197265625,
+      "max_tolerance": 1,
+      "median_ms": 988.667041,
+      "output_file": "sigma25-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0012123242985647667,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 988.667041
+      },
+      "warm_ms": [
+        982.335291,
+        1071.996917,
+        988.667041
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 878.549208,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma30-gray-h193-w257",
+      "max_absolute_error": 0.010528564453125,
+      "max_tolerance": 1,
+      "median_ms": 1036.610459,
+      "output_file": "sigma30-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.001374208643515569,
+      "rms_tolerance": 0.05,
+      "sigma": 30,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma30_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1067.216042
+      },
+      "warm_ms": [
+        1036.610459,
+        1035.4685,
+        1067.216042
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 874.776167,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma40-gray-h193-w257",
+      "max_absolute_error": 0.011699676513671875,
+      "max_tolerance": 1,
+      "median_ms": 1010.427542,
+      "output_file": "sigma40-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0014520765045119347,
+      "rms_tolerance": 0.05,
+      "sigma": 40,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma40_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1010.427542
+      },
+      "warm_ms": [
+        1022.576958,
+        946.398667,
+        1010.427542
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 852.806791,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma50-gray-h193-w257",
+      "max_absolute_error": 0.0091705322265625,
+      "max_tolerance": 1,
+      "median_ms": 1023.972583,
+      "output_file": "sigma50-gray-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0013301131247579635,
+      "rms_tolerance": 0.05,
+      "sigma": 50,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma50_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 2,
+        "wallMilliseconds": 1023.972583
+      },
+      "warm_ms": [
+        1022.83325,
+        1027.88175,
+        1023.972583
+      ],
+      "width": 257
+    },
+    {
+      "channels": 3,
+      "cold_ms": 34.411208,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 2,
+      "id": "sigma25-rgb-h2-w3",
+      "max_absolute_error": 0.00409698486328125,
+      "max_tolerance": 1,
+      "median_ms": 17.69,
+      "output_file": "sigma25-rgb-h2-w3-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0017245265705276235,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 3,
+        "wallMilliseconds": 18.217334
+      },
+      "warm_ms": [
+        17.66225,
+        17.69,
+        18.217334
+      ],
+      "width": 3
+    },
+    {
+      "channels": 3,
+      "cold_ms": 447.432834,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 79,
+      "id": "sigma25-rgb-h79-w111",
+      "max_absolute_error": 0.0034942626953125,
+      "max_tolerance": 1,
+      "median_ms": 453.09125,
+      "output_file": "sigma25-rgb-h79-w111-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.00032770098114754217,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 3,
+        "wallMilliseconds": 462.881709
+      },
+      "warm_ms": [
+        436.635208,
+        453.09125,
+        462.881709
+      ],
+      "width": 111
+    },
+    {
+      "channels": 3,
+      "cold_ms": 2963.365458,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "sigma25-rgb-h193-w257",
+      "max_absolute_error": 0.00830078125,
+      "max_tolerance": 1,
+      "median_ms": 3151.301167,
+      "output_file": "sigma25-rgb-h193-w257-mixed-all.f32",
+      "reference_passed": true,
+      "rms_error": 0.0011417833196492898,
+      "rms_tolerance": 0.05,
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 6,
+        "wallMilliseconds": 3125.853917
+      },
+      "warm_ms": [
+        3246.821542,
+        3151.301167,
+        3125.853917
+      ],
+      "width": 257
+    },
+    {
+      "channels": 1,
+      "cold_ms": 305.134584,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 128,
+      "id": "performance-128x128c1",
+      "median_ms": 264.04975,
+      "output_file": "performance-128x128c1-mixed-all.f32",
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 1,
+          "gpu": 159,
+          "unknown": 325
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_fp32",
+        "precision": "fp32",
+        "tileCount": 1,
+        "wallMilliseconds": 269.399083
+      },
+      "warm_ms": [
+        252.599375,
+        264.04975,
+        269.399083
+      ],
+      "width": 128
+    },
+    {
+      "channels": 1,
+      "cold_ms": 493.084417,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 256,
+      "id": "performance-256x256c1",
+      "median_ms": 536.267875,
+      "output_file": "performance-256x256c1-mixed-all.f32",
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 1,
+        "wallMilliseconds": 536.995375
+      },
+      "warm_ms": [
+        536.267875,
+        520.284041,
+        536.995375
+      ],
+      "width": 256
+    },
+    {
+      "channels": 1,
+      "cold_ms": 2089.150708,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 257,
+      "id": "performance-385x257c1",
+      "median_ms": 2140.358625,
+      "output_file": "performance-385x257c1-mixed-all.f32",
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 4,
+        "wallMilliseconds": 2142.173458
+      },
+      "warm_ms": [
+        2140.358625,
+        2110.952833,
+        2142.173458
+      ],
+      "width": 385
+    },
+    {
+      "channels": 1,
+      "cold_ms": 4766.102541,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 512,
+      "id": "performance-512x512c1",
+      "median_ms": 4780.680209,
+      "output_file": "performance-512x512c1-mixed-all.f32",
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 9,
+        "wallMilliseconds": 4780.680209
+      },
+      "warm_ms": [
+        4719.682,
+        4820.594959,
+        4780.680209
+      ],
+      "width": 512
+    },
+    {
+      "channels": 1,
+      "cold_ms": 16072.067959,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 768,
+      "id": "performance-1024x768c1",
+      "median_ms": 16082.259542,
+      "output_file": "performance-1024x768c1-mixed-all.f32",
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 30,
+        "wallMilliseconds": 16057.496666
+      },
+      "warm_ms": [
+        16091.166,
+        16082.259542,
+        16057.496666
+      ],
+      "width": 1024
+    },
+    {
+      "channels": 3,
+      "cold_ms": 3218.432,
+      "finite": true,
+      "gpu_ms": [],
+      "height": 193,
+      "id": "performance-257x193c3",
+      "median_ms": 3123.574417,
+      "output_file": "performance-257x193c3-mixed-all.f32",
+      "sigma": 25,
+      "statistics": {
+        "anticipatedOperationDevices": {
+          "cpu": 6,
+          "gpu": 197,
+          "neuralEngine": 10,
+          "unknown": 378
+        },
+        "backend": "all",
+        "model": "DeepBeltrami_sigma25_mixed16_masked256",
+        "precision": "mixed16",
+        "tileCount": 6,
+        "wallMilliseconds": 3115.38
+      },
+      "warm_ms": [
+        3231.542708,
+        3123.574417,
+        3115.38
+      ],
+      "width": 257
+    }
+  ],
+  "schema": 1,
+  "thermal_current": 1,
+  "thermal_start": 0,
+  "hardware": {
+    "model": "iPhone 12",
+    "soc": "A14 Bionic"
+  },
+  "build": "Release, Xcode 16.1, iOS SDK 18.1",
+  "timing_scope": "Engine wall time: packing, prediction completion and stitching; excludes model initialization, diagnostic compute-plan inspection, photo decoding and UI rendering.",
+  "measurement_limit": "Three warm repetitions after one first per-case prediction; not sustained throughput or tail latency. Models may already be loaded by earlier cases.",
+  "configuration_note": "Requested mixed/all. Tiny/narrow images use FP32 CPU+GPU. Masked512 excluded from ANE-permitted modes. Boundary-aware minimum tile partition."
+}

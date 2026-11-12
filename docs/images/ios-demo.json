@@ -1,0 +1,18 @@
+{
+  "channels": 1,
+  "denoised_psnr_db": 41.21255492174983,
+  "height": 320,
+  "noisy_psnr_db": 20.179916378618103,
+  "requested_compute": "all",
+  "requested_precision": "mixed",
+  "sigma": 25,
+  "statistics": {
+    "anticipatedOperationDevices": {},
+    "backend": "all",
+    "model": "DeepBeltrami_sigma25_mixed16_masked256",
+    "precision": "mixed16",
+    "tileCount": 4,
+    "wallMilliseconds": 2056.412584
+  },
+  "width": 384
+}

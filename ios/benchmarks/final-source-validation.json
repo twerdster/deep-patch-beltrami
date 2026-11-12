@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "validation_scope": "Final public macOS harness with final native engine",
+  "dataset": "bsd68",
+  "platform": "macOS 15.1.1, arm64",
+  "backend": "native Core ML",
+  "precision": "fp32",
+  "compute_units": "cpuAndGPU",
+  "case_count": 544,
+  "complete": true,
+  "all_finite": true,
+  "all_original_input_hashes_verified_at_preparation_and_native_inference": true,
+  "all_label_hashes_verified": true,
+  "all_cases_one_full_image_prediction": true,
+  "all_eight_model_hashes_verified_before_and_after": true,
+  "source_hashes_verified_before_and_after": {
+    "ios/DeepBeltramiCoreML/DeepBeltramiCoreML.swift": "66255e22364c0b1b0cc53d37842cc3ce16203eda4eabdfcd48cb896a9eb08d6e",
+    "ios/Tests/prepare_bsd68_coreml.py": "7dc09404fd868a10c648af703acf8dd9f855116b2719e18842ac24bf15087e28",
+    "ios/Tests/RunBSD68CoreML.swift": "32dd1d38f3d86c29da9b3ce0d6e1d7b01f22c649b048c4e494624c914c504901",
+    "ios/Tests/run_bsd68_coreml.sh": "f74b5ef09604af1d1fb555082c42fe2e298423ceb5d15786cfb542b19c373958"
+  },
+  "runner_sha256": "265fd2120785ac0da25f0460959e9b268dc86c426b65ea318b2d97a4bd41d67e",
+  "fixture_manifest_sha256": "68a7b2918eac51e18b0e118230c2947143db38e0984878e7722348a3d34b0cee",
+  "matches_all_eight_published_means": true,
+  "means": [
+    {
+      "sigma": 5,
+      "images": 68,
+      "mean_psnr": 37.69580982351123,
+      "published_psnr": 37.7,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 10,
+      "images": 68,
+      "mean_psnr": 33.5226754580742,
+      "published_psnr": 33.52,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 15,
+      "images": 68,
+      "mean_psnr": 31.365599894167772,
+      "published_psnr": 31.37,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 20,
+      "images": 68,
+      "mean_psnr": 29.91806019192071,
+      "published_psnr": 29.92,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 25,
+      "images": 68,
+      "mean_psnr": 28.86523993402139,
+      "published_psnr": 28.87,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 30,
+      "images": 68,
+      "mean_psnr": 28.038062716033938,
+      "published_psnr": 28.04,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 40,
+      "images": 68,
+      "mean_psnr": 26.8118630268364,
+      "published_psnr": 26.81,
+      "matches_published_rounding": true
+    },
+    {
+      "sigma": 50,
+      "images": 68,
+      "mean_psnr": 25.94791386269354,
+      "published_psnr": 25.95,
+      "matches_published_rounding": true
+    }
+  ],
+  "numerical_comparison": {
+    "earlier_public_report": "bsd68-coreml-mac.json",
+    "case_count": 544,
+    "all_input_hashes_equal": true,
+    "all_per_image_psnr_equal": true,
+    "maximum_absolute_psnr_difference_db": 0.0,
+    "earlier_report_retained": true
+  },
+  "max_abs_delta_vs_pytorch_db": 3.609649493796496e-05,
+  "max_abs_delta_vs_archived_db": 1.4233767203108982e-05,
+  "full_output_report": {
+    "name": "bsd68-coreml.json",
+    "sha256": "02d1b6b6ea78c4528a4abf78cc2961716736373a0742807bcff830cf73263f1a",
+    "retention": "Retained with complete per-image results in the task validation archive"
+  },
+  "wall_seconds": 116.31429398059845,
+  "summed_inference_seconds": 100.99026053499999,
+  "timing_caution": "One sequential validation including startup and shape effects; not a warmed benchmark.",
+  "compute_plan_caution": "Anticipated preferred operation devices, not a hardware execution trace."
+}

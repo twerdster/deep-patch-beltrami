@@ -62,3 +62,48 @@ PyTorch installation, state that explicitly. An installed wheel import check
 and clean CI installation establish different parts of packaging verification.
 Keep the demo's procedural image, fixed seed and sigma explicit; its score is
 an example, separate from the 544-case BSD68 acceptance check.
+
+## Native iOS workflow
+
+Read `ios/README.md` and `ios/VALIDATION.md` before changing native behavior.
+Build with `ios/scripts/build_ios.sh` (unsigned), or set `TEAM_ID` to sign
+using an existing Apple development account. Do not commit local signing
+settings, device identifiers, generated fixtures/models, caches or builds.
+Use Release builds on a physical phone for latency evidence; keep sample
+counts, thermal state, precision and processed dimensions with the results.
+
+Run `--check-image-io` on the phone after image-adapter changes. It must
+pass all 16 orientation/scale checks. `--validate` must contain the expected
+reference cases and pass declared finite/error gates; an empty suite fails.
+Use `--benchmark`, `--case` and `--repeats` for controlled timings. Preserve
+reports before another invocation replaces the same Documents filename.
+`--auto-run --screenshot` exports only the procedural demo and an app-view
+capture for documentation. Imported photos are shared only on user action.
+
+Fetch all 24 Core ML variants with `python3 ios/scripts/fetch_models.py`.
+Use `--sigmas 25` for a smaller development build. Generate the full 22
+phone references with `python ios/scripts/prepare_fixtures.py --include-smoke`
+(default without the flag is 11 geometry cases). Rebuild to bundle them.
+Check FP32/GPU and mixed/Automatic separately; a tiny mixed request returns
+FP32 by design, and model metadata must report the actual variant.
+
+Keep the 45-pixel halo, per-stage true-boundary masks, native N,C,W,H axes,
+sigma-specific grayscale offsets, zero RGB offsets and final clipping.
+Never enable masked512 on an ANE-permitted configuration without resolving
+and revalidating the observed physical A14 failure. Full FP16 was rejected
+as non-finite. `MLComputePlan` is anticipated placement; actual processor
+claims require app-correlated runtime traces for the exact released graph.
+Rebuild portable packages with `ios/DeepBeltramiCoreML/export_models.sh`
+and `tools/package_coreml_assets.py`; keep release SHA256 pins in sync.
+
+For full native Mac quality acceptance, install the Python package and fetch
+all Core ML models, then run `bash ios/Tests/run_bsd68_coreml.sh --work-dir
+/path/to/data --python .venv/bin/python`. The work directory holds inputs,
+logs and metrics; builds default to the native `.build-ios/bsd68-native`.
+Use `--sigmas 25 --limit 1` for a subset, which is never full acceptance.
+Only all 544 cases/eight rounded means establish the full BSD68 result.
+When changing the spatial partition, retain at least 45 pixels before every
+artificial boundary and cover every output pixel exactly once. Rerun seam,
+RGB and geometry checks, then update phone tile counts/timings in the docs.
+Unsigned CI uses `ios/scripts/build_ios.sh --compile-only`; this skips model
+preflight and cannot produce an installed usable app without prepared models.

@@ -1,0 +1,40 @@
+{
+  "hardware": "iPhone 12 / A14",
+  "os_version": "18.0.1",
+  "precision": "mixed",
+  "requested_compute": "gpu",
+  "record": {
+    "channels": 1,
+    "cold_ms": 1041.130708,
+    "finite": true,
+    "gpu_ms": [],
+    "height": 256,
+    "id": "h256-w256",
+    "max_absolute_error": 0.0099945068359375,
+    "max_tolerance": 1,
+    "median_ms": 954.370459,
+    "output_file": "h256-w256-mixed-gpu.f32",
+    "reference_passed": true,
+    "rms_error": 0.0011641226654811872,
+    "rms_tolerance": 0.05,
+    "sigma": 25,
+    "statistics": {
+      "anticipatedOperationDevices": {
+        "cpu": 1,
+        "gpu": 212,
+        "unknown": 378
+      },
+      "backend": "gpu",
+      "model": "DeepBeltrami_sigma25_mixed16_masked256",
+      "precision": "mixed16",
+      "tileCount": 1,
+      "wallMilliseconds": 986.409458
+    },
+    "warm_ms": [
+      953.083667,
+      954.370459,
+      986.409458
+    ],
+    "width": 256
+  }
+}
