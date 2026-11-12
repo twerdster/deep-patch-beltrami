@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the 2017 thesis when using Deep Patch-Beltrami."
+title: "Deep Patch-Beltrami"
+type: software
+version: 1.0.0
+date-released: 2026-11-12
+authors:
+  - family-names: Wetzler
+    given-names: Aaron
+repository-code: "https://github.com/twerdster/deep-patch-beltrami"
+url: "https://github.com/twerdster/deep-patch-beltrami"
+license: MIT
+preferred-citation:
+  type: thesis
+  thesis-type: PhD
+  authors:
+    - family-names: Wetzler
+      given-names: Aaron
+  title: "Topics in Computational Geometric Vision"
+  year: 2017
+  institution:
+    name: "Technion – Israel Institute of Technology"
+  notes: "Chapter 4, Section 4.5: Operator tuning: a deep perspective"

@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "name": "PB_5_80_5__iter_40000.caffemodel",
+      "sigma": 5,
+      "original_file_sha256": "79cedfdab403ce016c706a1e62516c7992087941d77d3ef746d54bafbb63ad92",
+      "sha256": "7e7717c8fae065a1ede81f0ad49cc1cda1bd87b9c2d3c3f3665c0af2f6f12f2d",
+      "learned_tensors_sha256": "5cac666031c6d2299968999beedec3587c66689e6b3847b1c8acb489c41c12df",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_10_80_5__iter_40000.caffemodel",
+      "sigma": 10,
+      "original_file_sha256": "d9dc07eb18c7d3178d3e36b9aee68ee05863fab76ed9e1f3f91706e503e852b4",
+      "sha256": "8fa718c1753372649a53f9b151786af04f91026cd96332a49d4f67510489108d",
+      "learned_tensors_sha256": "11627a258abbc86cd97c5667279107d52b77623b9249dbecb8c285aef1f6f154",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_15_80_5__iter_40000.caffemodel",
+      "sigma": 15,
+      "original_file_sha256": "c677fb43d156f764bc165d9faeb56e95e8634ec864becb9803d77bd621e5917a",
+      "sha256": "3a7a65293caaa4238d155cc62f66db248567d085e0798df8a22589d74b2dc3a3",
+      "learned_tensors_sha256": "2ced8168ced37262421b4584d72823126b8c8b9ab0e9e385c9a2ce795c9823b4",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_20_80_5__iter_40000.caffemodel",
+      "sigma": 20,
+      "original_file_sha256": "6c02eab1748fd1875a7c0d3ebc5d8aebf5fd530a829e81feab7f089b95230de0",
+      "sha256": "0f524c1125a4a9fdeb43879cdf438f79f52ccfcff951558c2225d8bb4ba71d95",
+      "learned_tensors_sha256": "921a662f6e2cfcda4bd618d0155d892c32193bec61392cdcf6a9e55af8cffb6b",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_25_80_5__iter_40000.caffemodel",
+      "sigma": 25,
+      "original_file_sha256": "07a9438eb26fc0e70c425d31a460cf2d493f53ebf8044893e1e3a9d94fcede50",
+      "sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+      "learned_tensors_sha256": "a554a6e216de8208f75f6331d39fa905dabf3848ecc0c9269a3d4860f10f4c0d",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_30_80_5__iter_40000.caffemodel",
+      "sigma": 30,
+      "original_file_sha256": "b34175726579c50b99a5f7603a161e1eb5805ba5b2b03de9182657b4a6bae123",
+      "sha256": "8438b484621fc0e596985615eb438a6435284e9ee18fdc8f2a00cf11625802f8",
+      "learned_tensors_sha256": "192faf1ebd999b4c1c07288b1f5292d0efcc321b21f1b2c076b5d5089d9440db",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_40_80_5__iter_40000.caffemodel",
+      "sigma": 40,
+      "original_file_sha256": "59529803fc14cac3803e4848c129b85acdff32074a6a8119128b812cd23bdcab",
+      "sha256": "37a2d22513d23480e5b8ca9549bd7d7606dce3696defa8434cdee5ac03408e27",
+      "learned_tensors_sha256": "32a63d95f17856bf03c29a9b8b6da7b85a868e78a7bb9621d36cd718610f8431",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "PB_50_80_5__iter_40000.caffemodel",
+      "sigma": 50,
+      "original_file_sha256": "e0129d2546182e4e40f7b875bd5aeb261910bbd57f4add14a645e3ccfb6dfcc0",
+      "sha256": "c81dca2c8d1fa173a7a0a4ed2ad5571551c971b45bc4d4bc9952f9899bc87dbf",
+      "learned_tensors_sha256": "c20dd82ab9f2168f6e292d7e4b59e86c8c4d3e52e9492b514afafcdf88f01db8",
+      "bytes": 12942095,
+      "sanitation": "Only weighted layer names and blob shape/data fields retained; learned tensors unchanged"
+    },
+    {
+      "name": "stage_001_deploy.prototxt",
+      "stage": 1,
+      "sha256": "da9eb66c09ca8c58d9614bb69baa4d00d25dbe44fc16f9db01dd6ce7c6fa55a2",
+      "bytes": 9498
+    },
+    {
+      "name": "stage_002_deploy.prototxt",
+      "stage": 2,
+      "sha256": "45c6eee856b428e255988197537340664172d3c611260cdb9884601ed5778871",
+      "bytes": 9498
+    },
+    {
+      "name": "stage_003_deploy.prototxt",
+      "stage": 3,
+      "sha256": "4d51e04a64de22a3bc80ccdf176e9e718a68ef8e0b2071c6d3a0a19b6e3600d3",
+      "bytes": 9498
+    },
+    {
+      "name": "stage_004_deploy.prototxt",
+      "stage": 4,
+      "sha256": "6a2afabafd764dd64ab6e0ca65bb091f127d7aca870aa8c85f631ab39452db36",
+      "bytes": 9498
+    },
+    {
+      "name": "stage_005_deploy.prototxt",
+      "stage": 5,
+      "sha256": "eef43c755a063069592bf0d4c39178d71d456146392f3c4c83f5a1bd72d164e4",
+      "bytes": 9498
+    }
+  ]
+}

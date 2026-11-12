@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "repository": "twerdster/deep-patch-beltrami",
+  "tag": "v1.0.0",
+  "assets": {
+    "models": {
+      "filename": "deep-beltrami-models-v1.tar.gz",
+      "bytes": 94582731,
+      "sha256": "88a65088b7852683657fca0c65dc4cb864ed5328231b36519ddbae4f6da8146b",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.0.0/deep-beltrami-models-v1.tar.gz"
+    },
+    "bsd68_noise": {
+      "filename": "bsd68-original-noise-v1.h5",
+      "bytes": 323965111,
+      "sha256": "0c1c0227c71e90f5f08eead3ee18e5e5c9217187b4f5a7240f7376d45f460190",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.0.0/bsd68-original-noise-v1.h5"
+    }
+  }
+}
