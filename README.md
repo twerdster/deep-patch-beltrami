@@ -1,5 +1,9 @@
 # Deep Patch-Beltrami
 
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
+[![Platforms: Linux and iOS 18+](https://img.shields.io/badge/platform-Linux%20%7C%20iOS%2018%2B-555555)](ios/README.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 ![Deep Patch-Beltrami running on an iPhone 12](docs/images/ios-demo.png)
 
 **Unrolled geometric image denoising from the original trained models.**

@@ -107,3 +107,10 @@ artificial boundary and cover every output pixel exactly once. Rerun seam,
 RGB and geometry checks, then update phone tile counts/timings in the docs.
 Unsigned CI uses `ios/scripts/build_ios.sh --compile-only`; this skips model
 preflight and cannot produce an installed usable app without prepared models.
+
+## README presentation (2026-11-12)
+
+The README adds factual language, platform and existing-license badges while
+preserving the original demonstration figures and all runtime, reproduction,
+validation and attribution details. Keep badge claims aligned with these docs;
+a presentation-only update does not establish a new build or runtime result.

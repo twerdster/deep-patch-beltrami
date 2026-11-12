@@ -134,3 +134,10 @@ Tests use synthetic arrays; the full numerical benchmark is an explicit command.
 - The actual phone procedural demo at 384x320, sigma 25, fast Automatic
   improved raw-float PSNR from 20.18 to 41.21 dB in 2,056 ms of filter work.
   Its app-view capture and metrics are published beside the top README figure.
+
+## README presentation (2026-11-12)
+
+The README adds factual language, platform and existing-license badges while
+preserving the original demonstration figures and all runtime, reproduction,
+validation and attribution details. Keep badge claims aligned with these docs;
+a presentation-only update does not establish a new build or runtime result.
