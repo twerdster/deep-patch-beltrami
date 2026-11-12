@@ -1,0 +1,664 @@
+{
+  "schema_version": 1,
+  "scope": "validation32-pilot-screening-only",
+  "screening_complete": true,
+  "final_bsd68_results_included": false,
+  "continuation_results_included": false,
+  "provenance": {
+    "primary_snapshot_created_utc": "2026-11-12T14:29:17.577992+00:00",
+    "primary_summary_sha256": "8ec909456d84d66ad25349d2bbac354a2cf5253b1732c1062f69d8983a7551ca",
+    "historical_model": "PB_25_80_5__iter_40000.caffemodel",
+    "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+    "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+    "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+    "numerical_namespace_sha256": {
+      "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2"
+    }
+  },
+  "protocol": {
+    "sigma": 25,
+    "intensity_offset": 25,
+    "input_scale": "0-255 float32; unclipped noisy input",
+    "native_axes": "N,C,W,H",
+    "batch_size": 2,
+    "training_seed": 20261112,
+    "primary_validation_noise_seed": 742913,
+    "optimizer": "Adam",
+    "learning_rate": 1e-05,
+    "weight_decay": 0,
+    "gradient_clip_norm": 1,
+    "training_clean_images": 400,
+    "validation_source_images": 32,
+    "training_noise": "fresh unclipped Gaussian noise each sample",
+    "augmentation": "random crops and D4 rotations/reflections",
+    "loss": "raw prediction MSE / 255^2",
+    "validation": "full images; no crop, resize or test-time augmentation; final prediction-only float clip [0,255]; float64 MSE; mean image PSNR with peak255",
+    "primary_checkpoint_selection": "maximum observed primary validation mean per trial; earliest step on ties",
+    "pilot_outer_lease_seconds": 1260,
+    "pilot_inner_allowance_seconds": 1224,
+    "historical_training_recipe": "Recovered historical generator used 1,600 fixed four-corner 100x100 crops from the 400 images and one fixed noise draw; fresh augmentation/noise continuation is a separate change."
+  },
+  "data_identity_scope": {
+    "training_sources": "The 400 recovered crops map to all 200 BSDS500 train and 200 test source photographs.",
+    "validation_sources": "The 32 official BSDS500 validation photographs outside the 68 BSD68 source identities.",
+    "qualification": "Source-identity exclusion was audited; historical development exposure and near-duplicate scenes cannot be ruled out. Images retain separate dataset terms and are not distributed."
+  },
+  "trials": [
+    {
+      "trial_id": "control-patch100",
+      "label": "Patch100 frozen control",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "model": {
+        "width": 80,
+        "stages": 5,
+        "metric": "frozen",
+        "zero_dc": false,
+        "step_scale": 1000.0
+      },
+      "parameters": 3195600,
+      "trainable_parameters": 3175600,
+      "patch_size": 100,
+      "completed_updates": 26750,
+      "training_patches_seen": 53500,
+      "training_pixels_seen": 535000000,
+      "actual_charged_lease_seconds": 1225.765189569007,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 54,
+      "best_step": 25000,
+      "primary_validation_mean_psnr_db": 28.23470510980859,
+      "selected_validation_record_sha256": "58a564b7a667cf0530147be72281c6b14e81b7dcee8cdcca5d7bb4cd8230fe53",
+      "matched_control_trial_id": "finetune-frozen",
+      "matched_control_best_comparison": {
+        "candidate_step": 25000,
+        "reference_step": 10500,
+        "mean_delta_db": 0.004490977438366461,
+        "median_delta_db": 0.006398830299424674,
+        "improved_images": 22,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.00016155419586021407,
+          0.008533576744765656
+        ],
+        "bootstrap_seed": 10453256988728827912,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 10500,
+        "reference_step": 10500,
+        "mean_delta_db": -0.00220952982454925,
+        "median_delta_db": -0.0006267691984547241,
+        "improved_images": 16,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.0061511505601980565,
+          0.0013387110511911614
+        ],
+        "bootstrap_seed": 9195706399151314553,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "config_file": "configs/pilot-control-patch100.json",
+      "config_sha256": "c74db8e4fe4e631ffb2d126f8adf5e7d5c332f0e8fcc0fd36526b372c86bdaac",
+      "numerical_source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    },
+    {
+      "trial_id": "deeper-positive",
+      "label": "Depth8, float32 (failed)",
+      "status": "failed",
+      "eligible_trained_model": false,
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "model": {
+        "width": 80,
+        "stages": 8,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0
+      },
+      "parameters": 5112960,
+      "trainable_parameters": 5112960,
+      "patch_size": 160,
+      "completed_updates": 17,
+      "training_patches_seen": 34,
+      "training_pixels_seen": 870400,
+      "actual_charged_lease_seconds": 8.001585966994753,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 1,
+      "best_step": null,
+      "primary_validation_mean_psnr_db": null,
+      "selected_validation_record_sha256": null,
+      "matched_control_trial_id": "finetune-positive",
+      "matched_control_best_comparison": null,
+      "latest_common_step_comparison": null,
+      "config_file": "configs/pilot-deeper-positive.json",
+      "config_sha256": "174ffc4c78924a3f69c05786d6d7609361283fbc6ff8122effb8160407478c50",
+      "numerical_source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+      "failure": "Non-finite training prediction after 17 completed updates; excluded from all trained-model accuracy comparisons.",
+      "failure_diagnosis": "CPU reproduction identified float32 Gram determinant cancellation. The separately versioned float64-metric cohort requires its own precision5 control."
+    },
+    {
+      "trial_id": "finetune-frozen",
+      "label": "Frozen160 control",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "model": {
+        "width": 80,
+        "stages": 5,
+        "metric": "frozen",
+        "zero_dc": false,
+        "step_scale": 1000.0
+      },
+      "parameters": 3195600,
+      "trainable_parameters": 3175600,
+      "patch_size": 160,
+      "completed_updates": 10785,
+      "training_patches_seen": 21570,
+      "training_pixels_seen": 552192000,
+      "actual_charged_lease_seconds": 1225.761027163011,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 22,
+      "best_step": 10500,
+      "primary_validation_mean_psnr_db": 28.23021413237022,
+      "selected_validation_record_sha256": "6acf73ae7cc7e11fd8b2bdb4a1de1ed092dc0ec567cf1b9be0e7fe8eae151f22",
+      "matched_control_trial_id": "finetune-frozen",
+      "matched_control_best_comparison": {
+        "candidate_step": 10500,
+        "reference_step": 10500,
+        "mean_delta_db": 0.0,
+        "median_delta_db": 0.0,
+        "improved_images": 0,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_seed": 15808246836455792749,
+        "bootstrap_samples": 20000,
+        "self_comparison": true
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 10500,
+        "reference_step": 10500,
+        "mean_delta_db": 0.0,
+        "median_delta_db": 0.0,
+        "improved_images": 0,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_seed": 15172722702936241873,
+        "bootstrap_samples": 20000,
+        "self_comparison": true
+      },
+      "config_file": "configs/pilot-finetune-frozen.json",
+      "config_sha256": "8a92846ae26ffb3fc6279b5854641abca83ccf4d82f9b6f293ab32c82c55b3a3",
+      "numerical_source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    },
+    {
+      "trial_id": "finetune-positive",
+      "label": "Positive160 metric",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "model": {
+        "width": 80,
+        "stages": 5,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0
+      },
+      "parameters": 3195600,
+      "trainable_parameters": 3195600,
+      "patch_size": 160,
+      "completed_updates": 10443,
+      "training_patches_seen": 20886,
+      "training_pixels_seen": 534681600,
+      "actual_charged_lease_seconds": 1225.9675519749871,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 21,
+      "best_step": 7500,
+      "primary_validation_mean_psnr_db": 28.229594247997856,
+      "selected_validation_record_sha256": "220ee88b1ef88f021cb4ad950defc3620377599ce62542f562f0645d62b170fc",
+      "matched_control_trial_id": "finetune-frozen",
+      "matched_control_best_comparison": {
+        "candidate_step": 7500,
+        "reference_step": 10500,
+        "mean_delta_db": -0.0006198843723662639,
+        "median_delta_db": 0.0012225748307006512,
+        "improved_images": 17,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.004015270973840376,
+          0.002319551145444184
+        ],
+        "bootstrap_seed": 4582551837644985448,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 10000,
+        "reference_step": 10000,
+        "mean_delta_db": 0.00026343286695840185,
+        "median_delta_db": 0.00019479167928082575,
+        "improved_images": 26,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.00016703116067580406,
+          0.000366133127619686
+        ],
+        "bootstrap_seed": 8821323826483442641,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "config_file": "configs/pilot-finetune-positive.json",
+      "config_sha256": "f6c0d1fa46902e46dfdcbd37859bb4b3525168f4fd163cfd4e97d09646604e14",
+      "numerical_source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    },
+    {
+      "trial_id": "precision-control-positive",
+      "label": "Precision5 control",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_precision",
+      "metric_arithmetic": "float64",
+      "model": {
+        "width": 80,
+        "stages": 5,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "metric_precision": "float64"
+      },
+      "parameters": 3195600,
+      "trainable_parameters": 3195600,
+      "patch_size": 160,
+      "completed_updates": 8278,
+      "training_patches_seen": 16556,
+      "training_pixels_seen": 423833600,
+      "actual_charged_lease_seconds": 1225.9319895750086,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 17,
+      "best_step": 7500,
+      "primary_validation_mean_psnr_db": 28.229594138366107,
+      "selected_validation_record_sha256": "159fcd5e0e183a93b621f31f4feeda52fa6b992ba3b8c8dacb004ef113ed456c",
+      "matched_control_trial_id": "precision-control-positive",
+      "matched_control_best_comparison": {
+        "candidate_step": 7500,
+        "reference_step": 7500,
+        "mean_delta_db": 0.0,
+        "median_delta_db": 0.0,
+        "improved_images": 0,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_seed": 4039780727817907872,
+        "bootstrap_samples": 20000,
+        "self_comparison": true
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 8000,
+        "reference_step": 8000,
+        "mean_delta_db": 0.0,
+        "median_delta_db": 0.0,
+        "improved_images": 0,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_seed": 9720269700153649998,
+        "bootstrap_samples": 20000,
+        "self_comparison": true
+      },
+      "config_file": "configs/pilot-precision-control-positive.json",
+      "config_sha256": "ad350e5c21b2d60d175f968d9e92b99c2d02c245931c3c3480923f08957dc413",
+      "numerical_source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    },
+    {
+      "trial_id": "precision-deeper-positive",
+      "label": "Precision8 depth",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_precision",
+      "metric_arithmetic": "float64",
+      "model": {
+        "width": 80,
+        "stages": 8,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "metric_precision": "float64"
+      },
+      "parameters": 5112960,
+      "trainable_parameters": 5112960,
+      "patch_size": 160,
+      "completed_updates": 4896,
+      "training_patches_seen": 9792,
+      "training_pixels_seen": 250675200,
+      "actual_charged_lease_seconds": 1226.0269901910215,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 10,
+      "best_step": 4500,
+      "primary_validation_mean_psnr_db": 28.233277764176137,
+      "selected_validation_record_sha256": "826e42168a41a543600ee0faaa70f4698268d2b58aa9c8dab1d2643e8aa93562",
+      "matched_control_trial_id": "precision-control-positive",
+      "matched_control_best_comparison": {
+        "candidate_step": 4500,
+        "reference_step": 7500,
+        "mean_delta_db": 0.0036836258100314545,
+        "median_delta_db": -0.0013508016770273912,
+        "improved_images": 14,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.0021976176137941646,
+          0.01113894388723912
+        ],
+        "bootstrap_seed": 1762896104950072736,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 4500,
+        "reference_step": 4500,
+        "mean_delta_db": 0.007681117964377204,
+        "median_delta_db": 0.003134834693927502,
+        "improved_images": 31,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.003281894738021465,
+          0.014018362920649676
+        ],
+        "bootstrap_seed": 5744401231485988100,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "config_file": "configs/pilot-precision-deeper-positive.json",
+      "config_sha256": "c4519491e4586038fbf16d9faec195042e6aab777643a5b4150b6be666543cb6",
+      "numerical_source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    },
+    {
+      "trial_id": "reaction-frozen",
+      "label": "Fidelity reaction",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "model": {
+        "width": 80,
+        "stages": 5,
+        "metric": "frozen",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "reaction": true
+      },
+      "parameters": 3195605,
+      "trainable_parameters": 3175605,
+      "patch_size": 160,
+      "completed_updates": 10690,
+      "training_patches_seen": 21380,
+      "training_pixels_seen": 547328000,
+      "actual_charged_lease_seconds": 1225.7987862309965,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 22,
+      "best_step": 10500,
+      "primary_validation_mean_psnr_db": 28.239173799611475,
+      "selected_validation_record_sha256": "adcb4e6833c4f66c9fd34e4e43537c8b50a6a837b130a4cdf7a9729f6f6ee1ea",
+      "matched_control_trial_id": "finetune-frozen",
+      "matched_control_best_comparison": {
+        "candidate_step": 10500,
+        "reference_step": 10500,
+        "mean_delta_db": 0.008959667241250968,
+        "median_delta_db": 0.008837575205923542,
+        "improved_images": 31,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.006560854358069653,
+          0.011531663865741336
+        ],
+        "bootstrap_seed": 17879588190474037487,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 10500,
+        "reference_step": 10500,
+        "mean_delta_db": 0.008959667241250968,
+        "median_delta_db": 0.008837575205923542,
+        "improved_images": 31,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.006561047081487323,
+          0.011518546074486801
+        ],
+        "bootstrap_seed": 11439533297352817710,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "config_file": "configs/pilot-reaction-frozen.json",
+      "config_sha256": "ec5e5a383ca7305662f7b6a3ce5f1aaec5e5e2effb4dff9b6a0b336e346fef0c",
+      "numerical_source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    },
+    {
+      "trial_id": "wider-positive",
+      "label": "Width112 positive",
+      "status": "clean_budget_stop",
+      "eligible_trained_model": true,
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "model": {
+        "width": 112,
+        "stages": 5,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0
+      },
+      "parameters": 6230000,
+      "trainable_parameters": 6230000,
+      "patch_size": 160,
+      "completed_updates": 7159,
+      "training_patches_seen": 14318,
+      "training_pixels_seen": 366540800,
+      "actual_charged_lease_seconds": 1226.075417059008,
+      "immutable_step_ceiling": 60000,
+      "observed_validation_evaluations_including_initialization": 15,
+      "best_step": 7000,
+      "primary_validation_mean_psnr_db": 28.228398320372598,
+      "selected_validation_record_sha256": "1177b9da032ed71698cc9d1aeb6bde4f5926eb68588b501dd36d45d5fbe89a78",
+      "matched_control_trial_id": "finetune-positive",
+      "matched_control_best_comparison": {
+        "candidate_step": 7000,
+        "reference_step": 7500,
+        "mean_delta_db": -0.001195927625260329,
+        "median_delta_db": -0.0016654932668167532,
+        "improved_images": 11,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.003659621414062972,
+          0.0013128117976601845
+        ],
+        "bootstrap_seed": 6146993076003699893,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "latest_common_step_comparison": {
+        "candidate_step": 7000,
+        "reference_step": 7000,
+        "mean_delta_db": -0.0008928145310286295,
+        "median_delta_db": -0.0009804151717531795,
+        "improved_images": 10,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.0016134773920592066,
+          -0.00018033372999304902
+        ],
+        "bootstrap_seed": 2233458418472642671,
+        "bootstrap_samples": 20000,
+        "self_comparison": false
+      },
+      "config_file": "configs/pilot-wider-positive.json",
+      "config_sha256": "e84c40cc5e5f8df690641debbc1cb41a745a0be8b5fa625597178b5850f55ea6",
+      "numerical_source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "historical_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+    }
+  ],
+  "second_fixed_noise_screen": {
+    "noise_seed": 1742913,
+    "complete": true,
+    "selection_sha256": "6b331ea7524082778aec5d6e4cd0859f24cadf2cd3993a30396ababe1b689b07",
+    "result_sha256": "774e8e456f6d6c7bb15b77225ee046441897159beb9757a946fb6fcb7d5a2df5",
+    "checkpoint_rule": "All eligible pilot checkpoints remained those selected on the primary draw; failed float32 depth was excluded. No checkpoint, offset or seed was fitted to this draw.",
+    "validation_means_db": {
+      "historical": 28.21180584833437,
+      "finetune-frozen": 28.22488749906751,
+      "finetune-positive": 28.224135973153828,
+      "precision-control-positive": 28.22413603155482,
+      "control-patch100": 28.22877632902974,
+      "wider-positive": 28.222320464294565,
+      "reaction-frozen": 28.23414271006888,
+      "precision-deeper-positive": 28.227997309710897
+    },
+    "comparisons": [
+      {
+        "candidate_trial_id": "control-patch100",
+        "reference_trial_id": "finetune-frozen",
+        "mean_delta_db": 0.003888829962230722,
+        "median_delta_db": 0.005271472173138392,
+        "improved_images": 22,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.00019651615206156257,
+          0.007743135320985644
+        ],
+        "bootstrap_seed": 20261112,
+        "bootstrap_samples": 20000
+      },
+      {
+        "candidate_trial_id": "finetune-positive",
+        "reference_trial_id": "finetune-frozen",
+        "mean_delta_db": -0.0007515259136811059,
+        "median_delta_db": 0.0014262927695192218,
+        "improved_images": 17,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.004308172647542868,
+          0.0021530102973447846
+        ],
+        "bootstrap_seed": 20261112,
+        "bootstrap_samples": 20000
+      },
+      {
+        "candidate_trial_id": "precision-control-positive",
+        "reference_trial_id": "finetune-positive",
+        "mean_delta_db": 5.840099492893103e-08,
+        "median_delta_db": 1.1966820423481295e-08,
+        "improved_images": 17,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -1.259521995450319e-07,
+          2.5287888954783615e-07
+        ],
+        "bootstrap_seed": 20261112,
+        "bootstrap_samples": 20000
+      },
+      {
+        "candidate_trial_id": "wider-positive",
+        "reference_trial_id": "finetune-positive",
+        "mean_delta_db": -0.0018155088592612945,
+        "median_delta_db": -0.0015116040832605648,
+        "improved_images": 11,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.0040576021898516695,
+          0.00046387282891642556
+        ],
+        "bootstrap_seed": 20261112,
+        "bootstrap_samples": 20000
+      },
+      {
+        "candidate_trial_id": "reaction-frozen",
+        "reference_trial_id": "finetune-frozen",
+        "mean_delta_db": 0.009255211001375718,
+        "median_delta_db": 0.008294848590546522,
+        "improved_images": 31,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          0.0069674531513316375,
+          0.011900555350060195
+        ],
+        "bootstrap_seed": 20261112,
+        "bootstrap_samples": 20000
+      },
+      {
+        "candidate_trial_id": "precision-deeper-positive",
+        "reference_trial_id": "precision-control-positive",
+        "mean_delta_db": 0.0038612781560758425,
+        "median_delta_db": 0.00045989944227287083,
+        "improved_images": 16,
+        "images": 32,
+        "bootstrap_mean_95_percentile_ci_db": [
+          -0.0019589702257566204,
+          0.010947859107788074
+        ],
+        "bootstrap_seed": 20261112,
+        "bootstrap_samples": 20000
+      }
+    ],
+    "uncertainty": "Same 32 photographs with a second fixed independent noise draw; not 64 independent photographs. Paired image intervals exclude training/checkpoint/architecture selection uncertainty."
+  },
+  "interpretation": [
+    "Reaction has the clearest small matched-control benefit: primary +0.00895967 dB and second-noise +0.00925521 dB, with 31/32 image improvements on both.",
+    "Float64 depth is exploratory: positive same-update curves and mean on both draws, but best-versus-best means are driven by two photographs and image-bootstrap intervals include zero.",
+    "Width112 does not beat the matching positive80 control in these bounded pilots; this does not rule out all longer-training width experiments.",
+    "Patch100 achieves more updates and receives more checkpoint-selection opportunities under the same time allowance; its selected-best advantage does not isolate patch geometry.",
+    "Positive-versus-frozen metric differences are tiny and depend on endpoint/checkpoint choice.",
+    "The float32 depth failure is a numerical failure, not a valid zero-gain trained denoiser."
+  ],
+  "limitations": [
+    "Validation32 is the model-selection set, not BSD68 final test performance.",
+    "One training seed; image-bootstrap intervals condition on the selected checkpoints and fixed noise draw and do not estimate training-seed variation.",
+    "Best-of-many checkpoints and architecture trials create selection bias; faster runs have more selection opportunities.",
+    "Wall-time matching gives unequal completed updates and pixel exposures; common-update comparisons give unequal compute.",
+    "Self-control deltas are identically zero by definition and are not independent architecture gains.",
+    "Startup, evaluation and failures are included in the reported charged lease; historical checkpoint pretraining and other setup/smoke leases are outside individual pilot charges.",
+    "No state-of-the-art, perceptual, global-stability or mobile-performance claim follows from these pilot scores."
+  ],
+  "figure": {
+    "file": "validation-pilots.png",
+    "sha256": "624cfccf3d1ac3870d7ecc43188261d7cce2e4b063597a3fae18ab54884e3b70",
+    "description": "Primary-noise pilot curves versus cumulative inner elapsed hours and optimizer updates. Inner time excludes startup; table charges include startup. Dots are selected observed means. Failed depth has only an initialization point, not a valid trained-model score."
+  }
+}

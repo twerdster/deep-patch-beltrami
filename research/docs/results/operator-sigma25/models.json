@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "purpose": "bsd68",
+  "sigma": 25,
+  "offset": 25,
+  "selection_sha256": "08d5dbb72a6f420a69ab6bf57f5772463793d23c8ee631f0d4c50ef0c56ad20c",
+  "results_sha256": "16fb05d2d083d1ced88e15a0082199aa517678f46ba453a86b4b9bf5d9c542d5",
+  "evaluator_sha256": "0b77f7a8024135e76f8c1fc13a228983ff7a5017a91923867d1e2c9be26d68ff",
+  "license": "MIT",
+  "baseline": {
+    "name": "historical",
+    "role": "baseline",
+    "kind": "historical",
+    "parameters": 3195600,
+    "training_step": 40000,
+    "files": [
+      {
+        "name": "PB_25_80_5__iter_40000.caffemodel",
+        "sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415"
+      },
+      {
+        "name": "stage_001_deploy.prototxt",
+        "sha256": "da9eb66c09ca8c58d9614bb69baa4d00d25dbe44fc16f9db01dd6ce7c6fa55a2"
+      },
+      {
+        "name": "stage_002_deploy.prototxt",
+        "sha256": "45c6eee856b428e255988197537340664172d3c611260cdb9884601ed5778871"
+      },
+      {
+        "name": "stage_003_deploy.prototxt",
+        "sha256": "4d51e04a64de22a3bc80ccdf176e9e718a68ef8e0b2071c6d3a0a19b6e3600d3"
+      },
+      {
+        "name": "stage_004_deploy.prototxt",
+        "sha256": "6a2afabafd764dd64ab6e0ca65bb091f127d7aca870aa8c85f631ab39452db36"
+      },
+      {
+        "name": "stage_005_deploy.prototxt",
+        "sha256": "eef43c755a063069592bf0d4c39178d71d456146392f3c4c83f5a1bd72d164e4"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "model": "frozen-control",
+      "role": "control",
+      "filename": "dpb-frozen-control-sigma25-step52000.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.2.0/dpb-frozen-control-sigma25-step52000.pt",
+      "bytes": 12793965,
+      "sha256": "22281a1d4cde0a2d1d6ae01ffa5e9253a1f539417541a40ee7d0553b25ef34df",
+      "tensor_sha256": "0db30ab4fa70a896896db717e877f8e072867ec567ddbea39a0e01e94e647719",
+      "implementation": "beltrami_operator",
+      "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "model_config": {
+        "width": 80,
+        "stages": 5,
+        "metric": "frozen",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "reaction": false
+      },
+      "sigma": 25,
+      "grayscale_offset": 25,
+      "parameters": 3195600,
+      "training_step": 52000,
+      "provenance": {
+        "training_checkpoint_sha256": "7b2cb461dff5aee4a7c4b8aa49206d4e145584bdf0d874edd1cae56bf98083eb",
+        "training_config_sha256": "8a92846ae26ffb3fc6279b5854641abca83ccf4d82f9b6f293ab32c82c55b3a3",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "license": "MIT",
+        "citation": "Wetzler, Topics in Computational Geometric Vision, 2017, Chapter 4 Section 4.5"
+      }
+    },
+    {
+      "model": "reaction",
+      "role": "candidate",
+      "filename": "dpb-reaction-sigma25-step52000.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.2.0/dpb-reaction-sigma25-step52000.pt",
+      "bytes": 12795294,
+      "sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+      "tensor_sha256": "e70f948526b89fe7aeb569ef68b7f5721497868dccdbb8ad8a15a25a031d6264",
+      "implementation": "beltrami_operator",
+      "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "model_config": {
+        "width": 80,
+        "stages": 5,
+        "metric": "frozen",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "reaction": true
+      },
+      "sigma": 25,
+      "grayscale_offset": 25,
+      "parameters": 3195605,
+      "training_step": 52000,
+      "provenance": {
+        "training_checkpoint_sha256": "ffeeab6e16fcde8bf1e2e56bd69b897168b11d2250dd89cd45056c102787d769",
+        "training_config_sha256": "ec5e5a383ca7305662f7b6a3ce5f1aaec5e5e2effb4dff9b6a0b336e346fef0c",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "license": "MIT",
+        "citation": "Wetzler, Topics in Computational Geometric Vision, 2017, Chapter 4 Section 4.5"
+      }
+    },
+    {
+      "model": "precision-control",
+      "role": "control",
+      "filename": "dpb-precision-control-sigma25-step25000.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.2.0/dpb-precision-control-sigma25-step25000.pt",
+      "bytes": 12793965,
+      "sha256": "cc73f9ede1278695fe16a0e26218021ad8bf5afb5bd6e9a31710b6896099751a",
+      "tensor_sha256": "b420e9d61fad7c9a55253e648c8b57115fce38801f31cd43d02fcf5567232212",
+      "implementation": "beltrami_precision",
+      "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "model_config": {
+        "width": 80,
+        "stages": 5,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "reaction": false,
+        "metric_precision": "float64"
+      },
+      "sigma": 25,
+      "grayscale_offset": 25,
+      "parameters": 3195600,
+      "training_step": 25000,
+      "provenance": {
+        "training_checkpoint_sha256": "e9ffdb86552138ea892d1b8174822ff267aed5d33de369619c8842dba2ef58ef",
+        "training_config_sha256": "ad350e5c21b2d60d175f968d9e92b99c2d02c245931c3c3480923f08957dc413",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "license": "MIT",
+        "citation": "Wetzler, Topics in Computational Geometric Vision, 2017, Chapter 4 Section 4.5"
+      }
+    },
+    {
+      "model": "precision-depth",
+      "role": "candidate",
+      "filename": "dpb-precision-depth-sigma25-step14500.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.2.0/dpb-precision-depth-sigma25-step14500.pt",
+      "bytes": 20469806,
+      "sha256": "50679ed1e887b679a94dc4452224c4b90cb9e87c12f6a784755093af09da7afd",
+      "tensor_sha256": "423675e50e884ec602eec35c2daf1753ae328b80e7eafa5a78c072fc9b4afda8",
+      "implementation": "beltrami_precision",
+      "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "model_config": {
+        "width": 80,
+        "stages": 8,
+        "metric": "positive",
+        "zero_dc": false,
+        "step_scale": 1000.0,
+        "reaction": false,
+        "metric_precision": "float64"
+      },
+      "sigma": 25,
+      "grayscale_offset": 25,
+      "parameters": 5112960,
+      "training_step": 14500,
+      "provenance": {
+        "training_checkpoint_sha256": "f155ac940cf7fd4c07aa839ba6617009e921412865831c8de2bf8ce587838204",
+        "training_config_sha256": "c4519491e4586038fbf16d9faec195042e6aab777643a5b4150b6be666543cb6",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "license": "MIT",
+        "citation": "Wetzler, Topics in Computational Geometric Vision, 2017, Chapter 4 Section 4.5"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "candidate": "frozen-control",
+      "reference": "historical"
+    },
+    {
+      "candidate": "reaction",
+      "reference": "historical"
+    },
+    {
+      "candidate": "reaction",
+      "reference": "frozen-control"
+    },
+    {
+      "candidate": "precision-control",
+      "reference": "historical"
+    },
+    {
+      "candidate": "precision-depth",
+      "reference": "historical"
+    },
+    {
+      "candidate": "precision-depth",
+      "reference": "precision-control"
+    }
+  ],
+  "timing_warmup": 2,
+  "timing_repeats": 3,
+  "bootstrap_seed": 20261112,
+  "bootstrap_samples": 20000,
+  "expected_results": {
+    "filename": "reference-results.json",
+    "sha256": "c7a3bcd3e3e47e6d361ee4503c7d6f24baafaeed2a7ed1022f0b12e7fb52404f"
+  }
+}

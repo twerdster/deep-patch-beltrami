@@ -1,0 +1,102 @@
+{
+  "check": "completed_precision_depth_finalist_cpu_export_and_inference",
+  "verified_utc": "2026-11-12T18:06:01.012199+00:00",
+  "checkpoint_sha256": "f155ac940cf7fd4c07aa839ba6617009e921412865831c8de2bf8ce587838204",
+  "checkpoint_step": 14500,
+  "selection": "Completed arm BEST selected using primary validation32 only; final joint held-out evaluation remains pending.",
+  "implementation": "beltrami_precision",
+  "config_sha256": "c4519491e4586038fbf16d9faec195042e6aab777643a5b4150b6be666543cb6",
+  "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+  "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+  "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+  "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+  "parent_provenance": {
+    "parent_step": 4896,
+    "parent_last_sha256": "545ccb8bc3ecf1e858c5df79947ca6a350baa19416143a3e8fa3999cbdaff2fe",
+    "parent_best_sha256": "b663383be70c11a973749e618d3a663342d93742f909bc20f5474703b3f79fee",
+    "decision_sha256": "af4daa0706273372df3d9244587441d990c17300fda06e1490ff4b8d5646d907"
+  },
+  "promotion_record_sha256": "1cd994f5bf274449e81871faabbecc15043a2cbf2988faac1117c93c4db10870",
+  "tensor_sha256": "423675e50e884ec602eec35c2daf1753ae328b80e7eafa5a78c072fc9b4afda8",
+  "export_sha256": "50679ed1e887b679a94dc4452224c4b90cb9e87c12f6a784755093af09da7afd",
+  "export_bytes": 20469806,
+  "parameter_count": 5112960,
+  "state_tensors": 56,
+  "all_tensor_bytes_preserved": true,
+  "raw_model_and_optimizer_finite": true,
+  "validation_image_file_sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+  "validation_image_pixels_sha256": "4d8781999d80a6a30ed0276c83517c00c51d94291cf706128cdf9fd1654799a2",
+  "native_crop_shape": [
+    1,
+    1,
+    17,
+    19
+  ],
+  "raw_prediction_max_absolute_difference": 0.0,
+  "image_adapter_exact": true,
+  "additional_geometry_checks": [
+    {
+      "shape": [
+        11,
+        9,
+        3
+      ],
+      "finite": true,
+      "adapter_matches_raw_exactly": true
+    },
+    {
+      "shape": [
+        1,
+        13
+      ],
+      "finite": true,
+      "adapter_matches_raw_exactly": true
+    },
+    {
+      "shape": [
+        15,
+        1
+      ],
+      "finite": true,
+      "adapter_matches_raw_exactly": true
+    }
+  ],
+  "finite_predictions": true,
+  "private_metadata_removed": true,
+  "safe_weights_only_reader": true,
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false,
+  "python": "3.11.13",
+  "torch": "2.5.1",
+  "numpy": "1.26.4",
+  "cpu_threads": 1,
+  "artifact_metadata": {
+    "format": "beltrami-operator-tensors-v1",
+    "implementation": "beltrami_precision",
+    "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+    "model_config": {
+      "width": 80,
+      "stages": 8,
+      "metric": "positive",
+      "zero_dc": false,
+      "step_scale": 1000.0,
+      "reaction": false,
+      "metric_precision": "float64"
+    },
+    "sigma": 25,
+    "grayscale_offset": 25,
+    "tensor_sha256": "423675e50e884ec602eec35c2daf1753ae328b80e7eafa5a78c072fc9b4afda8",
+    "parameters": 5112960,
+    "training_step": 14500,
+    "provenance": {
+      "training_checkpoint_sha256": "f155ac940cf7fd4c07aa839ba6617009e921412865831c8de2bf8ce587838204",
+      "training_config_sha256": "c4519491e4586038fbf16d9faec195042e6aab777643a5b4150b6be666543cb6",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+      "license": "MIT",
+      "citation": "Wetzler, Topics in Computational Geometric Vision, 2017, Chapter 4 Section 4.5"
+    }
+  }
+}

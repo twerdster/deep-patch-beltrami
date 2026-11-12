@@ -3,7 +3,65 @@
 `deep-patch-beltrami` is a standalone Python/PyTorch inference and reproduction
 package for the original Deep Patch-Beltrami models from Aaron Wetzler's
 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4 §4.5.
-The preferred citation is the thesis. Package version: 1.1.0.
+The preferred citation is the thesis. Package version: 1.2.0.
+
+## Learned-operator study
+
+The optional `research/` package evaluates width, depth, metric arithmetic and
+an explicit fidelity reaction while retaining the learned differential operator.
+The original inference package, trained models and iOS app remain reproducible.
+Research weights are separate Python/CUDA models; they are not deployed in iOS.
+
+Five models and six comparisons were frozen before the new BSD68 evaluation.
+At sigma 25 the historical model scores 28.865240 dB, continued frozen-metric
+control 28.897944, reaction 28.908215, precision control 28.891054 and precision
+depth 28.894934. Reaction improves its matched control by 0.010271 dB, 66/68 wins,
+with conditional 95% image-bootstrap interval [0.008306, 0.012338]. Its total
+historical-baseline gain is 0.042975 dB and includes continued-training effects.
+Depth's mean gain of 0.003881 dB is outlier-sensitive: 32 wins/36 losses and a
+negative median change. One training seed/fixed noise draw and checkpoint
+selection do not establish seed-robust superiority or modern state of the art.
+
+All four selected inference-only exports preserve every tensor byte and CPU
+raw/safe/image-adapter predictions. A separate Linux released-weight replay
+matches all 340 input/label hashes, MSE, PSNR and clipping records and all six
+paired statistics exactly. Prediction pixel arrays were not compared in that
+full replay. Runtime is measured separately on a shared RTX 4090, without any
+phone speed claim. Total charged process wall time is 6.890961199 hours of 12,
+including startup, failures, continuation and both final evaluations.
+
+Reproduction entry points:
+
+- `research/README.md` provides installation, weight downloads and image inference.
+- `research/docs/RESULTS.md` explains measured effects, runtime and limitations.
+- `research/docs/results/operator-sigma25/` contains all five means, six contrasts,
+  complete accounting, per-image/timing CSVs and the public model manifest.
+- `research/docs/released-weight-reproduction.json` records full replay checks.
+- `research/docs/validation-screening.*` and validation-continuations.* preserve
+  the pilot/continuation evidence, failures and actual exposure.
+- `research/docs/MODERN_CONTEXT.md` reports earlier inference comparisons on
+  exactly the same inputs, with unmatched training/data/compute caveats.
+
+The model-manifest SHA256 is
+`20a3ea6011dfde4facf8bbf94aad5ad71aff3bed006328a56c14e8ed2e83c40b`.
+The stable numerical reference excludes accounting; refreshing the completed
+ledger left the tested manifest/reference/scoring CSV bytes unchanged.
+
+Install from root with `python -m pip install -e '.[test]' -e './research[test]'`.
+The combined CPU suite passes 174 tests with 17 optional archival checks skipped;
+source guards, artifact integrations and installed-wheel checks are recorded in
+`research/docs/VERIFICATION.md`. Wheel checks explicitly reused existing Torch.
+The optional research package is version 0.1.0. Numerical namespaces remain
+byte-frozen: `beltrami_operator` uses legacy float32; `beltrami_precision` uses
+float64 metric/flux with float32 parameters/dense operations, without epsilon
+or determinant clamp. Precision depth requires its matching precision control.
+Export/support code lives separately in `beltrami_research`; public tensors
+load with `weights_only=True` and source/tensor/provenance guards.
+
+Exact training continuation needs the author's recovered 400 grayscale crops;
+only validation32 has a byte-verified upstream reconstruction command. No
+photographs or raw optimizer/RNG state are distributed. Code/author weights
+are MIT licensed; dataset image terms remain separate. Cite the 2017 thesis.
 
 ## Implementation and commands
 
@@ -141,3 +199,7 @@ The README adds factual language, platform and existing-license badges while
 preserving the original demonstration figures and all runtime, reproduction,
 validation and attribution details. Keep badge claims aligned with these docs;
 a presentation-only update does not establish a new build or runtime result.
+
+Protocol-generated result CSVs retain their original CRLF bytes and SHA256
+receipts. `.gitattributes` disables line-ending conversion and recognizes
+those CSV terminators; do not normalize a frozen result file for formatting.

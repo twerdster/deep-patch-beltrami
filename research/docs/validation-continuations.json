@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "scope": "Completed validation32 continuation model selection only; no held-out scores are included.",
+  "continuations_complete": true,
+  "final_bsd68_results_included": false,
+  "provenance": {
+    "source_summary_sha256": "3ffbf6b7728c884bc949863ea2434f7baaa7f1866efcf6afa9ff3cc4eb47ba8c",
+    "independent_review_sha256": "73b866b9773b7339fa51e0758d6b8aba33e3e94128ae693de7fb82eac1021ec1",
+    "method": "CPU-only review of complete parent-aware validation records, per-image means, metadata, finite logged evidence and actual lease accounting; no model scoring."
+  },
+  "selection_rule": "Maximum primary validation32 mean over the complete verified parent-plus-child lineage, earliest global step on ties. All four maxima are unique.",
+  "training_stop": {
+    "fixed_before_final_test": true,
+    "decision_utc": "2026-11-12T16:06:07.630105+00:00",
+    "additional_training_after_fixed_queue": false,
+    "reason": "Complete the four predeclared continuations and prioritize the held-out comparison. A positive resource trend permits but does not require further compute; the 12-hour total is a ceiling, not a spending target.",
+    "resource_rounding": "q=max(1,n//4), integer floor; count unique child validation global steps strictly above parent-last and exclude resumed initialization.",
+    "resource_no_extension_threshold_db": 0.002,
+    "interpretation": "All four completed arms exceed the threshold; the earlier fixed stopping decision still ends training after this queue.",
+    "final_cohort": [
+      "historical",
+      "frozen-control",
+      "reaction",
+      "precision-control",
+      "precision-depth"
+    ]
+  },
+  "protocol": {
+    "images": 32,
+    "source_identity_disjoint_from_supplied_training_and_bsd68": true,
+    "historical_development_exposure_not_excluded": true,
+    "training": "Fresh unclipped Gaussian noise, random spatial crops and D4 augmentation; raw prediction MSE divided by 255 squared; Adam.",
+    "evaluation": "Full images, fixed sigma 25/+25, fixed validation draw, output-only float clipping, float64 MSE, mean per-image PSNR; no resize, crop, TTA or rounding."
+  },
+  "trials": [
+    {
+      "id": "frozen-control",
+      "role": "control",
+      "matched_control": "frozen-control",
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "architecture": {
+        "stages": 5,
+        "width": 80,
+        "metric": "frozen",
+        "reaction": false,
+        "parameters": 3195600,
+        "trainable_parameters": 3175600
+      },
+      "protocol": {
+        "sigma": 25,
+        "offset": 25,
+        "seed": 20261112,
+        "validation_seed": 742913,
+        "batch_size": 2,
+        "patch_size": 160,
+        "learning_rate": 1e-05,
+        "weight_decay": 0.0,
+        "gradient_clip": 1.0
+      },
+      "terminal": {
+        "state": "stopped",
+        "reason": "budget",
+        "global_updates": 53660,
+        "maximum_global_updates": 60000,
+        "maximum_global_updates_reached": false,
+        "last_evaluated_step": 53500,
+        "last_validation_mean_psnr_db": 28.244933169364977
+      },
+      "selection": {
+        "step": 52000,
+        "mean_psnr_db": 28.246093503206904,
+        "validation_json_sha256": "adca5ec4f2b456eae51ece79b41c5039488ec14709abe7cab1895dbbe96ebda0",
+        "unique_maximum": true,
+        "origin": "continuation",
+        "unique_lineage_validation_opportunities": 109,
+        "continuation_evaluation_calls_including_resume": 87,
+        "actual_lineage_evaluation_calls": 109
+      },
+      "exposure": {
+        "parent": {
+          "updates": 10785,
+          "patches": 21570,
+          "pixels": 552192000
+        },
+        "continuation": {
+          "updates": 42875,
+          "patches": 85750,
+          "pixels": 2195200000
+        },
+        "total": {
+          "updates": 53660,
+          "patches": 107320,
+          "pixels": 2747392000
+        },
+        "selected_checkpoint": {
+          "updates": 52000,
+          "patches": 104000,
+          "pixels": 2662400000
+        }
+      },
+      "charged_lease_seconds": {
+        "parent": 1225.761027163011,
+        "continuation": 5329.62323596701,
+        "total": 6555.384263130021
+      },
+      "outer_allowance_seconds": {
+        "parent": 1260.0,
+        "continuation": 5400.0,
+        "total": 6660.0
+      },
+      "inner_cumulative_seconds": {
+        "terminal": 6552.164636825997,
+        "selected_checkpoint": 6367.794702801999,
+        "scope": "Trainer inner elapsed time already includes restored parent time. Do not sum across ancestors or substitute it for actual charged terminal-arm exposure."
+      },
+      "resource_trend": {
+        "resource_decision_only": true,
+        "parent_step_excluded": 10785,
+        "unique_new_validation_count": 86,
+        "quarter_count": 21,
+        "rounding": "max(1, n // 4)",
+        "minimum_count_for_assessment": 4,
+        "first_quarter_median_psnr": 28.230157839936506,
+        "last_quarter_median_psnr": 28.243233057487373,
+        "last_minus_first_db": 0.013075217550866824,
+        "threshold_db": 0.002,
+        "no_further_extension": false,
+        "provisional": false
+      },
+      "delta_vs_own_historical_initialization": {
+        "n": 32,
+        "mean_delta_db": 0.029363667601592036,
+        "ci95_low_db": 0.02313958786661196,
+        "ci95_high_db": 0.03623478653259814,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 2083200560807010676,
+        "candidate_step": 52000,
+        "reference_step": 0,
+        "improved_images": 31,
+        "median_delta_db": 0.025292780626948286,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.027571820625853505,
+        "minimum_delta_db": -0.002595252004219617,
+        "maximum_delta_db": 0.09047112867408202,
+        "largest_two_fraction_of_net_mean": 0.1717442305662757,
+        "mean_after_removing_largest_two_db": 0.02594200224293625
+      },
+      "lineage_evidence": {
+        "verified": true,
+        "issues": [],
+        "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+        "config_sha256": "8a92846ae26ffb3fc6279b5854641abca83ccf4d82f9b6f293ab32c82c55b3a3",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "initial_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "promotion_receipt_sha256": "9e7d2f7691c7e25612586d93827eb68b479670b2ecbc2d43a04cb9c68f420e1e",
+        "promotion_decision_sha256": "af4daa0706273372df3d9244587441d990c17300fda06e1490ff4b8d5646d907"
+      },
+      "comparison_note": "Self-control row; no independent architecture contrast is supplied."
+    },
+    {
+      "id": "reaction",
+      "role": "candidate",
+      "matched_control": "frozen-control",
+      "implementation": "beltrami_operator",
+      "metric_arithmetic": "float32",
+      "architecture": {
+        "stages": 5,
+        "width": 80,
+        "metric": "frozen",
+        "reaction": true,
+        "parameters": 3195605,
+        "trainable_parameters": 3175605
+      },
+      "protocol": {
+        "sigma": 25,
+        "offset": 25,
+        "seed": 20261112,
+        "validation_seed": 742913,
+        "batch_size": 2,
+        "patch_size": 160,
+        "learning_rate": 1e-05,
+        "weight_decay": 0.0,
+        "gradient_clip": 1.0
+      },
+      "terminal": {
+        "state": "stopped",
+        "reason": "budget",
+        "global_updates": 57165,
+        "maximum_global_updates": 60000,
+        "maximum_global_updates_reached": false,
+        "last_evaluated_step": 57000,
+        "last_validation_mean_psnr_db": 28.255645622024332
+      },
+      "selection": {
+        "step": 52000,
+        "mean_psnr_db": 28.255693478318022,
+        "validation_json_sha256": "f6df1d57334e3febae0086bc35652040146bc1a8037eb13a0fdf19f42c56e523",
+        "unique_maximum": true,
+        "origin": "continuation",
+        "unique_lineage_validation_opportunities": 116,
+        "continuation_evaluation_calls_including_resume": 94,
+        "actual_lineage_evaluation_calls": 116
+      },
+      "exposure": {
+        "parent": {
+          "updates": 10690,
+          "patches": 21380,
+          "pixels": 547328000
+        },
+        "continuation": {
+          "updates": 46475,
+          "patches": 92950,
+          "pixels": 2379520000
+        },
+        "total": {
+          "updates": 57165,
+          "patches": 114330,
+          "pixels": 2926848000
+        },
+        "selected_checkpoint": {
+          "updates": 52000,
+          "patches": 104000,
+          "pixels": 2662400000
+        }
+      },
+      "charged_lease_seconds": {
+        "parent": 1225.7987862309965,
+        "continuation": 5329.547983161989,
+        "total": 6555.346769392985
+      },
+      "outer_allowance_seconds": {
+        "parent": 1260.0,
+        "continuation": 5400.0,
+        "total": 6660.0
+      },
+      "inner_cumulative_seconds": {
+        "terminal": 6552.18744968102,
+        "selected_checkpoint": 5969.530463655014,
+        "scope": "Trainer inner elapsed time already includes restored parent time. Do not sum across ancestors or substitute it for actual charged terminal-arm exposure."
+      },
+      "resource_trend": {
+        "resource_decision_only": true,
+        "parent_step_excluded": 10690,
+        "unique_new_validation_count": 93,
+        "quarter_count": 23,
+        "rounding": "max(1, n // 4)",
+        "minimum_count_for_assessment": 4,
+        "first_quarter_median_psnr": 28.239542175635318,
+        "last_quarter_median_psnr": 28.25365013447782,
+        "last_minus_first_db": 0.014107958842501489,
+        "threshold_db": 0.002,
+        "no_further_extension": false,
+        "provisional": false
+      },
+      "delta_vs_own_historical_initialization": {
+        "n": 32,
+        "mean_delta_db": 0.03896364271271002,
+        "ci95_low_db": 0.03204530905541722,
+        "ci95_high_db": 0.04651772257007593,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 11933824581921376575,
+        "candidate_step": 52000,
+        "reference_step": 0,
+        "improved_images": 32,
+        "median_delta_db": 0.03529308276036858,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.03720930217243384,
+        "minimum_delta_db": 0.0033831869344602694,
+        "maximum_delta_db": 0.11236256016019297,
+        "largest_two_fraction_of_net_mean": 0.15023738743445625,
+        "mean_after_removing_largest_two_db": 0.03531716994839774
+      },
+      "lineage_evidence": {
+        "verified": true,
+        "issues": [],
+        "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+        "config_sha256": "ec5e5a383ca7305662f7b6a3ce5f1aaec5e5e2effb4dff9b6a0b336e346fef0c",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "initial_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "promotion_receipt_sha256": "2d89eb6acc00ba025b1a3d2bd84d268f0cf85fdf38b6237af74523e9c6d2d955",
+        "promotion_decision_sha256": "af4daa0706273372df3d9244587441d990c17300fda06e1490ff4b8d5646d907"
+      },
+      "selected_best_vs_control": {
+        "n": 32,
+        "mean_delta_db": 0.009599975111117987,
+        "ci95_low_db": 0.007186171007061684,
+        "ci95_high_db": 0.012436252764596594,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 10899074349053979118,
+        "candidate_step": 52000,
+        "reference_step": 52000,
+        "improved_images": 31,
+        "median_delta_db": 0.007887572806907883,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.00872392691020543,
+        "minimum_delta_db": -0.0044824732950985435,
+        "maximum_delta_db": 0.03994138944439385,
+        "largest_two_fraction_of_net_mean": 0.2012792358013986,
+        "mean_after_removing_largest_two_db": 0.00817887942084236,
+        "candidate_mean_psnr_db": 28.255693478318022,
+        "reference_mean_psnr_db": 28.246093503206904
+      },
+      "latest_common_step_vs_control": {
+        "n": 32,
+        "mean_delta_db": 0.010353302172269152,
+        "ci95_low_db": 0.007579997087547996,
+        "ci95_high_db": 0.013443884677014187,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 10614529098637345900,
+        "candidate_step": 53500,
+        "reference_step": 53500,
+        "improved_images": 31,
+        "median_delta_db": 0.008869744893942766,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.009699389941130331,
+        "minimum_delta_db": -0.011612890429795186,
+        "maximum_delta_db": 0.041239747032456364,
+        "largest_two_fraction_of_net_mean": 0.19536217234415382,
+        "mean_after_removing_largest_two_db": 0.008886035806889818,
+        "candidate_mean_psnr_db": 28.255286471537246,
+        "reference_mean_psnr_db": 28.24493316936498,
+        "endpoint_rule": "Largest mutually evaluated global step, chosen by availability without looking at scores."
+      }
+    },
+    {
+      "id": "precision-control",
+      "role": "control",
+      "matched_control": "precision-control",
+      "implementation": "beltrami_precision",
+      "metric_arithmetic": "float64",
+      "architecture": {
+        "stages": 5,
+        "width": 80,
+        "metric": "positive",
+        "reaction": false,
+        "parameters": 3195600,
+        "trainable_parameters": 3195600
+      },
+      "protocol": {
+        "sigma": 25,
+        "offset": 25,
+        "seed": 20261112,
+        "validation_seed": 742913,
+        "batch_size": 2,
+        "patch_size": 160,
+        "learning_rate": 1e-05,
+        "weight_decay": 0.0,
+        "gradient_clip": 1.0
+      },
+      "terminal": {
+        "state": "stopped",
+        "reason": "budget",
+        "global_updates": 26204,
+        "maximum_global_updates": 60000,
+        "maximum_global_updates_reached": false,
+        "last_evaluated_step": 26000,
+        "last_validation_mean_psnr_db": 28.229929932767412
+      },
+      "selection": {
+        "step": 25000,
+        "mean_psnr_db": 28.23930903143385,
+        "validation_json_sha256": "0e36d7f6c21d370e59c2dc1da4d21d34c2e8a9399f87720cdbbd46557c4b38f8",
+        "unique_maximum": true,
+        "origin": "continuation",
+        "unique_lineage_validation_opportunities": 54,
+        "continuation_evaluation_calls_including_resume": 37,
+        "actual_lineage_evaluation_calls": 54
+      },
+      "exposure": {
+        "parent": {
+          "updates": 8278,
+          "patches": 16556,
+          "pixels": 423833600
+        },
+        "continuation": {
+          "updates": 17926,
+          "patches": 35852,
+          "pixels": 917811200
+        },
+        "total": {
+          "updates": 26204,
+          "patches": 52408,
+          "pixels": 1341644800
+        },
+        "selected_checkpoint": {
+          "updates": 25000,
+          "patches": 50000,
+          "pixels": 1280000000
+        }
+      },
+      "charged_lease_seconds": {
+        "parent": 1225.9319895750086,
+        "continuation": 2629.629854805011,
+        "total": 3855.5618443800195
+      },
+      "outer_allowance_seconds": {
+        "parent": 1260.0,
+        "continuation": 2700.0,
+        "total": 3960.0
+      },
+      "inner_cumulative_seconds": {
+        "terminal": 3852.1665172999783,
+        "selected_checkpoint": 3679.4143375849817,
+        "scope": "Trainer inner elapsed time already includes restored parent time. Do not sum across ancestors or substitute it for actual charged terminal-arm exposure."
+      },
+      "resource_trend": {
+        "resource_decision_only": true,
+        "parent_step_excluded": 8278,
+        "unique_new_validation_count": 36,
+        "quarter_count": 9,
+        "rounding": "max(1, n // 4)",
+        "minimum_count_for_assessment": 4,
+        "first_quarter_median_psnr": 28.228075868432473,
+        "last_quarter_median_psnr": 28.2345617522429,
+        "last_minus_first_db": 0.00648588381042714,
+        "threshold_db": 0.002,
+        "no_further_extension": false,
+        "provisional": false
+      },
+      "delta_vs_own_historical_initialization": {
+        "n": 32,
+        "mean_delta_db": 0.022579191755077277,
+        "ci95_low_db": 0.016168639174866287,
+        "ci95_high_db": 0.030414374434776698,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 10676217619500844108,
+        "candidate_step": 25000,
+        "reference_step": 0,
+        "improved_images": 29,
+        "median_delta_db": 0.020978712618550333,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.020499898169773337,
+        "minimum_delta_db": -0.007346763004676404,
+        "maximum_delta_db": 0.109561126351295,
+        "largest_two_fraction_of_net_mean": 0.21654857864530475,
+        "mean_after_removing_largest_two_db": 0.018869013198459208
+      },
+      "lineage_evidence": {
+        "verified": true,
+        "issues": [],
+        "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+        "config_sha256": "ad350e5c21b2d60d175f968d9e92b99c2d02c245931c3c3480923f08957dc413",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "initial_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "promotion_receipt_sha256": "ea95aee64568d2113d1225fdde68f977e442b24779ddc6942a0cba897347184f",
+        "promotion_decision_sha256": "af4daa0706273372df3d9244587441d990c17300fda06e1490ff4b8d5646d907"
+      },
+      "comparison_note": "Self-control row; no independent architecture contrast is supplied."
+    },
+    {
+      "id": "precision-depth",
+      "role": "candidate",
+      "matched_control": "precision-control",
+      "implementation": "beltrami_precision",
+      "metric_arithmetic": "float64",
+      "architecture": {
+        "stages": 8,
+        "width": 80,
+        "metric": "positive",
+        "reaction": false,
+        "parameters": 5112960,
+        "trainable_parameters": 5112960
+      },
+      "protocol": {
+        "sigma": 25,
+        "offset": 25,
+        "seed": 20261112,
+        "validation_seed": 742913,
+        "batch_size": 2,
+        "patch_size": 160,
+        "learning_rate": 1e-05,
+        "weight_decay": 0.0,
+        "gradient_clip": 1.0
+      },
+      "terminal": {
+        "state": "stopped",
+        "reason": "budget",
+        "global_updates": 16004,
+        "maximum_global_updates": 60000,
+        "maximum_global_updates_reached": false,
+        "last_evaluated_step": 16000,
+        "last_validation_mean_psnr_db": 28.240108389433434
+      },
+      "selection": {
+        "step": 14500,
+        "mean_psnr_db": 28.24303077612013,
+        "validation_json_sha256": "275035924ad6950b718b902c773adb2012639bd44990fc23b3b54328d1ebd9f0",
+        "unique_maximum": true,
+        "origin": "continuation",
+        "unique_lineage_validation_opportunities": 34,
+        "continuation_evaluation_calls_including_resume": 24,
+        "actual_lineage_evaluation_calls": 34
+      },
+      "exposure": {
+        "parent": {
+          "updates": 4896,
+          "patches": 9792,
+          "pixels": 250675200
+        },
+        "continuation": {
+          "updates": 11108,
+          "patches": 22216,
+          "pixels": 568729600
+        },
+        "total": {
+          "updates": 16004,
+          "patches": 32008,
+          "pixels": 819404800
+        },
+        "selected_checkpoint": {
+          "updates": 14500,
+          "patches": 29000,
+          "pixels": 742400000
+        }
+      },
+      "charged_lease_seconds": {
+        "parent": 1226.0269901910215,
+        "continuation": 2629.7566461520037,
+        "total": 3855.783636343025
+      },
+      "outer_allowance_seconds": {
+        "parent": 1260.0,
+        "continuation": 2700.0,
+        "total": 3960.0
+      },
+      "inner_cumulative_seconds": {
+        "terminal": 3852.398323469999,
+        "selected_checkpoint": 3488.9321615149966,
+        "scope": "Trainer inner elapsed time already includes restored parent time. Do not sum across ancestors or substitute it for actual charged terminal-arm exposure."
+      },
+      "resource_trend": {
+        "resource_decision_only": true,
+        "parent_step_excluded": 4896,
+        "unique_new_validation_count": 23,
+        "quarter_count": 5,
+        "rounding": "max(1, n // 4)",
+        "minimum_count_for_assessment": 4,
+        "first_quarter_median_psnr": 28.23263024853083,
+        "last_quarter_median_psnr": 28.240108389433434,
+        "last_minus_first_db": 0.007478140902605901,
+        "threshold_db": 0.002,
+        "no_further_extension": false,
+        "provisional": false
+      },
+      "delta_vs_own_historical_initialization": {
+        "n": 32,
+        "mean_delta_db": 0.02630093644135556,
+        "ci95_low_db": 0.017709201988759204,
+        "ci95_high_db": 0.0376985562932134,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 15405284481981183613,
+        "candidate_step": 14500,
+        "reference_step": 0,
+        "improved_images": 30,
+        "median_delta_db": 0.021157779620764927,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.021445065225750206,
+        "minimum_delta_db": -0.008218621337512388,
+        "maximum_delta_db": 0.15945699217165554,
+        "largest_two_fraction_of_net_mean": 0.2908926879549287,
+        "mean_after_removing_largest_two_db": 0.019893532100477767
+      },
+      "lineage_evidence": {
+        "verified": true,
+        "issues": [],
+        "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+        "config_sha256": "c4519491e4586038fbf16d9faec195042e6aab777643a5b4150b6be666543cb6",
+        "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+        "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+        "initial_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+        "promotion_receipt_sha256": "1cd994f5bf274449e81871faabbecc15043a2cbf2988faac1117c93c4db10870",
+        "promotion_decision_sha256": "af4daa0706273372df3d9244587441d990c17300fda06e1490ff4b8d5646d907"
+      },
+      "selected_best_vs_control": {
+        "n": 32,
+        "mean_delta_db": 0.0037217446862782833,
+        "ci95_low_db": -0.00014698436200127337,
+        "ci95_high_db": 0.008482931035272515,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 5269801487282389870,
+        "candidate_step": 14500,
+        "reference_step": 25000,
+        "improved_images": 18,
+        "median_delta_db": 7.423385571492247e-05,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.001403128571418495,
+        "minimum_delta_db": -0.009478340390092654,
+        "maximum_delta_db": 0.04989586582036054,
+        "largest_two_fraction_of_net_mean": 0.7703180352561791,
+        "mean_after_removing_largest_two_db": 0.0009118054739405561,
+        "candidate_mean_psnr_db": 28.24303077612013,
+        "reference_mean_psnr_db": 28.23930903143385
+      },
+      "latest_common_step_vs_control": {
+        "n": 32,
+        "mean_delta_db": 0.010410567679076,
+        "ci95_low_db": 0.006194061692694322,
+        "ci95_high_db": 0.01615843233719729,
+        "bootstrap_repeats": 20000,
+        "bootstrap_seed": 5700663877601495620,
+        "candidate_step": 16000,
+        "reference_step": 16000,
+        "improved_images": 32,
+        "median_delta_db": 0.006555553864266983,
+        "trimmed_mean_drop_each_end": 3,
+        "trimmed_mean_delta_db": 0.006822872507403561,
+        "minimum_delta_db": 0.0012765088995685403,
+        "maximum_delta_db": 0.07003629366317199,
+        "largest_two_fraction_of_net_mean": 0.3964791345409868,
+        "mean_after_removing_largest_two_db": 0.006701861136635282,
+        "candidate_mean_psnr_db": 28.240108389433434,
+        "reference_mean_psnr_db": 28.229697821754357,
+        "endpoint_rule": "Largest mutually evaluated global step, chosen by availability without looking at scores."
+      }
+    }
+  ],
+  "limitations": [
+    "All scores are validation model-selection evidence, not final BSD68 results.",
+    "Intervals resample 32 paired images with 20000 deterministic replicates and condition on chosen checkpoints, one training seed and one fixed noise draw; they do not correct trial/checkpoint selection or estimate training/noise-seed variation.",
+    "Different run speeds create different terminal updates, pixels and checkpoint-selection opportunities despite matched time allowances. Equal updates do not imply equal compute.",
+    "Actual charged terminal arm exposure includes parent and continuation once and excludes unknown historical checkpoint pretraining. Selected-checkpoint inner elapsed time is a different quantity.",
+    "Patch/pixel counts are repeated training exposure rather than distinct photographs.",
+    "Changes versus historical initialization include continued training and the new sampling/optimizer recipe, not architecture alone.",
+    "The precision pair uses float64 metric/flux but float32 parameters/dense operations and requires its own matched control.",
+    "A positive resource trend is not a convergence claim, significance test or mandate to extend.",
+    "These findings establish neither modern state of the art, global operator stability, perceptual superiority nor new iOS performance."
+  ]
+}

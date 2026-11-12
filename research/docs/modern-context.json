@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "scope": "Completed 2026-11-11 released-checkpoint comparison, independent of the new operator study; no new model evaluation performed to prepare this context.",
+  "dataset": "BSD68",
+  "sigma": 25,
+  "images": 68,
+  "metric": "arithmetic mean of per-image full-frame PSNR; float64 MSE; peak 255; output clipped to [0,255]; no quantization or border crop",
+  "protocol": {
+    "input": "identical archived float32 noisy pixels, preserved out-of-range values; no regeneration or input clipping",
+    "coordinates": "historical native N,C,W,H; modern N,C,H,W via fixed spatial transpose, inverse-transpose before metrics",
+    "modern_input_scaling": "divide by 255; supply true sigma where applicable",
+    "historical_offset": 25,
+    "offset_fitted_in_this_comparison": false,
+    "training_performed_in_this_comparison": false,
+    "test_ground_truth_parameter_selection": false,
+    "self_ensemble": false,
+    "paired_bootstrap": {
+      "replicates": 10000,
+      "seed": 20261111,
+      "sampling": "paired images; does not measure independent-noise uncertainty"
+    },
+    "hardware": "NVIDIA GeForce RTX 4090 (shared GPU); Torch 2.7.1+cu126; FP32 inference; TF32 disabled; batch 1",
+    "same_input_hashes_all_five_verified": true,
+    "all_340_sigma25_cases_finite": true
+  },
+  "input_identity": {
+    "serialization": "JSON sorted keys, compact separators, UTF-8; records sorted by name",
+    "archive_case_records_fields": [
+      "name",
+      "shape",
+      "noisy_sha256",
+      "clean_sha256"
+    ],
+    "archive_case_records_sha256": "1b5e3a42b6b6093a5a1b49dc113d4865827a0f523d4523a9d65f47ac05266905",
+    "canonical_natural_noisy_records_fields": [
+      "name",
+      "sha256"
+    ],
+    "canonical_natural_noisy_records_sha256": "f6310ccd46372e852742d290d155af6897ddd8e953faa5d0f5248c2b5e0fc1c7",
+    "fixture_file_sha256": "7527f3f7f97f910d9f37592c32f56d69109078c7a8d6915798320a9c211afe7a"
+  },
+  "methods": [
+    {
+      "method": "Deep Patch-Beltrami",
+      "images": 68,
+      "mean_psnr_db": 28.865239729870755,
+      "mean_ssim": 0.8165891130497356,
+      "paired_gain_over_historical_db": 0.0,
+      "paired_gain_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "wins_over_historical": 0,
+      "ties_over_historical": 68,
+      "parameters": 3195600,
+      "execution_started_utc": "2026-11-11T19:45:18.781195+00:00",
+      "execution_finished_utc": "2026-11-11T19:45:48.585258+00:00",
+      "original_result_receipt": {
+        "filename": "beltrami-bsd68.json",
+        "sha256": "c950da9cfb3b508d7bc8fec911559a6ab0bdf0a5477dd4c45e6f29d8f9e33d05"
+      },
+      "provenance": {
+        "origin": "recovered author Caffe model; original 40000-update checkpoint",
+        "checkpoint": {
+          "filename": "PB_25_80_5__iter_40000.caffemodel",
+          "sha256": "07a9438eb26fc0e70c425d31a460cf2d493f53ebf8044893e1e3a9d94fcede50",
+          "training_step": 40000
+        },
+        "historical_offset": 25,
+        "reproduction_source_sha256": {
+          "deep/infer.py": "8eb028db8e72495951f4ea8fe37439851d0cd26415da53a13b60cb016e305b49",
+          "deep/caffe_model.py": "5b10de77e124014da85dd6ab3b2b353d5fcce09e55695a86b623bc2f2a930fe2",
+          "sota/beltrami/evaluate.py": "2f4ae7d0a94b0aa4b8eba9a758524bd7288f9ba7a2025779850e10fc148e69e9"
+        }
+      }
+    },
+    {
+      "method": "DRUNet",
+      "images": 68,
+      "mean_psnr_db": 29.49015373414832,
+      "mean_ssim": 0.8380805048344697,
+      "paired_gain_over_historical_db": 0.6249140042775708,
+      "paired_gain_ci95_db": [
+        0.5537040222210359,
+        0.7009284148133014
+      ],
+      "wins_over_historical": 68,
+      "ties_over_historical": 0,
+      "parameters": 32638656,
+      "execution_started_utc": "2026-11-11T19:50:19.237385+00:00",
+      "execution_finished_utc": "2026-11-11T19:50:41.480610+00:00",
+      "original_result_receipt": {
+        "filename": "drunet-natural-bsd68.json",
+        "sha256": "a8955c188870c7516ba88671bf76c743b40aca3cf22d02e95804a7eb3a4f73d7"
+      },
+      "provenance": {
+        "repository": "https://github.com/cszn/DPIR",
+        "commit": "15bca3fcc1f3cc51a1f99ccf027691e278c19354",
+        "checkpoint": {
+          "filename": "drunet_gray.pth",
+          "sha256": "e27fb29456732c604c8ee3ac3e92ecadd2a7a4e36a8be675e92ebbf93a240de4",
+          "bytes": 130569961,
+          "url": "https://github.com/cszn/KAIR/releases/download/v1.0/drunet_gray.pth"
+        },
+        "evaluator_sha256": "ef6fca85599e48261591fd50f737de9d5384edb58c0e736cb1a4520e843bc66e"
+      }
+    },
+    {
+      "method": "SCUNet",
+      "images": 68,
+      "mean_psnr_db": 29.560451146390594,
+      "mean_ssim": 0.8398144888298846,
+      "paired_gain_over_historical_db": 0.6952114165198443,
+      "paired_gain_ci95_db": [
+        0.6142680656030172,
+        0.7812652021788407
+      ],
+      "wins_over_historical": 68,
+      "ties_over_historical": 0,
+      "parameters": 17943768,
+      "execution_started_utc": "2026-11-11T19:47:59.610590+00:00",
+      "execution_finished_utc": "2026-11-11T19:48:36.112118+00:00",
+      "original_result_receipt": {
+        "filename": "scunet-natural-bsd68.json",
+        "sha256": "db1e12064ca4ea7e8152f75e4b586d27d1532195ad00e18c25557dd80d4fccef"
+      },
+      "provenance": {
+        "repository": "https://github.com/cszn/SCUNet",
+        "commit": "52e440a80a655b01e0b41e9dd9bfe599bc11625e",
+        "source_files_sha256": {
+          "models/network_scunet.py": "77aeefd31e37080db7f0bf46bca5efcecc800fcfddb502081340a10b2b949c60",
+          "utils/utils_model.py": "ab48362f4c1ae7781846db85d7c3dac6cc6f9357784276512eff7f0f0f9925f3",
+          "main_test_scunet_gray_gaussian.py": "8afcd38ad1e0a1cc67c0214450d1b63df0b45a683b0d4f19aaba1bbbbbfcffbc"
+        },
+        "checkpoint": {
+          "sha256": "06e971c573c52a9a62c2796071fe7fae168542ead7225cfb91bc074d3350a657",
+          "bytes": 71973627,
+          "url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_gray_25.pth",
+          "filename": "scunet_gray_25.pth"
+        }
+      }
+    },
+    {
+      "method": "Xformer",
+      "images": 68,
+      "mean_psnr_db": 29.554484548436278,
+      "mean_ssim": 0.8403309655199688,
+      "paired_gain_over_historical_db": 0.6892448185655228,
+      "paired_gain_ci95_db": [
+        0.6034696082120528,
+        0.7806669831274377
+      ],
+      "wins_over_historical": 68,
+      "ties_over_historical": 0,
+      "parameters": null,
+      "execution_started_utc": "2026-11-11T19:46:40.606429+00:00",
+      "execution_finished_utc": "2026-11-11T19:47:58.185754+00:00",
+      "original_result_receipt": {
+        "filename": "xformer-natural-bsd68.json",
+        "sha256": "104aa581dc404f5e0e12ebec8029a35753cf7449950ff492c09589aa1c0a47da"
+      },
+      "provenance": {
+        "repository": "https://github.com/gladzhang/Xformer",
+        "commit": "ecc1e910b923f35c8d46f5ffbc8ed2bc603f6567",
+        "source_files_sha256": {
+          "basicsr/models/archs/x_former_arch.py": "2819f393acc01210ad682ff907d58c5cdbef7c581942eecf5ce1762b51d97f42",
+          "evaluate/test_gaussian_gray_denoising.py": "05002cf4937dc8dfb5f54cbc8444c114d9ecb72207ddd16be4c22fced4fb48aa"
+        },
+        "checkpoint": {
+          "sha256": "8ea3680c2ffd7331e78bf9b66949d87b6879f02a20cfd05205fc4ec97a0e0890",
+          "bytes": 114747415,
+          "url": "https://drive.google.com/drive/folders/1Ui_X1JoC5jxgE6k_hK7AZ2qrLo2I_OsD",
+          "filename": "xformer_gray_dn_sigma25.pth"
+        }
+      }
+    },
+    {
+      "method": "BERUNet v2 (revised)",
+      "images": 68,
+      "mean_psnr_db": 29.55415273257012,
+      "mean_ssim": 0.8402743763821211,
+      "paired_gain_over_historical_db": 0.688913002699366,
+      "paired_gain_ci95_db": [
+        0.611323785222564,
+        0.7707488416852739
+      ],
+      "wins_over_historical": 68,
+      "ties_over_historical": 0,
+      "parameters": 63319744,
+      "execution_started_utc": "2026-11-11T19:49:01.826931+00:00",
+      "execution_finished_utc": "2026-11-11T19:49:35.251875+00:00",
+      "original_result_receipt": {
+        "filename": "berunet-natural-bsd68.json",
+        "sha256": "8aa4e9e54722b64fb2d69860a948329649bbf4ac58361944fc08a66aa9f7c469"
+      },
+      "provenance": {
+        "repository": "https://github.com/Xin-Ge/BERUNet-denoiser",
+        "commit": "2589ed6644218cd802473e30e6a7d72ab82a779c",
+        "source_files_sha256": {
+          "models/network_BERUNet.py": "5338bc5fb0929f6f187e0c09c37b264b6172d2863394f18b399c888f4164d28b",
+          "models/basicblock.py": "7ea729ffa359e8b529f5a46b0d44882d16ae16480a7a499c84dfe0bc39b12e65",
+          "utils/utils_model.py": "566f7ef12e1e8e34573e719a66589e5ce9e6c1ac67a1b000d3735f4fff263ffa",
+          "main_test_BERUNet_v2_Gaussian.py": "c9f06948c9aeb542d8174360546478c64a50e69eb8958f9f2808b715fd02f5da"
+        },
+        "checkpoint": {
+          "sha256": "3abbdab50adc7060f4c9c7a6d768e46d49fff71e6f504572c38850858b719e85",
+          "bytes": 253357041,
+          "url": "https://drive.google.com/file/d/1xqiHJjwvATTQc0WjkrfE7MM0oLqm7dPk/view",
+          "filename": "BERUNet_v2_gaussian_gray.pth",
+          "archive_member": "BERUNet/BERUNet_v2_gaussian_gray.pth",
+          "archive_sha256": "96475fb74280894244b0fbcab5a8339375f113316e46db0235ededead891e5a6",
+          "archive_bytes": 1175667655
+        }
+      }
+    }
+  ],
+  "excluded_from_headline": {
+    "method": "GRL-B",
+    "reason": "Unresolved discrepancy with published paper numbers; retained as released-model diagnostic, not successful paper reproduction.",
+    "measured_sigma25_psnr_db": 29.173387967087592,
+    "paper_sigma25_psnr_db": 29.54,
+    "official_repository": "https://github.com/ofsoundof/GRL-Image-Restoration",
+    "original_result_sha256": "9bf1a1e9f0c67c0a2fe20187bb64f8121ef3eb5638985d0ff59dc20c980313ba"
+  },
+  "audit_receipts": {
+    "comparison/summary.json": {
+      "filename": "summary.json",
+      "sha256": "847dd76daf253480161a1b83c370ea804812f5d0b10325f59f3a9f9e3cb28ebb"
+    },
+    "comparison/validation.json": {
+      "filename": "validation.json",
+      "sha256": "febf3dc58762e573a04b17730a6e1c6cecdeace6cdf905ced4a751cdf3b50d9b"
+    },
+    "PROTOCOL.md": {
+      "filename": "PROTOCOL.md",
+      "sha256": "3d0f6426e6cdaf56628143ed22859bc04c212970c8b2f11f102e7222c34a0303"
+    },
+    "research.md": {
+      "filename": "research.md",
+      "sha256": "2aeba85c1d3e90f1de3585cd9b1ece02170d6c17f2d93022cb4a543e57e11d8e"
+    }
+  },
+  "limits": [
+    "Released-system inference comparison; training data and compute are not matched.",
+    "External checkpoint training membership and near duplicates are not exhaustively audited.",
+    "Revised BERUNet weights were retrained after publication; these are not original-paper replication numbers.",
+    "Scores use archived noise and full-float output, not necessarily each modern paper protocol.",
+    "Bootstrap intervals describe variability across these images, not independent-noise uncertainty.",
+    "No exhaustive November 2026 state-of-the-art or strict speed ranking is established."
+  ],
+  "new_operator_heldout_audit": {
+    "private_evaluation_complete": true,
+    "public_released_weight_replay_status": "complete; all 340 input/label hashes, MSE, PSNR, clipping counts and all six paired statistics match exactly",
+    "original_result_sha256": "16fb05d2d083d1ced88e15a0082199aa517678f46ba453a86b4b9bf5d9c542d5",
+    "selection_sha256": "08d5dbb72a6f420a69ab6bf57f5772463793d23c8ee631f0d4c50ef0c56ad20c",
+    "selection_created_utc": "2026-11-12T19:59:41.914412+00:00",
+    "evaluation_started_utc": "2026-11-12T19:59:58.133543+00:00",
+    "evaluation_ended_utc": "2026-11-12T20:01:25.134808+00:00",
+    "selection_frozen_before_evaluation": true,
+    "all_five_models_match_existing_68_inputs_and_labels_exactly": true,
+    "compared_case_records": 340,
+    "case_records_sha256": "1b5e3a42b6b6093a5a1b49dc113d4865827a0f523d4523a9d65f47ac05266905",
+    "new_field_mapping": {
+      "name": "name",
+      "shape_native": "shape",
+      "noisy_native_sha256": "noisy_sha256",
+      "label_native_sha256": "clean_sha256"
+    },
+    "models": [
+      {
+        "name": "historical",
+        "mean_psnr_db": 28.865239729870755,
+        "images": 68
+      },
+      {
+        "name": "frozen-control",
+        "mean_psnr_db": 28.897943996292444,
+        "images": 68
+      },
+      {
+        "name": "reaction",
+        "mean_psnr_db": 28.9082146802265,
+        "images": 68
+      },
+      {
+        "name": "precision-control",
+        "mean_psnr_db": 28.8910537458407,
+        "images": 68
+      },
+      {
+        "name": "precision-depth",
+        "mean_psnr_db": 28.89493445449301,
+        "images": 68
+      }
+    ],
+    "interpretation": "Reaction improves its declared matched control modestly but remains below all four modern references. Modern scores were not used for checkpoint selection; training data and compute remain unmatched.",
+    "reproduction_evidence": {
+      "file": "released-weight-reproduction.json",
+      "sha256": "d76efd7493ab48e53783281e374f5bfec5d94ae43dcb37a8a1e0a6c59e8af2c9"
+    }
+  }
+}

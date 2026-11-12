@@ -1,0 +1,30 @@
+{
+  "check": "real_reaction_checkpoint_cpu_export_and_inference",
+  "checkpoint_sha256": "1d91001f99a997345812cc4b19b8b76e8fb3aec9c149c9d0bccb25a5ccec7b50",
+  "checkpoint_step": 10500,
+  "implementation": "beltrami_operator",
+  "config_sha256": "ec5e5a383ca7305662f7b6a3ce5f1aaec5e5e2effb4dff9b6a0b336e346fef0c",
+  "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+  "tensor_sha256": "0dfb5949a17e2e9b93352d6cfcfdb7a5767e5bd7bc5542e131ff714dd0330e6a",
+  "export_sha256": "de1a194b46b81701baffe7babae915366fcbb6da2b938b5914a7f98abe6fa2c5",
+  "export_bytes": 12795294,
+  "parameter_count": 3195605,
+  "state_tensors": 40,
+  "all_tensor_bytes_preserved": true,
+  "validation_image_file_sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+  "native_crop_shape": [
+    1,
+    1,
+    17,
+    19
+  ],
+  "raw_prediction_max_absolute_difference": 0.0,
+  "image_adapter_exact": true,
+  "finite_predictions": true,
+  "private_metadata_removed": true,
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false,
+  "torch": "2.5.1",
+  "numpy": "1.26.4"
+}

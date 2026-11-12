@@ -1,6 +1,6 @@
 # Reproducibility scope and limits
 
-This package executes the original trained Deep Patch-Beltrami models with Python and PyTorch. Its numerical target is the Deep model in Aaron Wetzler's 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4, Section 4.5 and Tables 4.5–4.6. It contains the inference implementation and manifests needed for a standalone rerun. No new training is required or performed.
+This package executes the original trained Deep Patch-Beltrami models with Python and PyTorch. Its numerical target is the Deep model in Aaron Wetzler's 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4, Section 4.5 and Tables 4.5–4.6. It contains the inference implementation and manifests needed for a standalone rerun. The reproduction commands require no new training. The separately installed [research package](../research/README.md) provides optional new optimization experiments with their own protocol and provenance; it does not alter the historical reproduction target.
 
 The [reproduction guide](reproduction.md) gives executable commands, accepted input layouts, model provenance and verified numerical results. Reproducing a displayed thesis value, matching an archived per-image score and recovering bit-identical network predictions are distinct claims.
 

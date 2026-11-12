@@ -1,0 +1,25 @@
+{
+  "utc": "2026-11-12T18:09:09.366201+00:00",
+  "versions": {
+    "deep-patch-beltrami": "1.2.0",
+    "beltrami-operator-research": "0.1.0"
+  },
+  "sources": {
+    "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+    "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2"
+  },
+  "torch": "2.7.1+cu126",
+  "cuda_initialized": false,
+  "reused_system_torch": true,
+  "wheels": [
+    "beltrami_operator_research-0.1.0-py3-none-any.whl",
+    "deep_patch_beltrami-1.2.0-py3-none-any.whl"
+  ],
+  "four_installed_cli_helps": true,
+  "bsd68_accessed": false,
+  "installed_modules_outside_checkout": true,
+  "python": "3.13.5",
+  "combined_cpu_tests_passed": 174,
+  "optional_archival_tests_skipped": 17,
+  "accuracy_scored": false
+}

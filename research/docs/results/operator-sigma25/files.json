@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "name": "README-snippet.md",
+      "sha256": "27d764501180990210eb51fa3f66d234f8a664740e363b6dc890dcab32bccf56"
+    },
+    {
+      "name": "REPORT.md",
+      "sha256": "3736d1d60632db18482ee541ca356f24979d703abdac12052241d4495d7b8d30"
+    },
+    {
+      "name": "models.json",
+      "sha256": "20a3ea6011dfde4facf8bbf94aad5ad71aff3bed006328a56c14e8ed2e83c40b"
+    },
+    {
+      "name": "paired-per-image.csv",
+      "sha256": "f6db793fcceb67a2acb878271ddd8d3d4ad97f828fcb08485df2d3ed407acbbd"
+    },
+    {
+      "name": "per-image.csv",
+      "sha256": "02d952de239f661221053efc98e7f38cdd2c63212a04c4ae6ccfc507b7432bcc"
+    },
+    {
+      "name": "reference-results.json",
+      "sha256": "c7a3bcd3e3e47e6d361ee4503c7d6f24baafaeed2a7ed1022f0b12e7fb52404f"
+    },
+    {
+      "name": "results.json",
+      "sha256": "aeef313e312eadff3093f3b6e1bf3aaeeef1c63bc5c83bd4e6d99e0e1cc69fbb"
+    },
+    {
+      "name": "runtime.csv",
+      "sha256": "ff68e526c54c9e98aa41eb4e8f5eab8a3aadfc9561c4cd00a2a220cb49f0ac4c"
+    }
+  ]
+}

@@ -22,6 +22,21 @@ The exact PNG versions used by the public fetcher are obtained from the BSD68 di
 
 Portrait images from the historical archive are not redistributed. Portrait experiments require separately supplied data under the applicable terms. No thesis PDF, private manuscript source, correspondence, backup inventory or personal filesystem metadata is included.
 
+## Optional operator research data
+
+The separate [operator research package](research/README.md) distributes SHA256
+manifests, source photograph identity evidence and code, with no training or
+validation photographs. The 400 recovered training crops derive from BSDS500
+official train/test images. Its 32-image selection set uses the official
+validation images outside BSD68. Source-identity separation does not establish
+absence of historical development exposure or near-duplicate scenes.
+
+The validation fetcher uses pinned JPEGs from
+[BIDS/BSDS500](https://github.com/BIDS/BSDS500/tree/a04b7c6c3a9f0ace74bf205c72a43d32e1c72722),
+under the underlying Berkeley dataset terms. Exact archival training crops
+must be supplied separately; a source crop mapping is not a byte-exact
+reconstruction recipe. See [training data provenance](research/docs/DATA.md).
+
 ## Runtime dependencies
 
 NumPy, Pillow, h5py and PyTorch are installed as dependencies rather than copied into the source tree. Their original licenses and notices remain in the installed distributions. Installing this package does not relicense those projects or their optional components.

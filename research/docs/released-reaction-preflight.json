@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-12T16:16:54.458293+00:00",
+  "tool_sha256": "e3673061f923afc582f3364dd688bcc5c76d7045f8cdc19d6d057a4f81e5b2f7",
+  "protocol_sha256": "0b77f7a8024135e76f8c1fc13a228983ff7a5017a91923867d1e2c9be26d68ff",
+  "asset_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+  "training_checkpoint_sha256": "ffeeab6e16fcde8bf1e2e56bd69b897168b11d2250dd89cd45056c102787d769",
+  "safe_manifest_asset_preflight_passed": true,
+  "native_shape": [
+    1,
+    1,
+    17,
+    19
+  ],
+  "raw_prediction_max_absolute_difference": 0.0,
+  "finite": true,
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false
+}

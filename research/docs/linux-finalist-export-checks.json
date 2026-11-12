@@ -1,0 +1,181 @@
+{
+  "check": "linux_completed_finalist_export_checks",
+  "assembled_utc": "2026-11-12T18:45:27.210506+00:00",
+  "models": [
+    {
+      "role": "frozen-control",
+      "checkpoint_step": 52000,
+      "checkpoint_sha256": "7b2cb461dff5aee4a7c4b8aa49206d4e145584bdf0d874edd1cae56bf98083eb",
+      "export_sha256": "22281a1d4cde0a2d1d6ae01ffa5e9253a1f539417541a40ee7d0553b25ef34df",
+      "export_bytes": 12793965,
+      "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "tensor_sha256": "0db30ab4fa70a896896db717e877f8e072867ec567ddbea39a0e01e94e647719",
+      "parameters": 3195600,
+      "state_tensors": 35,
+      "all_tensor_bytes_preserved": true,
+      "raw_model_and_optimizer_finite": true,
+      "original_asset_config_source_data_preflight": true,
+      "safe_weights_only_reader": true,
+      "native_crop_shape": [
+        1,
+        1,
+        17,
+        19
+      ],
+      "validation_image_file_sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+      "raw_prediction_max_absolute_difference": 0.0,
+      "image_adapter_exact": true,
+      "additional_geometry_checks": [
+        {
+          "shape": [
+            11,
+            9,
+            3
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        },
+        {
+          "shape": [
+            1,
+            13
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        },
+        {
+          "shape": [
+            15,
+            1
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        }
+      ],
+      "finite_predictions": true,
+      "verified_utc": "2026-11-12T18:07:05.515436+00:00"
+    },
+    {
+      "role": "precision-depth",
+      "checkpoint_step": 14500,
+      "checkpoint_sha256": "f155ac940cf7fd4c07aa839ba6617009e921412865831c8de2bf8ce587838204",
+      "export_sha256": "50679ed1e887b679a94dc4452224c4b90cb9e87c12f6a784755093af09da7afd",
+      "export_bytes": 20469806,
+      "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "tensor_sha256": "423675e50e884ec602eec35c2daf1753ae328b80e7eafa5a78c072fc9b4afda8",
+      "parameters": 5112960,
+      "state_tensors": 56,
+      "all_tensor_bytes_preserved": true,
+      "raw_model_and_optimizer_finite": true,
+      "original_asset_config_source_data_preflight": true,
+      "safe_weights_only_reader": true,
+      "native_crop_shape": [
+        1,
+        1,
+        17,
+        19
+      ],
+      "validation_image_file_sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+      "raw_prediction_max_absolute_difference": 0.0,
+      "image_adapter_exact": true,
+      "additional_geometry_checks": [
+        {
+          "shape": [
+            11,
+            9,
+            3
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        },
+        {
+          "shape": [
+            1,
+            13
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        },
+        {
+          "shape": [
+            15,
+            1
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        }
+      ],
+      "finite_predictions": true,
+      "verified_utc": "2026-11-12T18:07:05.515436+00:00"
+    },
+    {
+      "role": "precision-control",
+      "checkpoint_step": 25000,
+      "checkpoint_sha256": "e9ffdb86552138ea892d1b8174822ff267aed5d33de369619c8842dba2ef58ef",
+      "export_sha256": "cc73f9ede1278695fe16a0e26218021ad8bf5afb5bd6e9a31710b6896099751a",
+      "export_bytes": 12793965,
+      "source_sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "tensor_sha256": "b420e9d61fad7c9a55253e648c8b57115fce38801f31cd43d02fcf5567232212",
+      "parameters": 3195600,
+      "state_tensors": 35,
+      "all_tensor_bytes_preserved": true,
+      "raw_model_and_optimizer_finite": true,
+      "original_asset_config_source_data_preflight": true,
+      "safe_weights_only_reader": true,
+      "native_crop_shape": [
+        1,
+        1,
+        17,
+        19
+      ],
+      "validation_image_file_sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+      "raw_prediction_max_absolute_difference": 0.0,
+      "image_adapter_exact": true,
+      "additional_geometry_checks": [
+        {
+          "shape": [
+            11,
+            9,
+            3
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        },
+        {
+          "shape": [
+            1,
+            13
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        },
+        {
+          "shape": [
+            15,
+            1
+          ],
+          "finite": true,
+          "adapter_matches_raw_exactly": true
+        }
+      ],
+      "finite_predictions": true,
+      "verified_utc": "2026-11-12T18:44:15.679214+00:00"
+    }
+  ],
+  "reaction_check": {
+    "evidence": "linux-reaction-preflight.json",
+    "evidence_sha256": "360157cc3099f3a8e54dcbedd93e086f832298d0b296cebda092f406fade5864",
+    "export_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+    "verified_utc": "2026-11-12T16:26:38.633207+00:00",
+    "prediction_max_difference": 0.0,
+    "finite": true
+  },
+  "cpu_threads": 1,
+  "python": "3.13.5",
+  "torch": "2.7.1+cu126",
+  "numpy": "2.1.3",
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false,
+  "scope": "Tensor identity and small validation-crop/image-adapter checks; no held-out quality evaluation."
+}

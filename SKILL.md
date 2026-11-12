@@ -63,6 +63,102 @@ and clean CI installation establish different parts of packaging verification.
 Keep the demo's procedural image, fixed seed and sigma explicit; its score is
 an example, separate from the 544-case BSD68 acceptance check.
 
+## Optional learned-operator research workflow
+
+Read `research/README.md`, `research/docs/DATA.md`,
+`research/docs/EVALUATION.md` and `research/docs/source-hashes.json` before
+experimental changes. `research/` installs separately; the original inference
+package and release pins remain the historical reproduction target. Keep
+numerical namespaces byte-identical while they identify trained checkpoints.
+Do not place export/CLI additions inside either frozen namespace; support
+code belongs in `beltrami_research` or `research/tools`.
+
+Train under one exclusive budget ledger/GPU lock with explicit wall-time
+allowances and recurring progress/health checks. Preserve failure evidence;
+exit-zero lease completion may accompany `stopped(reason=budget)` training.
+Resume the exact config/source/data from `last.pt` under a unique new lease,
+extending the cumulative inner allowance. Carry the best checkpoint forward,
+reserve final-evaluation time, and report actual updates/images/time.
+Use `research/tools/promote_run.py` for its documented standard data layout,
+or `research/tools/resume_training.py` for explicit custom trainer arguments.
+The separate resume wrapper validates current source, original model bytes,
+config/data and finite model/optimizer state without modifying frozen trainer
+source. Raw trainer resume checks only config/manifests and is not the supported
+guarded continuation path.
+
+For several prepared runs, read `research/tools/PROMOTION_QUEUE.md`. Validate
+the complete plan before execution; keep the exact preparation interpreter,
+model directory, GPU lock, frozen artifacts and reserve. Do not delete queue
+status or execution evidence to retry a failed plan. Preserve evidence and
+review a new plan/output/lease only after diagnosis.
+
+Read `research/tools/SUMMARIZING.md` for promoted-run reports. Scope control
+matching deliberately, verify ancestry and inherited best/step0, and distinguish
+cumulative from continuation updates/pixels/time. Moved snapshots need explicit
+`--recorded-root`; keep strict path containment and SHA checks. Live trends
+are provisional until planned completion and never authorize more compute.
+
+Select using validation only. Positive capacity variants need their positive
+control; precision depth needs the precision five-stage control; fidelity
+reaction needs frozen metric control. Freeze architecture/checkpoint/stopping
+decision and source hashes before final BSD68 labels. Never present a
+validation gain as a test result. Existing iOS halo/model assumptions do not
+automatically support deeper models.
+
+Run `python -m pytest research/tests`, evaluator `self-test`, summarizer
+`--self-test`, `python research/tools/test_summarize_lineage.py` and research
+command help after relevant changes. Focused support checks are
+`python -m pytest research/tests/test_promotion_queue.py research/tools/test_summarize_lineage.py`.
+CPU CI needs
+no private data/model downloads. Optional archival integrations require an
+explicit `BELTRAMI_MODEL_DIR`. Run affected original tests too. Build/install
+the separate wheel and verify source hashes survive packaging.
+
+Public model assets must contain tensor-only state and plain sanitized
+metadata, preserve tensor digests and load with `weights_only=True`. Use the
+explicit trusted-local-checkpoint exporter, then inspect the resulting asset
+and provenance before release. Never publish raw run folders, optimizer/RNG
+state, host/path metadata, dataset photos or private manuscript material.
+Archival manifests do not grant image rights or provide a byte-exact training
+crop reconstruction recipe. Update this file and `SUMMARY.md` before commit
+when results/status/commands/assets change. Current result/asset pins are in
+research/docs/results/operator-sigma25/ and the documented release manifest.
+
+For each final asset, compare every exported tensor payload byte against the
+trusted checkpoint and compare safe-reader/raw-operator predictions exactly on
+a small hash-verified validation image crop. Check finite output, image-adapter
+axes/offset/clipping and absence of private metadata. The recorded reaction
+pilot integration in `research/docs/export-integration.json` verifies the
+pipeline; it does not replace checks of the actual selected release tensors
+or establish held-out quality. Keep raw checkpoints and scratch exports outside
+tracked files; public evidence should contain hashes/results, never local paths.
+
+Read `research/docs/PUBLICATION.md` before preparing final results. Use
+`research/tools/build_public_report.py` only on complete, frozen joint BSD68
+evidence and all explicitly selected safe exports; preserve original private
+selection bytes and resolve their original artifact paths. Require the external
+result SHA, terminal status, exact tensor identity and declared matched control
+contrasts. Generated README/report files are reviewable output, not automatic
+edits or uploads. Keep conditional image-bootstrap intervals distinct from
+training/noise-seed and selection uncertainty. Optional completed budget input
+publishes aggregate totals/hash only, including failures.
+Build the draft without a budget before public replay; afterward rebuild into
+a new directory with the completed ledger. `models.json.expected_results`
+pins `reference-results.json`, the scientific payload without accounting.
+Assert both files are byte-identical between draft and final. Only
+`results.json`, report text and file receipts may change for accounting;
+do not repeat BSD68 merely to incorporate bookkeeping.
+
+Use the generated public `models.json` with
+`research/tools/evaluate_released.py`; read `research/docs/RELEASED_EVALUATION.md`.
+Its public path uses safe tensor-only weights and original public inputs,
+requiring no raw training state/images. Actual full released-weight BSD68
+acceptance must be run under the remaining aggregate lease after final freeze;
+a CPU validation crop or synthetic fixture cannot establish that result.
+For focused publication checks, run `python -m pytest` on
+`research/tests/test_public_report.py` and `research/tests/test_released_evaluation.py`,
+plus both tools' `--help`.
+
 ## Native iOS workflow
 
 Read `ios/README.md` and `ios/VALIDATION.md` before changing native behavior.
@@ -114,3 +210,29 @@ The README adds factual language, platform and existing-license badges while
 preserving the original demonstration figures and all runtime, reproduction,
 validation and attribution details. Keep badge claims aligned with these docs;
 a presentation-only update does not establish a new build or runtime result.
+
+## Verified operator-study release
+
+Read `research/README.md`, `research/docs/RESULTS.md` and the pinned bundle at
+`research/docs/results/operator-sigma25/` before interpreting new weights.
+All training and both full evaluations are complete; no further tuning follows
+this held-out study. Preserve the five frozen entries and all six comparisons.
+The public weights reproduce all 340 per-image input/label hashes, MSE, PSNR,
+clipping and paired statistics exactly. Do not infer pixel-array byte identity
+or matching timing from those checks. Keep the conditional image-bootstrap,
+one-seed, selection, training exposure and modern-baseline limitations explicit.
+
+Current model-manifest SHA256:
+`20a3ea6011dfde4facf8bbf94aad5ad71aff3bed006328a56c14e8ed2e83c40b`.
+Released assets are tensor-only and retain the source hashes from training.
+The separate research package is 0.1.0 within repository release 1.2.0; historical
+model/noise/iOS release URLs and existing model assumptions stay unchanged.
+The combined CPU suite is 174 passed/17 optional archival skips. Noneditable
+wheel checks explicitly reused system PyTorch 2.7.1. Full released-weight numerical
+acceptance is recorded separately in released-weight-reproduction.json.
+Before another release, recheck the public commit/CI, exact asset downloads,
+README commands, source guards and current SUMMARY/SKILL.
+
+Protocol-generated result CSVs retain their original CRLF bytes and SHA256
+receipts. `.gitattributes` disables line-ending conversion and recognizes
+those CSV terminators; do not normalize a frozen result file for formatting.

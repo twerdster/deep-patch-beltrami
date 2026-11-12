@@ -1,0 +1,55 @@
+{
+  "check": "full_private_and_released_weight_bsd68_reproduction",
+  "verified_utc": "2026-11-12T20:05:23.855971+00:00",
+  "private_results_sha256": "16fb05d2d083d1ced88e15a0082199aa517678f46ba453a86b4b9bf5d9c542d5",
+  "released_results_sha256": "b5b869022cfd680994c7935bc40eea597092c26409e0cfcbf33c8e531e5b8e84",
+  "model_manifest_sha256": "20a3ea6011dfde4facf8bbf94aad5ad71aff3bed006328a56c14e8ed2e83c40b",
+  "selection_sha256": "08d5dbb72a6f420a69ab6bf57f5772463793d23c8ee631f0d4c50ef0c56ad20c",
+  "models": [
+    {
+      "model": "historical",
+      "images": 68,
+      "input_label_hashes_shapes_equal": true,
+      "mse_psnr_clipping_exact": true,
+      "maximum_mse_difference": 0.0,
+      "maximum_psnr_difference_db": 0.0
+    },
+    {
+      "model": "frozen-control",
+      "images": 68,
+      "input_label_hashes_shapes_equal": true,
+      "mse_psnr_clipping_exact": true,
+      "maximum_mse_difference": 0.0,
+      "maximum_psnr_difference_db": 0.0
+    },
+    {
+      "model": "reaction",
+      "images": 68,
+      "input_label_hashes_shapes_equal": true,
+      "mse_psnr_clipping_exact": true,
+      "maximum_mse_difference": 0.0,
+      "maximum_psnr_difference_db": 0.0
+    },
+    {
+      "model": "precision-control",
+      "images": 68,
+      "input_label_hashes_shapes_equal": true,
+      "mse_psnr_clipping_exact": true,
+      "maximum_mse_difference": 0.0,
+      "maximum_psnr_difference_db": 0.0
+    },
+    {
+      "model": "precision-depth",
+      "images": 68,
+      "input_label_hashes_shapes_equal": true,
+      "mse_psnr_clipping_exact": true,
+      "maximum_mse_difference": 0.0,
+      "maximum_psnr_difference_db": 0.0
+    }
+  ],
+  "image_model_cases": 340,
+  "all_six_paired_statistics_exact": true,
+  "numerical_protocol_unchanged": true,
+  "timing_samples_checked_separately_not_expected_equal": true,
+  "prediction_pixel_arrays_not_compared": true
+}

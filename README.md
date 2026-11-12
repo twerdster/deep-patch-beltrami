@@ -151,6 +151,21 @@ against the original checkpoint. Numerical differences between PyTorch and
 Caffe are small; matching printed scores does not imply identical output
 pixels. See [reproducibility details](docs/REPRODUCIBILITY.md).
 
+## Learned-operator study
+
+The optional [research package](research/README.md) optimizes the learned
+Beltrami differential operator with controlled depth, width, metric and fidelity
+reaction variants. The completed, frozen BSD68 comparison at sigma 25 reaches
+**28.9082 dB**, a modest **+0.0103 dB** over the matched continued-training
+control (+0.0430 dB over the historical model). Released tensor-only weights
+reproduce all 340 image/model metric records exactly. Depth's smaller mean
+gain is outlier-sensitive and does not establish a robust improvement.
+See the [results and limitations](research/docs/RESULTS.md),
+[installation and reproduction instructions](research/README.md), and
+[v1.2.0 weights](https://github.com/twerdster/deep-patch-beltrami/releases/tag/v1.2.0).
+The original reproduction commands and iPhone models above use the unchanged
+historical checkpoints.
+
 ## Tests
 
 ```bash

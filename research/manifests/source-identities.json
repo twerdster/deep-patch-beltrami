@@ -1,0 +1,4883 @@
+{
+  "schema": 1,
+  "source_repo": "BIDS/BSDS500",
+  "source_tree_sha": "a04b7c6c3a9f0ace74bf205c72a43d32e1c72722",
+  "grayscale": "OpenCV BT.601 uint8 conversion, full natural H,W frame",
+  "train_count": 400,
+  "train_matched_original_sources": 400,
+  "train_source_splits": {
+    "train": 200,
+    "test": 200
+  },
+  "train_min_fullres_crop_ncc": 0.9999821186065674,
+  "train_max_crop_mse": 0.0035493827160493828,
+  "bsd68_matches": [
+    {
+      "bsd68": "test001.png",
+      "source": "101085.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999994
+    },
+    {
+      "bsd68": "test002.png",
+      "source": "101087.jpg",
+      "transform_index": 0,
+      "mse": 9.067298786924955e-05,
+      "coarse_ncc": 0.999999803216776
+    },
+    {
+      "bsd68": "test003.png",
+      "source": "102061.jpg",
+      "transform_index": 0,
+      "mse": 0.00023315911166378456,
+      "coarse_ncc": 0.9999998027092105
+    },
+    {
+      "bsd68": "test004.png",
+      "source": "103070.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test005.png",
+      "source": "105025.jpg",
+      "transform_index": 0,
+      "mse": 5.828977791594614e-05,
+      "coarse_ncc": 0.9999999999999999
+    },
+    {
+      "bsd68": "test006.png",
+      "source": "106024.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999997
+    },
+    {
+      "bsd68": "test007.png",
+      "source": "108005.jpg",
+      "transform_index": 0,
+      "mse": 6.476641990660682e-06,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test008.png",
+      "source": "108070.jpg",
+      "transform_index": 0,
+      "mse": 6.476641990660682e-06,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test009.png",
+      "source": "108082.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test010.png",
+      "source": "109053.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test011.png",
+      "source": "119082.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test012.png",
+      "source": "12084.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test013.png",
+      "source": "123074.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test014.png",
+      "source": "126007.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test015.png",
+      "source": "130026.jpg",
+      "transform_index": 0,
+      "mse": 3.238320995330341e-05,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test016.png",
+      "source": "134035.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test017.png",
+      "source": "14037.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999991
+    },
+    {
+      "bsd68": "test018.png",
+      "source": "143090.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test019.png",
+      "source": "145086.jpg",
+      "transform_index": 0,
+      "mse": 0.0012499919041975118,
+      "coarse_ncc": 0.9999993063172632
+    },
+    {
+      "bsd68": "test020.png",
+      "source": "147091.jpg",
+      "transform_index": 0,
+      "mse": 0.0001878226177291598,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test021.png",
+      "source": "148026.jpg",
+      "transform_index": 0,
+      "mse": 2.590656796264273e-05,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test022.png",
+      "source": "148089.jpg",
+      "transform_index": 0,
+      "mse": 0.00011010291384123159,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test023.png",
+      "source": "157055.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test024.png",
+      "source": "159008.jpg",
+      "transform_index": 0,
+      "mse": 0.00013600948180387434,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test025.png",
+      "source": "160068.jpg",
+      "transform_index": 0,
+      "mse": 3.238320995330341e-05,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test026.png",
+      "source": "16077.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 1.0000000000000004
+    },
+    {
+      "bsd68": "test027.png",
+      "source": "163085.jpg",
+      "transform_index": 0,
+      "mse": 5.828977791594614e-05,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test028.png",
+      "source": "167062.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test029.png",
+      "source": "167083.jpg",
+      "transform_index": 0,
+      "mse": 0.000142486123794535,
+      "coarse_ncc": 0.9999999999999997
+    },
+    {
+      "bsd68": "test030.png",
+      "source": "170057.jpg",
+      "transform_index": 0,
+      "mse": 1.9429925971982047e-05,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test031.png",
+      "source": "175032.jpg",
+      "transform_index": 0,
+      "mse": 3.8859851943964094e-05,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test032.png",
+      "source": "175043.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test033.png",
+      "source": "182053.jpg",
+      "transform_index": 0,
+      "mse": 6.476641990660682e-06,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test034.png",
+      "source": "189080.jpg",
+      "transform_index": 0,
+      "mse": 0.0001489627657851957,
+      "coarse_ncc": 0.9999999999999994
+    },
+    {
+      "bsd68": "test035.png",
+      "source": "19021.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test036.png",
+      "source": "196073.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test037.png",
+      "source": "197017.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999997
+    },
+    {
+      "bsd68": "test038.png",
+      "source": "208001.jpg",
+      "transform_index": 0,
+      "mse": 3.238320995330341e-05,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test039.png",
+      "source": "210088.jpg",
+      "transform_index": 0,
+      "mse": 6.476641990660682e-06,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test040.png",
+      "source": "21077.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test041.png",
+      "source": "216081.jpg",
+      "transform_index": 0,
+      "mse": 0.0003626919514769982,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test042.png",
+      "source": "219090.jpg",
+      "transform_index": 0,
+      "mse": 1.9429925971982047e-05,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test043.png",
+      "source": "220075.jpg",
+      "transform_index": 0,
+      "mse": 5.181313592528546e-05,
+      "coarse_ncc": 0.9999999999999996
+    },
+    {
+      "bsd68": "test044.png",
+      "source": "223061.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test045.png",
+      "source": "227092.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test046.png",
+      "source": "229036.jpg",
+      "transform_index": 0,
+      "mse": 5.181313592528546e-05,
+      "coarse_ncc": 0.9999999999999999
+    },
+    {
+      "bsd68": "test047.png",
+      "source": "236037.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test048.png",
+      "source": "24077.jpg",
+      "transform_index": 0,
+      "mse": 0.00011657955583189228,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test049.png",
+      "source": "241004.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test050.png",
+      "source": "241048.jpg",
+      "transform_index": 0,
+      "mse": 4.5336493934624776e-05,
+      "coarse_ncc": 0.9999999999999999
+    },
+    {
+      "bsd68": "test051.png",
+      "source": "253027.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test052.png",
+      "source": "253055.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test053.png",
+      "source": "260058.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test054.png",
+      "source": "271035.jpg",
+      "transform_index": 0,
+      "mse": 3.238320995330341e-05,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test055.png",
+      "source": "285079.jpg",
+      "transform_index": 0,
+      "mse": 0.00010362627185057092,
+      "coarse_ncc": 0.9999996878748412
+    },
+    {
+      "bsd68": "test056.png",
+      "source": "291000.jpg",
+      "transform_index": 0,
+      "mse": 0.00011010291384123159,
+      "coarse_ncc": 0.9999999999999999
+    },
+    {
+      "bsd68": "test057.png",
+      "source": "295087.jpg",
+      "transform_index": 0,
+      "mse": 6.476641990660682e-05,
+      "coarse_ncc": 1.0000000000000004
+    },
+    {
+      "bsd68": "test058.png",
+      "source": "296007.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test059.png",
+      "source": "296059.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999998
+    },
+    {
+      "bsd68": "test060.png",
+      "source": "299086.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test061.png",
+      "source": "300091.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test062.png",
+      "source": "302008.jpg",
+      "transform_index": 0,
+      "mse": 6.476641990660682e-06,
+      "coarse_ncc": 1.0000000000000002
+    },
+    {
+      "bsd68": "test063.png",
+      "source": "304034.jpg",
+      "transform_index": 0,
+      "mse": 1.9429925971982047e-05,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test064.png",
+      "source": "304074.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 1.0000000000000004
+    },
+    {
+      "bsd68": "test065.png",
+      "source": "306005.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 0.9999999999999999
+    },
+    {
+      "bsd68": "test066.png",
+      "source": "3096.jpg",
+      "transform_index": 0,
+      "mse": 0.0,
+      "coarse_ncc": 0.9999999999999996
+    },
+    {
+      "bsd68": "test067.png",
+      "source": "33039.jpg",
+      "transform_index": 0,
+      "mse": 1.2953283981321365e-05,
+      "coarse_ncc": 1.0
+    },
+    {
+      "bsd68": "test068.png",
+      "source": "351093.jpg",
+      "transform_index": 0,
+      "mse": 4.5336493934624776e-05,
+      "coarse_ncc": 1.0000000000000004
+    }
+  ],
+  "bsd68_max_pixel_mse": 0.0012499919041975118,
+  "validation_count": 32,
+  "validation": [
+    {
+      "id": "156065",
+      "source": "BSDS500/data/images/val/156065.jpg",
+      "source_sha256": "2328df0f0f479e98fe313142bdc9d6463937e0ab6e7811f0b2ffb79329e946e2",
+      "filename": "156065.png",
+      "sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "4d8781999d80a6a30ed0276c83517c00c51d94291cf706128cdf9fd1654799a2"
+    },
+    {
+      "id": "361010",
+      "source": "BSDS500/data/images/val/361010.jpg",
+      "source_sha256": "fe806b64c91cff4d3c4755d84d6e449581ec064be0593d8c7b483e76dcbf7cb1",
+      "filename": "361010.png",
+      "sha256": "7e71cb099ae9a17c0bcf32f5fb400e10fa19400f7624bc18e16c4386b1c9d6d2",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "308099d071b2623067b1785f9ef974877cbd6f788ef89521e243349f4297982d"
+    },
+    {
+      "id": "37073",
+      "source": "BSDS500/data/images/val/37073.jpg",
+      "source_sha256": "16e3f09d490cea1bec87326bc02e0440bdb0f7b530a008ce858784c0c476aaff",
+      "filename": "37073.png",
+      "sha256": "b7e1bb5c05d4d1834bc955003f283cd56e69c6bac283d7cb162d1896780a14f5",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "fa952fc490531357baf8e45421ad0e51f77623ea3aea282035a8fd7eded6318a"
+    },
+    {
+      "id": "376043",
+      "source": "BSDS500/data/images/val/376043.jpg",
+      "source_sha256": "96e30f229df06707d78c518d6d3de2233fb2b06b6245511d2896b67b13b10561",
+      "filename": "376043.png",
+      "sha256": "9e562373fded73d883586d1dd474c831327483580e2826bd78b65565058a35de",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "f61c90397207fb973f0f908fcba0950049031068dc2c4e5e2f863aa9debbd46d"
+    },
+    {
+      "id": "38082",
+      "source": "BSDS500/data/images/val/38082.jpg",
+      "source_sha256": "ebc17d84d39ad6a6c7735079edf295c453d31a5c7892e75eaaa7a3bd9bd2bec0",
+      "filename": "38082.png",
+      "sha256": "0482b668536342c3cd2f973b1f57966ae4e1a91625a3c6b11cf36bf3caa193c1",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "988db0b25b8fc1a9f263c4ac9ea7d8f78f1500ef987f56eff7cfd80c7ff45c93"
+    },
+    {
+      "id": "38092",
+      "source": "BSDS500/data/images/val/38092.jpg",
+      "source_sha256": "3bdf276d8084f31744b5ea5a88296cd929e5ae09f7571c597f687b8b2f100037",
+      "filename": "38092.png",
+      "sha256": "3cf5990c548da01a93b27e3d4bd0058dbee840eaa8a7ec689ecffab769f0d901",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "5f495a2280b4a00993557d032995d179faa1131f1077156922121fb00d0feea9"
+    },
+    {
+      "id": "385039",
+      "source": "BSDS500/data/images/val/385039.jpg",
+      "source_sha256": "60b0a5d2e60b8cb6871fe0ff3a1a3a5623aadc2284155515aef5da8b4839a9f9",
+      "filename": "385039.png",
+      "sha256": "2b3e95df6022883990bc7bfc4c422289cad03663db01da809c5d33a46f12dbe8",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "f71abcc2e66c6a9bed7281cf94d44e5a9653f96c7113f6b4f77abba2d49f09f6"
+    },
+    {
+      "id": "41033",
+      "source": "BSDS500/data/images/val/41033.jpg",
+      "source_sha256": "1048d94225898e420b3381ce1b3fd682b27ada4825326f9657fa198a6a1ab64a",
+      "filename": "41033.png",
+      "sha256": "18f94d1e6d3ccca6491be79555d51f12fab6e718f68136a3230c0feac9c07eb8",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "85990521378c38e3896baf4d116ca51809b4db77d524542bc56a52e6befd7d9f"
+    },
+    {
+      "id": "41069",
+      "source": "BSDS500/data/images/val/41069.jpg",
+      "source_sha256": "e440f8eca36a7e503e1f2e5bf4fd4a17d9fbf092cf490e7940c2d02ad90713d2",
+      "filename": "41069.png",
+      "sha256": "f863d2df84d6c3c7bb4124df93ca5f6bf003ef18b89563d8ad98284c14949d64",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "3c41697f3e2e2ed1a2d81d4f1404fb067707dbfb56454a6756ac30a7c5be80a9"
+    },
+    {
+      "id": "42012",
+      "source": "BSDS500/data/images/val/42012.jpg",
+      "source_sha256": "8681423a18c8910f38c801bd3c0dc21627aa99035994c6e37e13dad7424fddd2",
+      "filename": "42012.png",
+      "sha256": "cb3d6466a5c34ee18f6d18eb21e5ac732bf11afb0aa96a1aa5c8913256a4e854",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "1d81b7d687ead50214adff8ec56edd9ff4ab59db0e567d6b0d250962fb0ce5b5"
+    },
+    {
+      "id": "42049",
+      "source": "BSDS500/data/images/val/42049.jpg",
+      "source_sha256": "a947a1fc0f0f83fc5ae52a907709447d7a5c3b74bd6bfadf75794116731985c8",
+      "filename": "42049.png",
+      "sha256": "e2ff28a9551ba5c385edf1e61e4dde17880c6583a2fa9315781d84f6bd311215",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "8570ecbb452be2624d447763f2b5c5e8b05946b2e905867cfab9bcc884385249"
+    },
+    {
+      "id": "43074",
+      "source": "BSDS500/data/images/val/43074.jpg",
+      "source_sha256": "b1284bc51ace9a8dc849ac4d63c377e3480627c6982fa3c7a794ad31c46ad2bd",
+      "filename": "43074.png",
+      "sha256": "b9f119e09546e2e734acb1cd8058c097d4040bcc0100773222f08d3edd2f8656",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "d6aee1aa525a5b87e407bb336263a3a3feaeb84ae7fe8b3be62d7fe1b9568594"
+    },
+    {
+      "id": "45096",
+      "source": "BSDS500/data/images/val/45096.jpg",
+      "source_sha256": "8a9cd328ef7c8339f0246ec73c14eda01a29545b5fe4782a3c118976e44f26bf",
+      "filename": "45096.png",
+      "sha256": "ec0415e691eeae1123e0a6592eb6ddf9614768de9ab152f3c255be7492d68d73",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "8839455c9348d3011dfbb28e6b9dd88ea9da4a920340720cf7bc7fd536eb8b00"
+    },
+    {
+      "id": "54082",
+      "source": "BSDS500/data/images/val/54082.jpg",
+      "source_sha256": "b5a25d284128cc3e4307c404d26a57107945609bd974ebaac0f026607e98f9b2",
+      "filename": "54082.png",
+      "sha256": "16c6b46ee02ae2f32fd4816922b706cf6b1fa66b5653c9aae842e70e1ef9b113",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "a63ae1a6bf581ba09fddf45d53dfc1b9c60d0e129e74447054bcdca8983d0ffc"
+    },
+    {
+      "id": "55073",
+      "source": "BSDS500/data/images/val/55073.jpg",
+      "source_sha256": "539d516840aa3daebe57f5d65d7ca13f4877c8da6ad0a12745bb58fe823a7119",
+      "filename": "55073.png",
+      "sha256": "5f05fecd80af2913d7d5d25f12b32ccd6e253a5539bbf8e3073f8de4eef90b79",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "2b67d4c6f17c61b13adbc282164adc8d3ae5c0b9df6a5c78442c29c0f6a9db48"
+    },
+    {
+      "id": "58060",
+      "source": "BSDS500/data/images/val/58060.jpg",
+      "source_sha256": "cea82e71a4bbee23d89c18538cd565c9e43a1f4995de6d605352505f83094277",
+      "filename": "58060.png",
+      "sha256": "01fab5cbd495a18449a56003bad2c67fd6f629280ceb48a5d66977330b2a7ea0",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "bde093ab86961ad64901dbd1fde6c30d41aa9c139775177a93efd97d2915c85d"
+    },
+    {
+      "id": "62096",
+      "source": "BSDS500/data/images/val/62096.jpg",
+      "source_sha256": "733d222d7aaaff4702b6412eff824e676f37be9fa59a52cf7740ab7695928ef8",
+      "filename": "62096.png",
+      "sha256": "ab13376d0a99076682208c6d7a78bbf9801350368f441ecef203ce2e7cc8ed1e",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "25b4ddd9e0978c58c04b1500c480062e263fd40b4fb5777db1c3ab8773c39ade"
+    },
+    {
+      "id": "65033",
+      "source": "BSDS500/data/images/val/65033.jpg",
+      "source_sha256": "7971752b0552d3f8df80cf83656d8f1b10fabefe4cfd1fb5434a97b784b23bff",
+      "filename": "65033.png",
+      "sha256": "5a39a1068d06051c39a13dc47ef22ac9ab52e013ffb4c3e70ead289aa6e51414",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "eaed6128647b576d004608738bb24d2593f2aedaa97f2133be4dc7a9eb174613"
+    },
+    {
+      "id": "66053",
+      "source": "BSDS500/data/images/val/66053.jpg",
+      "source_sha256": "bc27ff2d520d63f8ffc8575269a14c295788542cb723fcce6bda3752e9de27a7",
+      "filename": "66053.png",
+      "sha256": "9cfec3bace9091084a2d7cde31fe956369a4b68a7514534eb99cac7f6f0f1f3b",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "72e6d1bea8ff0ffb007e811690dbd5f448794728d00357ce00e7d41abaa8e196"
+    },
+    {
+      "id": "69015",
+      "source": "BSDS500/data/images/val/69015.jpg",
+      "source_sha256": "11ee0b6169a765f20df6126e542deeec1b5e0cac2fa45894cc4990b1358a6248",
+      "filename": "69015.png",
+      "sha256": "cb7fa28e1fc41430eab084c2fc4fd9d3de0076a7f6659d256f635e9872bd64ff",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "b951d5b958c0f2dd1a32a70ef1b337de782ff221b4b3fa5b2f27c812d8d292eb"
+    },
+    {
+      "id": "69020",
+      "source": "BSDS500/data/images/val/69020.jpg",
+      "source_sha256": "b48ee9eba4e447d411da427cdd19c01d519d2efef81858d9a15447f687d477c3",
+      "filename": "69020.png",
+      "sha256": "4b67cd1a7073b9a356f99cd48e66a0e81f6d39722913777321fe5451e0537103",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "6eee41a1a6f9ef581f885d1d2b91431379299ae192461df76c036d6f29d957b7"
+    },
+    {
+      "id": "69040",
+      "source": "BSDS500/data/images/val/69040.jpg",
+      "source_sha256": "fa2492dcdd305967280ea566f2fd2edf21c60104edc0407c2d8aba75fffb4e05",
+      "filename": "69040.png",
+      "sha256": "6c0074a24aac8343c7b7931337bb82a87dffe4401a793ce0fc319e08c5353550",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "5c8d75483eecadfac8102b19ea1599e037d598e5d1d9f5bf95abeeaf83e885ee"
+    },
+    {
+      "id": "76053",
+      "source": "BSDS500/data/images/val/76053.jpg",
+      "source_sha256": "6cc809339a953a105ee1bfdf074200181d0e04240e68c830f7aeb21be237c72c",
+      "filename": "76053.png",
+      "sha256": "e0fd849a0457e3cc0ca707a6d4817ca032b18d0220ad76ddfe5015ed08026858",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "ac46f13c10526aebbd871dde2910033b911e098790ce4037a83f5ef96987d3cb"
+    },
+    {
+      "id": "78004",
+      "source": "BSDS500/data/images/val/78004.jpg",
+      "source_sha256": "14ab48ad51e27fb7e3b60bcdfba6d5354a4af957893455b5dd53e624da71b971",
+      "filename": "78004.png",
+      "sha256": "c3fb81484d9525e0d42c8e1d098dd9c5d03ffe8987eac776d7f293b206bf7b0e",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "fea982f5aae83741020d4d5002b26eed5c5e4e516e46926189425ddd5bd3dee8"
+    },
+    {
+      "id": "8023",
+      "source": "BSDS500/data/images/val/8023.jpg",
+      "source_sha256": "c14e203930593ff50b0457bb96a1b1f8165a8b2ceb7c0ebb9ddb283641464f4e",
+      "filename": "8023.png",
+      "sha256": "624c699fc8518db4dc31bc481c7cfa2241446f23b7f5497c7306e087a2be38f6",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "96371a9bdaaf78fff25fdb55e7175973352828530e2b1e2e6d3f265b61e90187"
+    },
+    {
+      "id": "85048",
+      "source": "BSDS500/data/images/val/85048.jpg",
+      "source_sha256": "7802d81358356ae5033fdd4be7b475e9e28d6eb5eabba3559594214c603c8ba5",
+      "filename": "85048.png",
+      "sha256": "62ec65245102b411f70b0ff6434d7ad77620759bf454a97af0432f48fc2586ae",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "e975cd572841a1dc49b9cc9a161ce95b493c826eb078ec91d2a7254451edbd7f"
+    },
+    {
+      "id": "86000",
+      "source": "BSDS500/data/images/val/86000.jpg",
+      "source_sha256": "216fca8c3f045c3161e2053a7e85923c874f64e662b4c929d73afdb1c0cd4cbe",
+      "filename": "86000.png",
+      "sha256": "66cc3e8041bb7c62cb1cf304ef4afd1050c5eff54a0f2095991a3ee6ddc8a58c",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "544bfbb137a72fc4de73a6355166f53b966438b5659a0d94e4bd1e3818bbd458"
+    },
+    {
+      "id": "86016",
+      "source": "BSDS500/data/images/val/86016.jpg",
+      "source_sha256": "f53ca96f3024531f85fcd148833ac37944f4ae8dcb4492905e3469f3f102c970",
+      "filename": "86016.png",
+      "sha256": "a9fcd380fa8a9f49a30519b9f62c1d9dc626ae55c7ec208c5843f3bc49e24ada",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "664c7b867ab42a5fa899cfd02e24d2c9b592d0a0be9d79c8994f179d0b0d8282"
+    },
+    {
+      "id": "86068",
+      "source": "BSDS500/data/images/val/86068.jpg",
+      "source_sha256": "4a76e8193007a2b86183ecf175c43239377f4deaf6957ef95069ed8c455cb36f",
+      "filename": "86068.png",
+      "sha256": "cf538ef3fa7a5ffeb21795ddd6414285d49e331edf1f302b99afd7ca5ad9b2c9",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "8d4bc2c2a82b22599726b9c371e6026f6af6921459b98242aa7d06f2109c74e8"
+    },
+    {
+      "id": "87046",
+      "source": "BSDS500/data/images/val/87046.jpg",
+      "source_sha256": "166d637f2602865b43c7f98926056172fc8df29d1daff62af96d80feabd43980",
+      "filename": "87046.png",
+      "sha256": "5443a608f1f39935e00f86c69c3524f53199792bea9b8beda476573491836ad7",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "f183620624f7d60f9e087d3c95ebaab6353866f376db8fb6336cf9365c7539ec"
+    },
+    {
+      "id": "89072",
+      "source": "BSDS500/data/images/val/89072.jpg",
+      "source_sha256": "b08020789fcfc502fc3902489d1f1c80f3de55c1a6e5456b930b04c6db78c825",
+      "filename": "89072.png",
+      "sha256": "0e12225bf989b8dc998eb0d7a79bf1e96cf68e449cde794cd7c8e786a5056dc9",
+      "shape": [
+        481,
+        321
+      ],
+      "pixels_sha256": "682f547a2265901f2d14a8c78297d97aebf13ce0bcc24fcb4c920ad79c04c892"
+    },
+    {
+      "id": "97033",
+      "source": "BSDS500/data/images/val/97033.jpg",
+      "source_sha256": "0598c9c6d44af64c04e314f41c21453da7c4bb94adfda48f71548d98b4287d3e",
+      "filename": "97033.png",
+      "sha256": "4df5e2f5137bf7d24360b33e5f0b90c5f159cd4404566b150ce345820efe5b8a",
+      "shape": [
+        321,
+        481
+      ],
+      "pixels_sha256": "cd729941bd20373a58e1fe6cc46e38652bab1fee6d511102a780a4e22742c0d8"
+    }
+  ],
+  "scope": "Identity exclusion against supplied training crops and BSD68; source-photo identities are disjoint. Does not claim no historical development exposure or no near-duplicate photographic scenes.",
+  "training_sources": [
+    {
+      "training_file": "test_001.png",
+      "source": "BSDS500/data/images/train/100075.jpg",
+      "crop_xy": [
+        247,
+        80
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_002.png",
+      "source": "BSDS500/data/images/train/100080.jpg",
+      "crop_xy": [
+        33,
+        112
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_003.png",
+      "source": "BSDS500/data/images/train/100098.jpg",
+      "crop_xy": [
+        291,
+        139
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_004.png",
+      "source": "BSDS500/data/images/train/103041.jpg",
+      "crop_xy": [
+        26,
+        139
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_005.png",
+      "source": "BSDS500/data/images/train/104022.jpg",
+      "crop_xy": [
+        109,
+        277
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_006.png",
+      "source": "BSDS500/data/images/train/105019.jpg",
+      "crop_xy": [
+        251,
+        32
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_007.png",
+      "source": "BSDS500/data/images/train/105053.jpg",
+      "crop_xy": [
+        188,
+        83
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_008.png",
+      "source": "BSDS500/data/images/train/106020.jpg",
+      "crop_xy": [
+        52,
+        24
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_009.png",
+      "source": "BSDS500/data/images/train/106025.jpg",
+      "crop_xy": [
+        63,
+        14
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_010.png",
+      "source": "BSDS500/data/images/train/108041.jpg",
+      "crop_xy": [
+        22,
+        278
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_011.png",
+      "source": "BSDS500/data/images/train/108073.jpg",
+      "crop_xy": [
+        93,
+        66
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.000462962962962963
+    },
+    {
+      "training_file": "test_012.png",
+      "source": "BSDS500/data/images/train/109034.jpg",
+      "crop_xy": [
+        3,
+        130
+      ],
+      "crop_ncc": 0.9999983310699463,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_013.png",
+      "source": "BSDS500/data/images/train/112082.jpg",
+      "crop_xy": [
+        44,
+        36
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_014.png",
+      "source": "BSDS500/data/images/train/113009.jpg",
+      "crop_xy": [
+        119,
+        5
+      ],
+      "crop_ncc": 0.9999989867210388,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_015.png",
+      "source": "BSDS500/data/images/train/113016.jpg",
+      "crop_xy": [
+        49,
+        11
+      ],
+      "crop_ncc": 0.9999984502792358,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_016.png",
+      "source": "BSDS500/data/images/train/113044.jpg",
+      "crop_xy": [
+        9,
+        32
+      ],
+      "crop_ncc": 0.9999982118606567,
+      "crop_mse": 0.0002160493827160494
+    },
+    {
+      "training_file": "test_017.png",
+      "source": "BSDS500/data/images/train/117054.jpg",
+      "crop_xy": [
+        8,
+        9
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_018.png",
+      "source": "BSDS500/data/images/train/118020.jpg",
+      "crop_xy": [
+        236,
+        47
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_019.png",
+      "source": "BSDS500/data/images/train/118035.jpg",
+      "crop_xy": [
+        111,
+        69
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_020.png",
+      "source": "BSDS500/data/images/train/12003.jpg",
+      "crop_xy": [
+        35,
+        79
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0002777777777777778
+    },
+    {
+      "training_file": "test_021.png",
+      "source": "BSDS500/data/images/train/12074.jpg",
+      "crop_xy": [
+        243,
+        102
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_022.png",
+      "source": "BSDS500/data/images/train/122048.jpg",
+      "crop_xy": [
+        249,
+        58
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_023.png",
+      "source": "BSDS500/data/images/train/124084.jpg",
+      "crop_xy": [
+        300,
+        96
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.001388888888888889
+    },
+    {
+      "training_file": "test_024.png",
+      "source": "BSDS500/data/images/train/126039.jpg",
+      "crop_xy": [
+        52,
+        45
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_025.png",
+      "source": "BSDS500/data/images/train/130034.jpg",
+      "crop_xy": [
+        2,
+        12
+      ],
+      "crop_ncc": 0.9999971389770508,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_026.png",
+      "source": "BSDS500/data/images/train/134008.jpg",
+      "crop_xy": [
+        208,
+        133
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_027.png",
+      "source": "BSDS500/data/images/train/134052.jpg",
+      "crop_xy": [
+        142,
+        21
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_028.png",
+      "source": "BSDS500/data/images/train/135037.jpg",
+      "crop_xy": [
+        42,
+        17
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_029.png",
+      "source": "BSDS500/data/images/train/135069.jpg",
+      "crop_xy": [
+        37,
+        50
+      ],
+      "crop_ncc": 0.9999951124191284,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_030.png",
+      "source": "BSDS500/data/images/train/138032.jpg",
+      "crop_xy": [
+        90,
+        157
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_031.png",
+      "source": "BSDS500/data/images/train/138078.jpg",
+      "crop_xy": [
+        0,
+        283
+      ],
+      "crop_ncc": 0.9999972581863403,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_032.png",
+      "source": "BSDS500/data/images/train/140055.jpg",
+      "crop_xy": [
+        234,
+        57
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_033.png",
+      "source": "BSDS500/data/images/train/140075.jpg",
+      "crop_xy": [
+        166,
+        58
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.00033950617283950616
+    },
+    {
+      "training_file": "test_034.png",
+      "source": "BSDS500/data/images/train/144067.jpg",
+      "crop_xy": [
+        102,
+        182
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_035.png",
+      "source": "BSDS500/data/images/train/145014.jpg",
+      "crop_xy": [
+        96,
+        20
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_036.png",
+      "source": "BSDS500/data/images/train/145053.jpg",
+      "crop_xy": [
+        261,
+        110
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_037.png",
+      "source": "BSDS500/data/images/train/147021.jpg",
+      "crop_xy": [
+        11,
+        92
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_038.png",
+      "source": "BSDS500/data/images/train/147062.jpg",
+      "crop_xy": [
+        111,
+        23
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_039.png",
+      "source": "BSDS500/data/images/train/15004.jpg",
+      "crop_xy": [
+        40,
+        279
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_040.png",
+      "source": "BSDS500/data/images/train/15088.jpg",
+      "crop_xy": [
+        62,
+        193
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_041.png",
+      "source": "BSDS500/data/images/train/151087.jpg",
+      "crop_xy": [
+        206,
+        0
+      ],
+      "crop_ncc": 0.9999986290931702,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_042.png",
+      "source": "BSDS500/data/images/train/153077.jpg",
+      "crop_xy": [
+        292,
+        28
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_043.png",
+      "source": "BSDS500/data/images/train/153093.jpg",
+      "crop_xy": [
+        131,
+        16
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_044.png",
+      "source": "BSDS500/data/images/train/155060.jpg",
+      "crop_xy": [
+        108,
+        25
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_045.png",
+      "source": "BSDS500/data/images/train/156079.jpg",
+      "crop_xy": [
+        110,
+        63
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.00037037037037037035
+    },
+    {
+      "training_file": "test_046.png",
+      "source": "BSDS500/data/images/train/157036.jpg",
+      "crop_xy": [
+        16,
+        94
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.00033950617283950616
+    },
+    {
+      "training_file": "test_047.png",
+      "source": "BSDS500/data/images/train/159029.jpg",
+      "crop_xy": [
+        279,
+        77
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_048.png",
+      "source": "BSDS500/data/images/train/159045.jpg",
+      "crop_xy": [
+        19,
+        90
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_049.png",
+      "source": "BSDS500/data/images/train/159091.jpg",
+      "crop_xy": [
+        164,
+        40
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_050.png",
+      "source": "BSDS500/data/images/train/16052.jpg",
+      "crop_xy": [
+        97,
+        127
+      ],
+      "crop_ncc": 0.9999988079071045,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_051.png",
+      "source": "BSDS500/data/images/train/161062.jpg",
+      "crop_xy": [
+        34,
+        125
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_052.png",
+      "source": "BSDS500/data/images/train/163014.jpg",
+      "crop_xy": [
+        76,
+        176
+      ],
+      "crop_ncc": 0.9999990463256836,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_053.png",
+      "source": "BSDS500/data/images/train/163062.jpg",
+      "crop_xy": [
+        24,
+        123
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_054.png",
+      "source": "BSDS500/data/images/train/164074.jpg",
+      "crop_xy": [
+        197,
+        23
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_055.png",
+      "source": "BSDS500/data/images/train/166081.jpg",
+      "crop_xy": [
+        162,
+        89
+      ],
+      "crop_ncc": 0.9999987483024597,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_056.png",
+      "source": "BSDS500/data/images/train/169012.jpg",
+      "crop_xy": [
+        94,
+        122
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_057.png",
+      "source": "BSDS500/data/images/train/170054.jpg",
+      "crop_xy": [
+        55,
+        2
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.000462962962962963
+    },
+    {
+      "training_file": "test_058.png",
+      "source": "BSDS500/data/images/train/172032.jpg",
+      "crop_xy": [
+        92,
+        165
+      ],
+      "crop_ncc": 0.9999938011169434,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_059.png",
+      "source": "BSDS500/data/images/train/173036.jpg",
+      "crop_xy": [
+        140,
+        58
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_060.png",
+      "source": "BSDS500/data/images/train/176019.jpg",
+      "crop_xy": [
+        89,
+        213
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_061.png",
+      "source": "BSDS500/data/images/train/176035.jpg",
+      "crop_xy": [
+        168,
+        32
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0005555555555555556
+    },
+    {
+      "training_file": "test_062.png",
+      "source": "BSDS500/data/images/train/176039.jpg",
+      "crop_xy": [
+        143,
+        78
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_063.png",
+      "source": "BSDS500/data/images/train/178054.jpg",
+      "crop_xy": [
+        140,
+        113
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_064.png",
+      "source": "BSDS500/data/images/train/181018.jpg",
+      "crop_xy": [
+        120,
+        258
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_065.png",
+      "source": "BSDS500/data/images/train/181079.jpg",
+      "crop_xy": [
+        137,
+        19
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_066.png",
+      "source": "BSDS500/data/images/train/181091.jpg",
+      "crop_xy": [
+        89,
+        166
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_067.png",
+      "source": "BSDS500/data/images/train/183055.jpg",
+      "crop_xy": [
+        292,
+        101
+      ],
+      "crop_ncc": 0.9999934434890747,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_068.png",
+      "source": "BSDS500/data/images/train/183087.jpg",
+      "crop_xy": [
+        7,
+        72
+      ],
+      "crop_ncc": 0.999998927116394,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_069.png",
+      "source": "BSDS500/data/images/train/187003.jpg",
+      "crop_xy": [
+        169,
+        125
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_070.png",
+      "source": "BSDS500/data/images/train/187029.jpg",
+      "crop_xy": [
+        120,
+        138
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0004320987654320988
+    },
+    {
+      "training_file": "test_071.png",
+      "source": "BSDS500/data/images/train/187039.jpg",
+      "crop_xy": [
+        263,
+        130
+      ],
+      "crop_ncc": 0.9999991655349731,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_072.png",
+      "source": "BSDS500/data/images/train/187071.jpg",
+      "crop_xy": [
+        20,
+        125
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_073.png",
+      "source": "BSDS500/data/images/train/187083.jpg",
+      "crop_xy": [
+        82,
+        76
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_074.png",
+      "source": "BSDS500/data/images/train/188005.jpg",
+      "crop_xy": [
+        84,
+        73
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_075.png",
+      "source": "BSDS500/data/images/train/188063.jpg",
+      "crop_xy": [
+        35,
+        50
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_076.png",
+      "source": "BSDS500/data/images/train/188091.jpg",
+      "crop_xy": [
+        97,
+        56
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_077.png",
+      "source": "BSDS500/data/images/train/189003.jpg",
+      "crop_xy": [
+        261,
+        80
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_078.png",
+      "source": "BSDS500/data/images/train/189011.jpg",
+      "crop_xy": [
+        273,
+        76
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_079.png",
+      "source": "BSDS500/data/images/train/196015.jpg",
+      "crop_xy": [
+        122,
+        121
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_080.png",
+      "source": "BSDS500/data/images/train/198004.jpg",
+      "crop_xy": [
+        84,
+        95
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.00030864197530864197
+    },
+    {
+      "training_file": "test_081.png",
+      "source": "BSDS500/data/images/train/198023.jpg",
+      "crop_xy": [
+        125,
+        223
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_082.png",
+      "source": "BSDS500/data/images/train/198054.jpg",
+      "crop_xy": [
+        81,
+        282
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_083.png",
+      "source": "BSDS500/data/images/train/20008.jpg",
+      "crop_xy": [
+        25,
+        81
+      ],
+      "crop_ncc": 0.9999963045120239,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_084.png",
+      "source": "BSDS500/data/images/train/202012.jpg",
+      "crop_xy": [
+        239,
+        43
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_085.png",
+      "source": "BSDS500/data/images/train/207056.jpg",
+      "crop_xy": [
+        160,
+        90
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_086.png",
+      "source": "BSDS500/data/images/train/209070.jpg",
+      "crop_xy": [
+        275,
+        23
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_087.png",
+      "source": "BSDS500/data/images/train/2092.jpg",
+      "crop_xy": [
+        103,
+        132
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_088.png",
+      "source": "BSDS500/data/images/train/216041.jpg",
+      "crop_xy": [
+        101,
+        80
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_089.png",
+      "source": "BSDS500/data/images/train/216053.jpg",
+      "crop_xy": [
+        44,
+        112
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_090.png",
+      "source": "BSDS500/data/images/train/216066.jpg",
+      "crop_xy": [
+        71,
+        69
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_091.png",
+      "source": "BSDS500/data/images/train/22013.jpg",
+      "crop_xy": [
+        97,
+        2
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_092.png",
+      "source": "BSDS500/data/images/train/22090.jpg",
+      "crop_xy": [
+        102,
+        20
+      ],
+      "crop_ncc": 0.9999924898147583,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_093.png",
+      "source": "BSDS500/data/images/train/22093.jpg",
+      "crop_xy": [
+        32,
+        259
+      ],
+      "crop_ncc": 0.9999984502792358,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_094.png",
+      "source": "BSDS500/data/images/train/225017.jpg",
+      "crop_xy": [
+        30,
+        184
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_095.png",
+      "source": "BSDS500/data/images/train/227040.jpg",
+      "crop_xy": [
+        128,
+        75
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_096.png",
+      "source": "BSDS500/data/images/train/227046.jpg",
+      "crop_xy": [
+        143,
+        80
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_097.png",
+      "source": "BSDS500/data/images/train/23025.jpg",
+      "crop_xy": [
+        101,
+        28
+      ],
+      "crop_ncc": 0.9999971389770508,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_098.png",
+      "source": "BSDS500/data/images/train/23080.jpg",
+      "crop_xy": [
+        80,
+        122
+      ],
+      "crop_ncc": 0.999998152256012,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_099.png",
+      "source": "BSDS500/data/images/train/23084.jpg",
+      "crop_xy": [
+        230,
+        65
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_100.png",
+      "source": "BSDS500/data/images/train/231015.jpg",
+      "crop_xy": [
+        144,
+        135
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_101.png",
+      "source": "BSDS500/data/images/train/232038.jpg",
+      "crop_xy": [
+        52,
+        85
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_102.png",
+      "source": "BSDS500/data/images/train/236017.jpg",
+      "crop_xy": [
+        217,
+        72
+      ],
+      "crop_ncc": 0.999998152256012,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_103.png",
+      "source": "BSDS500/data/images/train/238011.jpg",
+      "crop_xy": [
+        118,
+        47
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_104.png",
+      "source": "BSDS500/data/images/train/239007.jpg",
+      "crop_xy": [
+        72,
+        123
+      ],
+      "crop_ncc": 0.9999982118606567,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_105.png",
+      "source": "BSDS500/data/images/train/239096.jpg",
+      "crop_xy": [
+        289,
+        108
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_106.png",
+      "source": "BSDS500/data/images/train/24004.jpg",
+      "crop_xy": [
+        71,
+        29
+      ],
+      "crop_ncc": 0.9999964237213135,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_107.png",
+      "source": "BSDS500/data/images/train/24063.jpg",
+      "crop_xy": [
+        43,
+        111
+      ],
+      "crop_ncc": 0.9999982118606567,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_108.png",
+      "source": "BSDS500/data/images/train/242078.jpg",
+      "crop_xy": [
+        77,
+        156
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0009567901234567902
+    },
+    {
+      "training_file": "test_109.png",
+      "source": "BSDS500/data/images/train/245051.jpg",
+      "crop_xy": [
+        180,
+        43
+      ],
+      "crop_ncc": 0.9999983906745911,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_110.png",
+      "source": "BSDS500/data/images/train/246016.jpg",
+      "crop_xy": [
+        75,
+        294
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_111.png",
+      "source": "BSDS500/data/images/train/246053.jpg",
+      "crop_xy": [
+        113,
+        9
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_112.png",
+      "source": "BSDS500/data/images/train/247085.jpg",
+      "crop_xy": [
+        147,
+        79
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_113.png",
+      "source": "BSDS500/data/images/train/249061.jpg",
+      "crop_xy": [
+        84,
+        42
+      ],
+      "crop_ncc": 0.9999982118606567,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_114.png",
+      "source": "BSDS500/data/images/train/249087.jpg",
+      "crop_xy": [
+        55,
+        42
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_115.png",
+      "source": "BSDS500/data/images/train/25098.jpg",
+      "crop_xy": [
+        91,
+        192
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.00030864197530864197
+    },
+    {
+      "training_file": "test_116.png",
+      "source": "BSDS500/data/images/train/253036.jpg",
+      "crop_xy": [
+        216,
+        45
+      ],
+      "crop_ncc": 0.9999944567680359,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_117.png",
+      "source": "BSDS500/data/images/train/254033.jpg",
+      "crop_xy": [
+        102,
+        58
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_118.png",
+      "source": "BSDS500/data/images/train/254054.jpg",
+      "crop_xy": [
+        54,
+        6
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_119.png",
+      "source": "BSDS500/data/images/train/260081.jpg",
+      "crop_xy": [
+        110,
+        248
+      ],
+      "crop_ncc": 0.9999982118606567,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_120.png",
+      "source": "BSDS500/data/images/train/26031.jpg",
+      "crop_xy": [
+        16,
+        11
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_121.png",
+      "source": "BSDS500/data/images/train/268002.jpg",
+      "crop_xy": [
+        128,
+        188
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_122.png",
+      "source": "BSDS500/data/images/train/27059.jpg",
+      "crop_xy": [
+        44,
+        56
+      ],
+      "crop_ncc": 0.9999990463256836,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_123.png",
+      "source": "BSDS500/data/images/train/271008.jpg",
+      "crop_xy": [
+        4,
+        30
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0008333333333333334
+    },
+    {
+      "training_file": "test_124.png",
+      "source": "BSDS500/data/images/train/271031.jpg",
+      "crop_xy": [
+        20,
+        86
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_125.png",
+      "source": "BSDS500/data/images/train/274007.jpg",
+      "crop_xy": [
+        102,
+        298
+      ],
+      "crop_ncc": 0.9999983310699463,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_126.png",
+      "source": "BSDS500/data/images/train/277095.jpg",
+      "crop_xy": [
+        50,
+        211
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_127.png",
+      "source": "BSDS500/data/images/train/28075.jpg",
+      "crop_xy": [
+        78,
+        46
+      ],
+      "crop_ncc": 0.9999976754188538,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_128.png",
+      "source": "BSDS500/data/images/train/28096.jpg",
+      "crop_xy": [
+        57,
+        84
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_129.png",
+      "source": "BSDS500/data/images/train/285036.jpg",
+      "crop_xy": [
+        6,
+        58
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_130.png",
+      "source": "BSDS500/data/images/train/286092.jpg",
+      "crop_xy": [
+        89,
+        77
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_131.png",
+      "source": "BSDS500/data/images/train/292066.jpg",
+      "crop_xy": [
+        63,
+        202
+      ],
+      "crop_ncc": 0.9999983906745911,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_132.png",
+      "source": "BSDS500/data/images/train/293029.jpg",
+      "crop_xy": [
+        240,
+        49
+      ],
+      "crop_ncc": 0.9999989867210388,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_133.png",
+      "source": "BSDS500/data/images/train/299091.jpg",
+      "crop_xy": [
+        36,
+        11
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_134.png",
+      "source": "BSDS500/data/images/train/301007.jpg",
+      "crop_xy": [
+        84,
+        206
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_135.png",
+      "source": "BSDS500/data/images/train/302003.jpg",
+      "crop_xy": [
+        63,
+        101
+      ],
+      "crop_ncc": 0.9999963045120239,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_136.png",
+      "source": "BSDS500/data/images/train/309004.jpg",
+      "crop_xy": [
+        36,
+        111
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_137.png",
+      "source": "BSDS500/data/images/train/310007.jpg",
+      "crop_xy": [
+        5,
+        62
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_138.png",
+      "source": "BSDS500/data/images/train/311068.jpg",
+      "crop_xy": [
+        99,
+        91
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_139.png",
+      "source": "BSDS500/data/images/train/311081.jpg",
+      "crop_xy": [
+        86,
+        16
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_140.png",
+      "source": "BSDS500/data/images/train/314016.jpg",
+      "crop_xy": [
+        80,
+        127
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_141.png",
+      "source": "BSDS500/data/images/train/317080.jpg",
+      "crop_xy": [
+        97,
+        132
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.000925925925925926
+    },
+    {
+      "training_file": "test_142.png",
+      "source": "BSDS500/data/images/train/323016.jpg",
+      "crop_xy": [
+        157,
+        116
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_143.png",
+      "source": "BSDS500/data/images/train/326038.jpg",
+      "crop_xy": [
+        85,
+        104
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_144.png",
+      "source": "BSDS500/data/images/train/33066.jpg",
+      "crop_xy": [
+        56,
+        85
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_145.png",
+      "source": "BSDS500/data/images/train/35008.jpg",
+      "crop_xy": [
+        296,
+        33
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_146.png",
+      "source": "BSDS500/data/images/train/35010.jpg",
+      "crop_xy": [
+        93,
+        92
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_147.png",
+      "source": "BSDS500/data/images/train/35058.jpg",
+      "crop_xy": [
+        43,
+        26
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_148.png",
+      "source": "BSDS500/data/images/train/35070.jpg",
+      "crop_xy": [
+        158,
+        106
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_149.png",
+      "source": "BSDS500/data/images/train/35091.jpg",
+      "crop_xy": [
+        286,
+        76
+      ],
+      "crop_ncc": 0.9999973177909851,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_150.png",
+      "source": "BSDS500/data/images/train/353013.jpg",
+      "crop_xy": [
+        138,
+        11
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_151.png",
+      "source": "BSDS500/data/images/train/361084.jpg",
+      "crop_xy": [
+        262,
+        71
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_152.png",
+      "source": "BSDS500/data/images/train/365025.jpg",
+      "crop_xy": [
+        68,
+        57
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_153.png",
+      "source": "BSDS500/data/images/train/365073.jpg",
+      "crop_xy": [
+        3,
+        115
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_154.png",
+      "source": "BSDS500/data/images/train/368016.jpg",
+      "crop_xy": [
+        200,
+        52
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_155.png",
+      "source": "BSDS500/data/images/train/368078.jpg",
+      "crop_xy": [
+        81,
+        219
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_156.png",
+      "source": "BSDS500/data/images/train/370036.jpg",
+      "crop_xy": [
+        286,
+        100
+      ],
+      "crop_ncc": 0.9999989867210388,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_157.png",
+      "source": "BSDS500/data/images/train/372047.jpg",
+      "crop_xy": [
+        35,
+        158
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_158.png",
+      "source": "BSDS500/data/images/train/374020.jpg",
+      "crop_xy": [
+        50,
+        42
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_159.png",
+      "source": "BSDS500/data/images/train/374067.jpg",
+      "crop_xy": [
+        136,
+        293
+      ],
+      "crop_ncc": 0.999997079372406,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_160.png",
+      "source": "BSDS500/data/images/train/376001.jpg",
+      "crop_xy": [
+        16,
+        25
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.00037037037037037035
+    },
+    {
+      "training_file": "test_161.png",
+      "source": "BSDS500/data/images/train/376020.jpg",
+      "crop_xy": [
+        262,
+        56
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0006790123456790123
+    },
+    {
+      "training_file": "test_162.png",
+      "source": "BSDS500/data/images/train/385028.jpg",
+      "crop_xy": [
+        222,
+        22
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_163.png",
+      "source": "BSDS500/data/images/train/388016.jpg",
+      "crop_xy": [
+        90,
+        60
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_164.png",
+      "source": "BSDS500/data/images/train/41004.jpg",
+      "crop_xy": [
+        193,
+        120
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_165.png",
+      "source": "BSDS500/data/images/train/41025.jpg",
+      "crop_xy": [
+        134,
+        22
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_166.png",
+      "source": "BSDS500/data/images/train/42044.jpg",
+      "crop_xy": [
+        234,
+        24
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_167.png",
+      "source": "BSDS500/data/images/train/42078.jpg",
+      "crop_xy": [
+        141,
+        28
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_168.png",
+      "source": "BSDS500/data/images/train/43070.jpg",
+      "crop_xy": [
+        239,
+        39
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_169.png",
+      "source": "BSDS500/data/images/train/43083.jpg",
+      "crop_xy": [
+        189,
+        13
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_170.png",
+      "source": "BSDS500/data/images/train/45077.jpg",
+      "crop_xy": [
+        232,
+        69
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_171.png",
+      "source": "BSDS500/data/images/train/46076.jpg",
+      "crop_xy": [
+        138,
+        74
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_172.png",
+      "source": "BSDS500/data/images/train/48055.jpg",
+      "crop_xy": [
+        108,
+        284
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_173.png",
+      "source": "BSDS500/data/images/train/54005.jpg",
+      "crop_xy": [
+        132,
+        249
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_174.png",
+      "source": "BSDS500/data/images/train/55067.jpg",
+      "crop_xy": [
+        280,
+        130
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_175.png",
+      "source": "BSDS500/data/images/train/55075.jpg",
+      "crop_xy": [
+        126,
+        27
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_176.png",
+      "source": "BSDS500/data/images/train/56028.jpg",
+      "crop_xy": [
+        46,
+        61
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_177.png",
+      "source": "BSDS500/data/images/train/59078.jpg",
+      "crop_xy": [
+        268,
+        54
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_178.png",
+      "source": "BSDS500/data/images/train/60079.jpg",
+      "crop_xy": [
+        130,
+        184
+      ],
+      "crop_ncc": 0.9999821186065674,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_179.png",
+      "source": "BSDS500/data/images/train/61060.jpg",
+      "crop_xy": [
+        24,
+        5
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_180.png",
+      "source": "BSDS500/data/images/train/61086.jpg",
+      "crop_xy": [
+        86,
+        225
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_181.png",
+      "source": "BSDS500/data/images/train/65010.jpg",
+      "crop_xy": [
+        126,
+        48
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_182.png",
+      "source": "BSDS500/data/images/train/65019.jpg",
+      "crop_xy": [
+        110,
+        47
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0012037037037037038
+    },
+    {
+      "training_file": "test_183.png",
+      "source": "BSDS500/data/images/train/65074.jpg",
+      "crop_xy": [
+        13,
+        24
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_184.png",
+      "source": "BSDS500/data/images/train/65132.jpg",
+      "crop_xy": [
+        234,
+        103
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_185.png",
+      "source": "BSDS500/data/images/train/66039.jpg",
+      "crop_xy": [
+        3,
+        147
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_186.png",
+      "source": "BSDS500/data/images/train/66075.jpg",
+      "crop_xy": [
+        137,
+        256
+      ],
+      "crop_ncc": 0.9999976754188538,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_187.png",
+      "source": "BSDS500/data/images/train/67079.jpg",
+      "crop_xy": [
+        247,
+        65
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_188.png",
+      "source": "BSDS500/data/images/train/68077.jpg",
+      "crop_xy": [
+        163,
+        26
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_189.png",
+      "source": "BSDS500/data/images/train/71046.jpg",
+      "crop_xy": [
+        46,
+        89
+      ],
+      "crop_ncc": 0.9999966025352478,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_190.png",
+      "source": "BSDS500/data/images/train/76002.jpg",
+      "crop_xy": [
+        269,
+        81
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_191.png",
+      "source": "BSDS500/data/images/train/78019.jpg",
+      "crop_xy": [
+        7,
+        24
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_192.png",
+      "source": "BSDS500/data/images/train/80099.jpg",
+      "crop_xy": [
+        7,
+        96
+      ],
+      "crop_ncc": 0.9999900460243225,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_193.png",
+      "source": "BSDS500/data/images/train/8049.jpg",
+      "crop_xy": [
+        158,
+        98
+      ],
+      "crop_ncc": 0.9999986886978149,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_194.png",
+      "source": "BSDS500/data/images/train/8143.jpg",
+      "crop_xy": [
+        169,
+        18
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_195.png",
+      "source": "BSDS500/data/images/train/87065.jpg",
+      "crop_xy": [
+        6,
+        110
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 0.00037037037037037035
+    },
+    {
+      "training_file": "test_196.png",
+      "source": "BSDS500/data/images/train/90076.jpg",
+      "crop_xy": [
+        240,
+        122
+      ],
+      "crop_ncc": 0.9999976754188538,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_197.png",
+      "source": "BSDS500/data/images/train/92059.jpg",
+      "crop_xy": [
+        45,
+        140
+      ],
+      "crop_ncc": 0.9999985098838806,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_198.png",
+      "source": "BSDS500/data/images/train/94079.jpg",
+      "crop_xy": [
+        35,
+        20
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_199.png",
+      "source": "BSDS500/data/images/train/95006.jpg",
+      "crop_xy": [
+        220,
+        68
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_200.png",
+      "source": "BSDS500/data/images/train/97017.jpg",
+      "crop_xy": [
+        49,
+        125
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_201.png",
+      "source": "BSDS500/data/images/test/100007.jpg",
+      "crop_xy": [
+        132,
+        22
+      ],
+      "crop_ncc": 0.9999988079071045,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_202.png",
+      "source": "BSDS500/data/images/test/100039.jpg",
+      "crop_xy": [
+        139,
+        27
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_203.png",
+      "source": "BSDS500/data/images/test/100099.jpg",
+      "crop_xy": [
+        101,
+        115
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_204.png",
+      "source": "BSDS500/data/images/test/10081.jpg",
+      "crop_xy": [
+        122,
+        53
+      ],
+      "crop_ncc": 0.9999968409538269,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_205.png",
+      "source": "BSDS500/data/images/test/101027.jpg",
+      "crop_xy": [
+        109,
+        139
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_206.png",
+      "source": "BSDS500/data/images/test/101084.jpg",
+      "crop_xy": [
+        138,
+        35
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_207.png",
+      "source": "BSDS500/data/images/test/102062.jpg",
+      "crop_xy": [
+        125,
+        132
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_208.png",
+      "source": "BSDS500/data/images/test/103006.jpg",
+      "crop_xy": [
+        68,
+        138
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_209.png",
+      "source": "BSDS500/data/images/test/103029.jpg",
+      "crop_xy": [
+        78,
+        69
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_210.png",
+      "source": "BSDS500/data/images/test/103078.jpg",
+      "crop_xy": [
+        2,
+        41
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_211.png",
+      "source": "BSDS500/data/images/test/104010.jpg",
+      "crop_xy": [
+        122,
+        186
+      ],
+      "crop_ncc": 0.9999985098838806,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_212.png",
+      "source": "BSDS500/data/images/test/104055.jpg",
+      "crop_xy": [
+        25,
+        32
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_213.png",
+      "source": "BSDS500/data/images/test/105027.jpg",
+      "crop_xy": [
+        207,
+        33
+      ],
+      "crop_ncc": 0.9999964833259583,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_214.png",
+      "source": "BSDS500/data/images/test/106005.jpg",
+      "crop_xy": [
+        233,
+        100
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_215.png",
+      "source": "BSDS500/data/images/test/106047.jpg",
+      "crop_xy": [
+        167,
+        12
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_216.png",
+      "source": "BSDS500/data/images/test/107014.jpg",
+      "crop_xy": [
+        216,
+        73
+      ],
+      "crop_ncc": 0.9999977946281433,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_217.png",
+      "source": "BSDS500/data/images/test/107045.jpg",
+      "crop_xy": [
+        90,
+        41
+      ],
+      "crop_ncc": 0.9999987483024597,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_218.png",
+      "source": "BSDS500/data/images/test/107072.jpg",
+      "crop_xy": [
+        87,
+        5
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_219.png",
+      "source": "BSDS500/data/images/test/108004.jpg",
+      "crop_xy": [
+        265,
+        40
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_220.png",
+      "source": "BSDS500/data/images/test/108036.jpg",
+      "crop_xy": [
+        211,
+        124
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_221.png",
+      "source": "BSDS500/data/images/test/108069.jpg",
+      "crop_xy": [
+        143,
+        127
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_222.png",
+      "source": "BSDS500/data/images/test/109055.jpg",
+      "crop_xy": [
+        276,
+        53
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_223.png",
+      "source": "BSDS500/data/images/test/112056.jpg",
+      "crop_xy": [
+        55,
+        38
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_224.png",
+      "source": "BSDS500/data/images/test/112090.jpg",
+      "crop_xy": [
+        139,
+        54
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0002777777777777778
+    },
+    {
+      "training_file": "test_225.png",
+      "source": "BSDS500/data/images/test/117025.jpg",
+      "crop_xy": [
+        133,
+        173
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_226.png",
+      "source": "BSDS500/data/images/test/118015.jpg",
+      "crop_xy": [
+        159,
+        14
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_227.png",
+      "source": "BSDS500/data/images/test/118031.jpg",
+      "crop_xy": [
+        150,
+        12
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_228.png",
+      "source": "BSDS500/data/images/test/118072.jpg",
+      "crop_xy": [
+        161,
+        108
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_229.png",
+      "source": "BSDS500/data/images/test/120003.jpg",
+      "crop_xy": [
+        194,
+        61
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_230.png",
+      "source": "BSDS500/data/images/test/120093.jpg",
+      "crop_xy": [
+        266,
+        129
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_231.png",
+      "source": "BSDS500/data/images/test/123057.jpg",
+      "crop_xy": [
+        7,
+        89
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_232.png",
+      "source": "BSDS500/data/images/test/128035.jpg",
+      "crop_xy": [
+        191,
+        104
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.000925925925925926
+    },
+    {
+      "training_file": "test_233.png",
+      "source": "BSDS500/data/images/test/130014.jpg",
+      "crop_xy": [
+        48,
+        41
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_234.png",
+      "source": "BSDS500/data/images/test/130066.jpg",
+      "crop_xy": [
+        251,
+        89
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_235.png",
+      "source": "BSDS500/data/images/test/134049.jpg",
+      "crop_xy": [
+        292,
+        136
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_236.png",
+      "source": "BSDS500/data/images/test/134067.jpg",
+      "crop_xy": [
+        8,
+        249
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_237.png",
+      "source": "BSDS500/data/images/test/140006.jpg",
+      "crop_xy": [
+        54,
+        235
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_238.png",
+      "source": "BSDS500/data/images/test/140088.jpg",
+      "crop_xy": [
+        26,
+        79
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_239.png",
+      "source": "BSDS500/data/images/test/14085.jpg",
+      "crop_xy": [
+        267,
+        17
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_240.png",
+      "source": "BSDS500/data/images/test/14092.jpg",
+      "crop_xy": [
+        23,
+        43
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_241.png",
+      "source": "BSDS500/data/images/test/141012.jpg",
+      "crop_xy": [
+        209,
+        106
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_242.png",
+      "source": "BSDS500/data/images/test/141048.jpg",
+      "crop_xy": [
+        176,
+        135
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_243.png",
+      "source": "BSDS500/data/images/test/145059.jpg",
+      "crop_xy": [
+        71,
+        139
+      ],
+      "crop_ncc": 0.9999980330467224,
+      "crop_mse": 0.0035493827160493828
+    },
+    {
+      "training_file": "test_244.png",
+      "source": "BSDS500/data/images/test/145079.jpg",
+      "crop_xy": [
+        39,
+        46
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_245.png",
+      "source": "BSDS500/data/images/test/146074.jpg",
+      "crop_xy": [
+        31,
+        69
+      ],
+      "crop_ncc": 0.9999954104423523,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_246.png",
+      "source": "BSDS500/data/images/test/147077.jpg",
+      "crop_xy": [
+        130,
+        121
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_247.png",
+      "source": "BSDS500/data/images/test/147080.jpg",
+      "crop_xy": [
+        90,
+        2
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_248.png",
+      "source": "BSDS500/data/images/test/15011.jpg",
+      "crop_xy": [
+        229,
+        85
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_249.png",
+      "source": "BSDS500/data/images/test/15062.jpg",
+      "crop_xy": [
+        187,
+        128
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_250.png",
+      "source": "BSDS500/data/images/test/156054.jpg",
+      "crop_xy": [
+        53,
+        221
+      ],
+      "crop_ncc": 0.9999987483024597,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_251.png",
+      "source": "BSDS500/data/images/test/157032.jpg",
+      "crop_xy": [
+        109,
+        56
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_252.png",
+      "source": "BSDS500/data/images/test/157087.jpg",
+      "crop_xy": [
+        176,
+        82
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_253.png",
+      "source": "BSDS500/data/images/test/159002.jpg",
+      "crop_xy": [
+        49,
+        204
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_254.png",
+      "source": "BSDS500/data/images/test/159022.jpg",
+      "crop_xy": [
+        66,
+        137
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_255.png",
+      "source": "BSDS500/data/images/test/160006.jpg",
+      "crop_xy": [
+        98,
+        63
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_256.png",
+      "source": "BSDS500/data/images/test/16004.jpg",
+      "crop_xy": [
+        291,
+        101
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.00037037037037037035
+    },
+    {
+      "training_file": "test_257.png",
+      "source": "BSDS500/data/images/test/160067.jpg",
+      "crop_xy": [
+        233,
+        60
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_258.png",
+      "source": "BSDS500/data/images/test/16068.jpg",
+      "crop_xy": [
+        242,
+        120
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_259.png",
+      "source": "BSDS500/data/images/test/161045.jpg",
+      "crop_xy": [
+        79,
+        57
+      ],
+      "crop_ncc": 0.999997079372406,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_260.png",
+      "source": "BSDS500/data/images/test/163004.jpg",
+      "crop_xy": [
+        88,
+        68
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0010185185185185184
+    },
+    {
+      "training_file": "test_261.png",
+      "source": "BSDS500/data/images/test/163096.jpg",
+      "crop_xy": [
+        75,
+        189
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_262.png",
+      "source": "BSDS500/data/images/test/164046.jpg",
+      "crop_xy": [
+        71,
+        13
+      ],
+      "crop_ncc": 0.9999985098838806,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_263.png",
+      "source": "BSDS500/data/images/test/168084.jpg",
+      "crop_xy": [
+        88,
+        118
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_264.png",
+      "source": "BSDS500/data/images/test/17067.jpg",
+      "crop_xy": [
+        134,
+        226
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_265.png",
+      "source": "BSDS500/data/images/test/175083.jpg",
+      "crop_xy": [
+        56,
+        103
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_266.png",
+      "source": "BSDS500/data/images/test/176051.jpg",
+      "crop_xy": [
+        40,
+        76
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_267.png",
+      "source": "BSDS500/data/images/test/179084.jpg",
+      "crop_xy": [
+        171,
+        59
+      ],
+      "crop_ncc": 0.9999989867210388,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_268.png",
+      "source": "BSDS500/data/images/test/181021.jpg",
+      "crop_xy": [
+        123,
+        219
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_269.png",
+      "source": "BSDS500/data/images/test/183066.jpg",
+      "crop_xy": [
+        241,
+        54
+      ],
+      "crop_ncc": 0.9999991655349731,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_270.png",
+      "source": "BSDS500/data/images/test/185092.jpg",
+      "crop_xy": [
+        157,
+        79
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_271.png",
+      "source": "BSDS500/data/images/test/187058.jpg",
+      "crop_xy": [
+        129,
+        24
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 0.00037037037037037035
+    },
+    {
+      "training_file": "test_272.png",
+      "source": "BSDS500/data/images/test/187099.jpg",
+      "crop_xy": [
+        225,
+        15
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_273.png",
+      "source": "BSDS500/data/images/test/188025.jpg",
+      "crop_xy": [
+        256,
+        24
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_274.png",
+      "source": "BSDS500/data/images/test/189006.jpg",
+      "crop_xy": [
+        63,
+        104
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_275.png",
+      "source": "BSDS500/data/images/test/189013.jpg",
+      "crop_xy": [
+        101,
+        100
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_276.png",
+      "source": "BSDS500/data/images/test/189029.jpg",
+      "crop_xy": [
+        4,
+        70
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_277.png",
+      "source": "BSDS500/data/images/test/189096.jpg",
+      "crop_xy": [
+        234,
+        59
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_278.png",
+      "source": "BSDS500/data/images/test/196027.jpg",
+      "crop_xy": [
+        111,
+        65
+      ],
+      "crop_ncc": 0.999998927116394,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_279.png",
+      "source": "BSDS500/data/images/test/196040.jpg",
+      "crop_xy": [
+        135,
+        83
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_280.png",
+      "source": "BSDS500/data/images/test/196062.jpg",
+      "crop_xy": [
+        24,
+        6
+      ],
+      "crop_ncc": 0.9999992251396179,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_281.png",
+      "source": "BSDS500/data/images/test/196088.jpg",
+      "crop_xy": [
+        167,
+        127
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_282.png",
+      "source": "BSDS500/data/images/test/198087.jpg",
+      "crop_xy": [
+        72,
+        66
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_283.png",
+      "source": "BSDS500/data/images/test/20069.jpg",
+      "crop_xy": [
+        19,
+        168
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_284.png",
+      "source": "BSDS500/data/images/test/201080.jpg",
+      "crop_xy": [
+        297,
+        68
+      ],
+      "crop_ncc": 0.9999980330467224,
+      "crop_mse": 0.000925925925925926
+    },
+    {
+      "training_file": "test_285.png",
+      "source": "BSDS500/data/images/test/2018.jpg",
+      "crop_xy": [
+        57,
+        48
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_286.png",
+      "source": "BSDS500/data/images/test/202000.jpg",
+      "crop_xy": [
+        254,
+        97
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_287.png",
+      "source": "BSDS500/data/images/test/206062.jpg",
+      "crop_xy": [
+        244,
+        10
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_288.png",
+      "source": "BSDS500/data/images/test/206097.jpg",
+      "crop_xy": [
+        112,
+        53
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_289.png",
+      "source": "BSDS500/data/images/test/207038.jpg",
+      "crop_xy": [
+        154,
+        80
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_290.png",
+      "source": "BSDS500/data/images/test/207049.jpg",
+      "crop_xy": [
+        158,
+        47
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_291.png",
+      "source": "BSDS500/data/images/test/208078.jpg",
+      "crop_xy": [
+        81,
+        49
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_292.png",
+      "source": "BSDS500/data/images/test/209021.jpg",
+      "crop_xy": [
+        140,
+        119
+      ],
+      "crop_ncc": 0.9999984502792358,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_293.png",
+      "source": "BSDS500/data/images/test/217013.jpg",
+      "crop_xy": [
+        90,
+        199
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_294.png",
+      "source": "BSDS500/data/images/test/217090.jpg",
+      "crop_xy": [
+        300,
+        59
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_295.png",
+      "source": "BSDS500/data/images/test/220003.jpg",
+      "crop_xy": [
+        249,
+        19
+      ],
+      "crop_ncc": 0.9999988079071045,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_296.png",
+      "source": "BSDS500/data/images/test/223004.jpg",
+      "crop_xy": [
+        68,
+        5
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_297.png",
+      "source": "BSDS500/data/images/test/223060.jpg",
+      "crop_xy": [
+        3,
+        98
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_298.png",
+      "source": "BSDS500/data/images/test/225022.jpg",
+      "crop_xy": [
+        22,
+        255
+      ],
+      "crop_ncc": 0.9999977946281433,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_299.png",
+      "source": "BSDS500/data/images/test/226022.jpg",
+      "crop_xy": [
+        109,
+        138
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_300.png",
+      "source": "BSDS500/data/images/test/226033.jpg",
+      "crop_xy": [
+        178,
+        126
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_301.png",
+      "source": "BSDS500/data/images/test/226043.jpg",
+      "crop_xy": [
+        38,
+        76
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_302.png",
+      "source": "BSDS500/data/images/test/226060.jpg",
+      "crop_xy": [
+        137,
+        41
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_303.png",
+      "source": "BSDS500/data/images/test/228076.jpg",
+      "crop_xy": [
+        2,
+        92
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_304.png",
+      "source": "BSDS500/data/images/test/230063.jpg",
+      "crop_xy": [
+        30,
+        123
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_305.png",
+      "source": "BSDS500/data/images/test/230098.jpg",
+      "crop_xy": [
+        94,
+        188
+      ],
+      "crop_ncc": 0.9999977946281433,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_306.png",
+      "source": "BSDS500/data/images/test/23050.jpg",
+      "crop_xy": [
+        91,
+        232
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_307.png",
+      "source": "BSDS500/data/images/test/232076.jpg",
+      "crop_xy": [
+        122,
+        14
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_308.png",
+      "source": "BSDS500/data/images/test/235098.jpg",
+      "crop_xy": [
+        64,
+        25
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_309.png",
+      "source": "BSDS500/data/images/test/238025.jpg",
+      "crop_xy": [
+        23,
+        251
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_310.png",
+      "source": "BSDS500/data/images/test/243095.jpg",
+      "crop_xy": [
+        49,
+        135
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_311.png",
+      "source": "BSDS500/data/images/test/246009.jpg",
+      "crop_xy": [
+        117,
+        20
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_312.png",
+      "source": "BSDS500/data/images/test/247003.jpg",
+      "crop_xy": [
+        131,
+        138
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_313.png",
+      "source": "BSDS500/data/images/test/247012.jpg",
+      "crop_xy": [
+        145,
+        8
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_314.png",
+      "source": "BSDS500/data/images/test/249021.jpg",
+      "crop_xy": [
+        93,
+        184
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_315.png",
+      "source": "BSDS500/data/images/test/250047.jpg",
+      "crop_xy": [
+        89,
+        152
+      ],
+      "crop_ncc": 0.9999991655349731,
+      "crop_mse": 0.000925925925925926
+    },
+    {
+      "training_file": "test_316.png",
+      "source": "BSDS500/data/images/test/250087.jpg",
+      "crop_xy": [
+        23,
+        66
+      ],
+      "crop_ncc": 0.9999990463256836,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_317.png",
+      "source": "BSDS500/data/images/test/253016.jpg",
+      "crop_xy": [
+        180,
+        74
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_318.png",
+      "source": "BSDS500/data/images/test/253092.jpg",
+      "crop_xy": [
+        62,
+        55
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_319.png",
+      "source": "BSDS500/data/images/test/257098.jpg",
+      "crop_xy": [
+        134,
+        290
+      ],
+      "crop_ncc": 0.9999978542327881,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_320.png",
+      "source": "BSDS500/data/images/test/258089.jpg",
+      "crop_xy": [
+        116,
+        125
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_321.png",
+      "source": "BSDS500/data/images/test/259060.jpg",
+      "crop_xy": [
+        93,
+        22
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.00040123456790123454
+    },
+    {
+      "training_file": "test_322.png",
+      "source": "BSDS500/data/images/test/267036.jpg",
+      "crop_xy": [
+        133,
+        277
+      ],
+      "crop_ncc": 0.9999991655349731,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_323.png",
+      "source": "BSDS500/data/images/test/268048.jpg",
+      "crop_xy": [
+        193,
+        87
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_324.png",
+      "source": "BSDS500/data/images/test/268074.jpg",
+      "crop_xy": [
+        46,
+        211
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_325.png",
+      "source": "BSDS500/data/images/test/277053.jpg",
+      "crop_xy": [
+        273,
+        132
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_326.png",
+      "source": "BSDS500/data/images/test/279005.jpg",
+      "crop_xy": [
+        125,
+        213
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_327.png",
+      "source": "BSDS500/data/images/test/28083.jpg",
+      "crop_xy": [
+        144,
+        10
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_328.png",
+      "source": "BSDS500/data/images/test/281017.jpg",
+      "crop_xy": [
+        91,
+        182
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_329.png",
+      "source": "BSDS500/data/images/test/285022.jpg",
+      "crop_xy": [
+        95,
+        0
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_330.png",
+      "source": "BSDS500/data/images/test/288024.jpg",
+      "crop_xy": [
+        294,
+        67
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_331.png",
+      "source": "BSDS500/data/images/test/289011.jpg",
+      "crop_xy": [
+        9,
+        228
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_332.png",
+      "source": "BSDS500/data/images/test/290035.jpg",
+      "crop_xy": [
+        278,
+        31
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_333.png",
+      "source": "BSDS500/data/images/test/29030.jpg",
+      "crop_xy": [
+        107,
+        32
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_334.png",
+      "source": "BSDS500/data/images/test/296028.jpg",
+      "crop_xy": [
+        170,
+        20
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0007098765432098765
+    },
+    {
+      "training_file": "test_335.png",
+      "source": "BSDS500/data/images/test/296058.jpg",
+      "crop_xy": [
+        72,
+        24
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_336.png",
+      "source": "BSDS500/data/images/test/302022.jpg",
+      "crop_xy": [
+        70,
+        35
+      ],
+      "crop_ncc": 0.9999990463256836,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_337.png",
+      "source": "BSDS500/data/images/test/306051.jpg",
+      "crop_xy": [
+        108,
+        166
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_338.png",
+      "source": "BSDS500/data/images/test/306052.jpg",
+      "crop_xy": [
+        295,
+        0
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_339.png",
+      "source": "BSDS500/data/images/test/3063.jpg",
+      "crop_xy": [
+        109,
+        97
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_340.png",
+      "source": "BSDS500/data/images/test/309040.jpg",
+      "crop_xy": [
+        291,
+        91
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_341.png",
+      "source": "BSDS500/data/images/test/317043.jpg",
+      "crop_xy": [
+        24,
+        91
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_342.png",
+      "source": "BSDS500/data/images/test/326025.jpg",
+      "crop_xy": [
+        210,
+        108
+      ],
+      "crop_ncc": 0.9999991655349731,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_343.png",
+      "source": "BSDS500/data/images/test/326085.jpg",
+      "crop_xy": [
+        110,
+        126
+      ],
+      "crop_ncc": 0.9999995231628418,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_344.png",
+      "source": "BSDS500/data/images/test/33044.jpg",
+      "crop_xy": [
+        96,
+        80
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_345.png",
+      "source": "BSDS500/data/images/test/334025.jpg",
+      "crop_xy": [
+        138,
+        55
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_346.png",
+      "source": "BSDS500/data/images/test/335088.jpg",
+      "crop_xy": [
+        48,
+        123
+      ],
+      "crop_ncc": 0.9999995827674866,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_347.png",
+      "source": "BSDS500/data/images/test/335094.jpg",
+      "crop_xy": [
+        65,
+        59
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_348.png",
+      "source": "BSDS500/data/images/test/344010.jpg",
+      "crop_xy": [
+        184,
+        85
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0002777777777777778
+    },
+    {
+      "training_file": "test_349.png",
+      "source": "BSDS500/data/images/test/346016.jpg",
+      "crop_xy": [
+        12,
+        118
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_350.png",
+      "source": "BSDS500/data/images/test/347031.jpg",
+      "crop_xy": [
+        78,
+        269
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_351.png",
+      "source": "BSDS500/data/images/test/35028.jpg",
+      "crop_xy": [
+        132,
+        38
+      ],
+      "crop_ncc": 0.9999988079071045,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_352.png",
+      "source": "BSDS500/data/images/test/35049.jpg",
+      "crop_xy": [
+        164,
+        48
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_353.png",
+      "source": "BSDS500/data/images/test/36046.jpg",
+      "crop_xy": [
+        242,
+        40
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_354.png",
+      "source": "BSDS500/data/images/test/365072.jpg",
+      "crop_xy": [
+        36,
+        20
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.00040123456790123454
+    },
+    {
+      "training_file": "test_355.png",
+      "source": "BSDS500/data/images/test/368037.jpg",
+      "crop_xy": [
+        30,
+        40
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_356.png",
+      "source": "BSDS500/data/images/test/372019.jpg",
+      "crop_xy": [
+        35,
+        171
+      ],
+      "crop_ncc": 0.9999985694885254,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_357.png",
+      "source": "BSDS500/data/images/test/376086.jpg",
+      "crop_xy": [
+        15,
+        104
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0006172839506172839
+    },
+    {
+      "training_file": "test_358.png",
+      "source": "BSDS500/data/images/test/384022.jpg",
+      "crop_xy": [
+        76,
+        23
+      ],
+      "crop_ncc": 0.9999966621398926,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_359.png",
+      "source": "BSDS500/data/images/test/384089.jpg",
+      "crop_xy": [
+        106,
+        213
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_360.png",
+      "source": "BSDS500/data/images/test/385022.jpg",
+      "crop_xy": [
+        242,
+        121
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_361.png",
+      "source": "BSDS500/data/images/test/388006.jpg",
+      "crop_xy": [
+        94,
+        107
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0008641975308641976
+    },
+    {
+      "training_file": "test_362.png",
+      "source": "BSDS500/data/images/test/388018.jpg",
+      "crop_xy": [
+        7,
+        122
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0002469135802469136
+    },
+    {
+      "training_file": "test_363.png",
+      "source": "BSDS500/data/images/test/388067.jpg",
+      "crop_xy": [
+        89,
+        2
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_364.png",
+      "source": "BSDS500/data/images/test/393035.jpg",
+      "crop_xy": [
+        180,
+        54
+      ],
+      "crop_ncc": 0.9999973177909851,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_365.png",
+      "source": "BSDS500/data/images/test/41006.jpg",
+      "crop_xy": [
+        259,
+        130
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_366.png",
+      "source": "BSDS500/data/images/test/41029.jpg",
+      "crop_xy": [
+        176,
+        78
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_367.png",
+      "source": "BSDS500/data/images/test/41085.jpg",
+      "crop_xy": [
+        143,
+        107
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_368.png",
+      "source": "BSDS500/data/images/test/41096.jpg",
+      "crop_xy": [
+        146,
+        125
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_369.png",
+      "source": "BSDS500/data/images/test/43033.jpg",
+      "crop_xy": [
+        162,
+        35
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_370.png",
+      "source": "BSDS500/data/images/test/43051.jpg",
+      "crop_xy": [
+        261,
+        1
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_371.png",
+      "source": "BSDS500/data/images/test/45000.jpg",
+      "crop_xy": [
+        145,
+        78
+      ],
+      "crop_ncc": 0.9999991655349731,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_372.png",
+      "source": "BSDS500/data/images/test/48017.jpg",
+      "crop_xy": [
+        78,
+        59
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 3.08641975308642e-05
+    },
+    {
+      "training_file": "test_373.png",
+      "source": "BSDS500/data/images/test/48025.jpg",
+      "crop_xy": [
+        188,
+        84
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_374.png",
+      "source": "BSDS500/data/images/test/49024.jpg",
+      "crop_xy": [
+        263,
+        116
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_375.png",
+      "source": "BSDS500/data/images/test/5096.jpg",
+      "crop_xy": [
+        233,
+        135
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_376.png",
+      "source": "BSDS500/data/images/test/51084.jpg",
+      "crop_xy": [
+        59,
+        114
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_377.png",
+      "source": "BSDS500/data/images/test/6046.jpg",
+      "crop_xy": [
+        109,
+        173
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_378.png",
+      "source": "BSDS500/data/images/test/61034.jpg",
+      "crop_xy": [
+        65,
+        212
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_379.png",
+      "source": "BSDS500/data/images/test/64061.jpg",
+      "crop_xy": [
+        52,
+        77
+      ],
+      "crop_ncc": 0.9999994039535522,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_380.png",
+      "source": "BSDS500/data/images/test/65084.jpg",
+      "crop_xy": [
+        28,
+        131
+      ],
+      "crop_ncc": 0.9999993443489075,
+      "crop_mse": 0.0011111111111111111
+    },
+    {
+      "training_file": "test_381.png",
+      "source": "BSDS500/data/images/test/69000.jpg",
+      "crop_xy": [
+        262,
+        41
+      ],
+      "crop_ncc": 0.9999992847442627,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_382.png",
+      "source": "BSDS500/data/images/test/69007.jpg",
+      "crop_xy": [
+        38,
+        140
+      ],
+      "crop_ncc": 0.9999997615814209,
+      "crop_mse": 0.0001234567901234568
+    },
+    {
+      "training_file": "test_383.png",
+      "source": "BSDS500/data/images/test/69022.jpg",
+      "crop_xy": [
+        88,
+        116
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_384.png",
+      "source": "BSDS500/data/images/test/70011.jpg",
+      "crop_xy": [
+        169,
+        57
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_385.png",
+      "source": "BSDS500/data/images/test/70090.jpg",
+      "crop_xy": [
+        56,
+        69
+      ],
+      "crop_ncc": 0.9999998807907104,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_386.png",
+      "source": "BSDS500/data/images/test/71076.jpg",
+      "crop_xy": [
+        78,
+        102
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 6.17283950617284e-05
+    },
+    {
+      "training_file": "test_387.png",
+      "source": "BSDS500/data/images/test/71099.jpg",
+      "crop_xy": [
+        203,
+        92
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.00015432098765432098
+    },
+    {
+      "training_file": "test_388.png",
+      "source": "BSDS500/data/images/test/77062.jpg",
+      "crop_xy": [
+        162,
+        102
+      ],
+      "crop_ncc": 0.999999463558197,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_389.png",
+      "source": "BSDS500/data/images/test/78098.jpg",
+      "crop_xy": [
+        260,
+        66
+      ],
+      "crop_ncc": 0.9999996423721313,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_390.png",
+      "source": "BSDS500/data/images/test/79073.jpg",
+      "crop_xy": [
+        91,
+        92
+      ],
+      "crop_ncc": 0.9999997019767761,
+      "crop_mse": 0.00040123456790123454
+    },
+    {
+      "training_file": "test_391.png",
+      "source": "BSDS500/data/images/test/80085.jpg",
+      "crop_xy": [
+        281,
+        58
+      ],
+      "crop_ncc": 0.9999968409538269,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_392.png",
+      "source": "BSDS500/data/images/test/80090.jpg",
+      "crop_xy": [
+        109,
+        173
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_393.png",
+      "source": "BSDS500/data/images/test/8068.jpg",
+      "crop_xy": [
+        49,
+        117
+      ],
+      "crop_ncc": 0.9999998211860657,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_394.png",
+      "source": "BSDS500/data/images/test/81066.jpg",
+      "crop_xy": [
+        114,
+        125
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_395.png",
+      "source": "BSDS500/data/images/test/81090.jpg",
+      "crop_xy": [
+        29,
+        234
+      ],
+      "crop_ncc": 0.9999999403953552,
+      "crop_mse": 9.259259259259259e-05
+    },
+    {
+      "training_file": "test_396.png",
+      "source": "BSDS500/data/images/test/81095.jpg",
+      "crop_xy": [
+        142,
+        84
+      ],
+      "crop_ncc": 0.9999991059303284,
+      "crop_mse": 0.00018518518518518518
+    },
+    {
+      "training_file": "test_397.png",
+      "source": "BSDS500/data/images/test/87015.jpg",
+      "crop_xy": [
+        131,
+        103
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_398.png",
+      "source": "BSDS500/data/images/test/92014.jpg",
+      "crop_xy": [
+        87,
+        9
+      ],
+      "crop_ncc": 0.9999988675117493,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_399.png",
+      "source": "BSDS500/data/images/test/94095.jpg",
+      "crop_xy": [
+        115,
+        58
+      ],
+      "crop_ncc": 0.9999986886978149,
+      "crop_mse": 0.0
+    },
+    {
+      "training_file": "test_400.png",
+      "source": "BSDS500/data/images/test/97010.jpg",
+      "crop_xy": [
+        192,
+        104
+      ],
+      "crop_ncc": 1.0,
+      "crop_mse": 0.0001234567901234568
+    }
+  ]
+}
