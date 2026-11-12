@@ -193,3 +193,12 @@ The combined original/research/lineage CPU suite passed 174 tests, with 17
 optional archival integrations skipped, in 3.75seconds. Actual frozen-control
 and precision-depth export evidence is recorded separately; no final joint
 held-out quality or public release acceptance follows from these CPU checks.
+
+## Final distribution metadata
+
+Both wheels were rebuilt after the concurrent upstream documentation update.
+Installed root/research README metadata matches current source exactly, both
+numerical hashes remain frozen and all four installed CLI help checks pass.
+The environment reused PyTorch 2.7.1; no inference or new benchmark ran. The
+[path-free metadata record](final-wheel-verification.json) pins both README
+hashes and software versions.

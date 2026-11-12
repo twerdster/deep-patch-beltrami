@@ -1,31 +1,38 @@
 # Deep Patch-Beltrami
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![Platforms: Linux and iOS 18+](https://img.shields.io/badge/platform-Linux%20%7C%20iOS%2018%2B-555555)](ios/README.md)
+[![Python: Linux; app: iOS 18+](https://img.shields.io/badge/Python-Linux%20%7C%20app%3A%20iOS%2018%2B-555555)](ios/README.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ![Deep Patch-Beltrami running on an iPhone 12](docs/images/ios-demo.png)
 
-**Unrolled geometric image denoising from the original trained models.**
+This package reads grayscale or RGB images and filters them with the original
+Deep Patch-Beltrami checkpoints using PyTorch. RGB is processed as three
+independent grayscale channels. It also reconstructs the 544
+archived noisy BSD68 inputs and checks the eight mean PSNR values in Aaron
+Wetzler's 2017 thesis, *Topics in Computational Geometric Vision*, Chapter 4
+§4.5. A separate SwiftUI app runs converted models through Core ML on iOS.
+The software provides inference and experiment reproduction; it does not
+repeat the historical training.
 
-Deep Patch-Beltrami turns the differential operators of patch-space Beltrami
-flow into learned convolution kernels and unrolls the update into a five-stage
-network. This repository provides PyTorch inference with the original learned
-parameters and a complete reproduction of the BSD68 results in Aaron Wetzler's
-2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4 §4.5.
+![Python Deep Patch-Beltrami output on a procedural image](docs/images/demo.png)
 
-![Deep Patch-Beltrami denoising of a synthetic image](docs/images/demo.png)
+The second figure is Python demo output; the first contains the phone app capture.
 
 
 ## iPhone app
 
-Run the original five-stage denoiser locally with **Core ML**, full-resolution
-photo import and a draggable before/after view. On the tested iPhone 12,
-256×256 grayscale takes **536 ms** (median of three warm filter runs).
-The fast mixed mode uses
-validated accelerator paths; accurate FP32 remains selectable. All eight
+The app runs the five-stage denoiser through **Core ML**, with full-resolution
+photo import and a draggable input/output view. The
+[iPhone 12 record](ios/benchmarks/iphone12.json) reports **536 ms** for
+256×256 grayscale at sigma 25 in mixed/Automatic mode (median of three warm
+filter runs, Release build, iOS 18.0.1). That case actually ran
+`DeepBeltrami_sigma25_mixed16_masked256`, without FP32 fallback. Model loading,
+photo import and display are excluded; this is
+not a sustained-throughput estimate. Accurate FP32 remains selectable. All eight
 noise-specific checkpoints are included in the model download. Grayscale and
-RGB images can have odd, non-square or larger-than-tile dimensions.
+RGB images can have odd, non-square or larger-than-tile dimensions; see the
+[recorded geometry cases](ios/benchmarks/iphone12.json).
 
 ```bash
 # macOS, Xcode 16.1+; download, verify and compile all eight model sets.
@@ -44,11 +51,18 @@ TEAM_ID=YOUR_TEAM_ID ios/scripts/build_ios.sh
 [Installation, precision modes and measured performance](ios/README.md) ·
 [Numerical and hardware evidence](ios/VALIDATION.md)
 
-The demo above was processed on a physical iPhone 12. Instruments verifies
-actual GPU and Neural Engine execution for the released fast 256-pixel model.
-Larger images use exact context halos, and RGB processes three channels;
-large-photo filtering takes longer. Accurate Core ML also reproduces all
-**544 BSD68 cases / eight printed thesis means** in the native Mac check.
+The first figure shows a procedural sample processed on a physical iPhone 12; its
+PSNR uses a known clean reference. The
+[runtime trace summary](ios/benchmarks/hybrid-runtime.json) records GPU and
+app-correlated ANE evaluation calls overlapping Neural Engine activity for the
+sigma-25 mixed masked256 model in Automatic mode. The trace does not attribute
+every layer or establish placement for other models/settings. Larger images
+use context halos; RGB images run three channel passes.
+
+The [native Mac record](ios/benchmarks/bsd68-coreml-mac.json) checked all 544
+BSD68 inputs using accurate FP32/Core ML with CPU+GPU on arm64 macOS 15.1.1.
+Its eight mean PSNR values round to the thesis values. This is separate from
+the phone's procedural checks and does not transfer that result to mixed mode.
 
 ## Quick start
 
@@ -70,8 +84,9 @@ deep-patch-beltrami denoise noisy.png denoised.png --sigma 25
 ```
 
 The demo saves numerical arrays, PNG previews and PSNR under `results/demo/`.
-It generates its own clean image; no benchmark photograph is bundled.
-At sigma 25, its verified CPU result improves PSNR from **20.15 to 39.32 dB**.
+It generates a 192×224 clean image and adds Gaussian noise with seed 2017;
+the displayed score describes that example, rather than a BSD68 mean. No
+benchmark photograph is bundled.
 
 ## Reproduce the thesis results
 
@@ -85,7 +100,10 @@ original noisy inputs** exactly, verifies their hashes, runs inference and
 checks all eight means in **thesis Table 4.6** at the printed precision.
 The model/noise downloads total about **400 MiB**, plus the clean images.
 
-| Noise σ | Thesis PSNR (dB) | Reproduced PSNR (dB) |
+The values below come from the saved PyTorch/CUDA run. Other backends can
+differ beyond the printed thesis precision and must run their own checks.
+
+| Noise σ | Thesis PSNR (dB) | PyTorch/CUDA PSNR (dB) |
 | ---: | ---: | ---: |
 | 5 | 37.70 | 37.695809 |
 | 10 | 33.52 | 33.522676 |
@@ -127,6 +145,14 @@ directly, including shared weights within each stage. MATLAB and Caffe are
 not required. The release provides pretrained inference; it does not repeat
 the original training.
 
+Within each stage, learned derivative filters feed metric terms, inverse-metric
+weighting, fluxes, learned divergence filters and a flow update. The
+[PyTorch graph executor](src/deep_patch_beltrami/inference.py) implements the
+saved graphs' `Padding`, `Convolution`, `Power` and `Eltwise` layers. It is
+specific to these deployment graphs, rather than a general Caffe runtime.
+
+Schematic of the inference sequence; it does not depict processor placement or timing:
+
 ```mermaid
 flowchart LR
     N[Noisy image] --> O[Historical intensity offset]
@@ -147,9 +173,10 @@ uses W,H spatial axes; public image commands handle the transpose automatically.
 
 The model archive contains inference-only Caffe-format files. Non-inference
 metadata was removed, and every learned tensor was verified byte-for-byte
-against the original checkpoint. Numerical differences between PyTorch and
-Caffe are small; matching printed scores does not imply identical output
-pixels. See [reproducibility details](docs/REPRODUCIBILITY.md).
+against the original checkpoint. The saved BSD68 record has a maximum absolute
+per-case PSNR difference of 0.0000373 dB from archived Caffe outputs; matching
+printed scores does not imply identical output pixels.
+See [reproducibility details](docs/REPRODUCIBILITY.md).
 
 ## Learned-operator study
 
@@ -176,7 +203,22 @@ python -m pytest
 Unit tests use synthetic arrays and need no model downloads. The full BSD68
 command separately verifies the released tensors and original experiment
 inputs. Models and noise residuals are attached to [release
-v1.0.0](https://github.com/twerdster/deep-patch-beltrami/releases/tag/v1.0.0).
+v1.0.0](https://github.com/twerdster/deep-patch-beltrami/releases/tag/v1.0.0)
+(the original model/noise assets are unchanged in package 1.2.0).
+The recorded eight synthetic tests cover parsing, selected graph operators,
+axis/offset conventions, clipping and download integrity. They do not
+establish general graph correctness or numerical fidelity on every backend.
+
+## Limitations
+
+RGB processing applies the grayscale model independently to each channel.
+Historical grayscale offset calibration was not recovered. Phone timings
+depend on geometry, precision and tile count; small mixed-mode requests can
+fall back to FP32. A masked512 parity failure on A14 excludes that variant
+from ANE-permitted modes, as documented in the [iOS guide](ios/README.md).
+The historical BSD68 reproduction does not validate the unavailable portrait
+dataset or new training runs. The separate operator study has its own frozen
+held-out comparison, described above.
 
 ## Citation
 
