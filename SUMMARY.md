@@ -135,9 +135,18 @@ Tests use synthetic arrays; the full numerical benchmark is an explicit command.
   improved raw-float PSNR from 20.18 to 41.21 dB in 2,056 ms of filter work.
   Its app-view capture and metrics are published beside the top README figure.
 
-## README presentation (2026-11-12)
+## Maintainer documentation — 2026-11-12
 
-The README adds factual language, platform and existing-license badges while
-preserving the original demonstration figures and all runtime, reproduction,
-validation and attribution details. Keep badge claims aligned with these docs;
-a presentation-only update does not establish a new build or runtime result.
+The README describes image input/output, independent grayscale passes for
+RGB, the saved five-stage graph and the supported executor layer types.
+The saved PyTorch/CUDA BSD68 result, native Mac FP32 CPU+GPU acceptance,
+phone procedural checks and app-correlated runtime traces are separate claims.
+Phone latency identifies the actual masked256 mixed16 model and excludes
+loading/import/display. Figures distinguish phone and Python output, and the
+pipeline is labeled schematic. The masked512/ANE limit and unrecovered
+historical offset calibration remain explicit.
+
+Actual Claude reviews of draft and substantial revision completed. Feedback
+was checked against code and saved JSON; no learned tensors, release assets,
+source algorithms or metrics changed. This pass verifies Markdown/resources
+and wheel README metadata, without rerunning benchmarks or launching training.

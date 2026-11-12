@@ -108,9 +108,18 @@ RGB and geometry checks, then update phone tile counts/timings in the docs.
 Unsigned CI uses `ios/scripts/build_ios.sh --compile-only`; this skips model
 preflight and cannot produce an installed usable app without prepared models.
 
-## README presentation (2026-11-12)
+## Documentation maintenance
 
-The README adds factual language, platform and existing-license badges while
-preserving the original demonstration figures and all runtime, reproduction,
-validation and attribution details. Keep badge claims aligned with these docs;
-a presentation-only update does not establish a new build or runtime result.
+Read SUMMARY.md, then this file, README, linked setup/validation records and
+relevant source before revising claims. Write concrete inputs, operations and
+outputs; keep current implementation, historical aims and recorded evidence
+separate. Label synthetic/untrained figures and schematics. Keep metric units,
+implementation, hardware, sample count and measurement scope with the claim.
+Source inspection or file export does not establish numerical execution or
+training. Preserve original attribution, licenses and validation limitations.
+
+Rebuild distributions when README metadata or bundled guides change; compare
+installed documentation with source. For substantial prose revisions, request
+an actual Claude review if directed, verify its factual suggestions and review
+the revision again. Never claim a review or runtime check that did not complete.
+Review and synchronize both context files before every commit.
