@@ -42,7 +42,8 @@ context limitation. The fixed training queue is complete and joint selection is
 frozen. All three selected exports and the four-model benchmark completed.
 The actual safe-weight replay and exact comparator now pass all 272 records
 and six paired summaries. Existing iOS models remain unchanged. Update
-SUMMARY/SKILL with publication status; publication/CI checks remain pending.
+SUMMARY/SKILL when publication state changes. Source/tag CI and fresh release
+downloads are now verified; no additional training or scoring is planned.
 
 The initial preparation receipt `research/docs/rollout-packaging-verification.json`
 records 200 combined CPU passes/17 optional skips, actual-author-weight
@@ -55,8 +56,8 @@ acceptance tool was added.
 All three actual selected exports and CPU crop/adapter identity checks pass;
 receipts are `research/docs/rollout-{5,32,64}-{export,crop}-verification.json`.
 The four-model reused-benchmark evaluation passed complete/finite guards.
-Public replay is complete; release acceptance/CI remain pending. Prepared
-versions are root 1.3.0/research 0.2.0; publication is pending.
+Public replay and release acceptance are complete. Released versions are
+root 1.3.0/research 0.2.0; preserve the v1.3.0 source and asset bytes.
 
 The fixed reused-benchmark means are 28.915269/28.922632/28.920873 dB for
 5/32/64, versus 28.908215 for the unchanged released reaction. The 32−5
@@ -105,6 +106,14 @@ tools pass outside the checkout with `PYTHONPATH` unset and CUDA hidden.
 `research/docs/rollout-final-wheel-verification.json` records packaging only;
 the separate actual replay receipt establishes numerical reproduction. No
 numerical rerun is needed for later context-only publication status updates.
+
+Release v1.3.0 is public at exact source commit
+`d42538bb862105b02617c774da11e74fa4e7252d`. Source CI `43471635006` and tag
+CI `43472077285` passed all six jobs. Fresh downloads of all nine assets match
+their recorded hashes and sizes; anonymous manifest/tagged README checks pass.
+Later context-only commits do not move this tag or alter its scientific files.
+The shipped weights already passed CPU identity and exact numerical replay;
+do not repeat inference merely to verify downloads or update accounting.
 
 After joint terminal selection is frozen, run
 `research/tools/verify_rollout_export_cpu.py` with independently pinned raw

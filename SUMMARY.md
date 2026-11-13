@@ -3,9 +3,8 @@
 `deep-patch-beltrami` is a standalone Python/PyTorch inference and reproduction
 package for the original Deep Patch-Beltrami models from Aaron Wetzler's
 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4 §4.5.
-The preferred citation is the thesis. Prepared package version: 1.3.0;
-scientific evaluation and safe-weight replay are complete. Publication/CI
-checks remain pending.
+The preferred citation is the thesis. Package version: 1.3.0; scientific
+evaluation, safe-weight replay, publication and release checks are complete.
 
 ## 32/64-stage study
 
@@ -14,8 +13,8 @@ namespace for the five-stage protocol control and 32-/64-stage operators.
 Its source is byte-identical to the frozen training implementation, SHA256
 `dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad`.
 `research/docs/rollout-source-hashes.json` pins all three numerical namespaces
-without changing v1.2.0 source/result manifests. Planned repository release
-v1.3.0 contains research package 0.2.0; publication is pending.
+without changing v1.2.0 source/result manifests. Repository release v1.3.0
+contains research package 0.2.0 and is public.
 
 All three bounded training arms completed cleanly. Terminal/selected updates
 are 16,286/12,750 (five stages), 2,959/2,959 (32) and 1,803/1,803 (64).
@@ -31,7 +30,7 @@ completed for all four models and 68 images each. A separate safe-weight
 replay and exact comparator passed all 272 input/label hashes, shapes, MSE,
 PSNR and clipping records and all six paired summaries. The receipt is
 `research/docs/rollout-released-weight-reproduction.json`; prediction pixel
-arrays and timing identity were not checked. Publication/CI remain pending.
+arrays and timing identity were not checked. Source and tag CI both passed.
 
 The reused BSD68 benchmark at sigma 25 scores the new five-stage control
 28.915269 dB, 32 stages 28.922632 and 64 stages 28.920873; released reaction
@@ -89,7 +88,16 @@ Installed source files, numerical hashes and README bytes matched; six console
 commands, the root module command and five support tools passed help checks
 outside the checkout with `PYTHONPATH` unset and CUDA hidden. Receipt:
 `research/docs/rollout-final-wheel-verification.json`. Packaging verification
-is separate from the completed numerical replay. Publication/CI remain pending.
+is separate from the completed numerical replay.
+
+Release [v1.3.0](https://github.com/twerdster/deep-patch-beltrami/releases/tag/v1.3.0)
+targets source commit `d42538bb862105b02617c774da11e74fa4e7252d`.
+Source CI `43471635006` and tag CI `43472077285` succeeded on all six jobs.
+All nine release assets were freshly downloaded and matched their recorded
+SHA256 and size, including the three author weights, manifest, reference,
+report, replay receipt, MIT license and checksums. The public manifest and
+tagged README also passed anonymous HTTP/hash checks. No extra inference was
+needed: downloaded bytes match the already verified exports and replay inputs.
 
 ## v1.2.0 learned-operator study
 
