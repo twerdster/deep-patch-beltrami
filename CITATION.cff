@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the 2017 thesis when using Deep Patch-Beltrami."
 title: "Deep Patch-Beltrami"
 type: software
-version: 1.2.0
-date-released: 2026-11-12
+version: 1.3.0
+date-released: 2026-11-13
 authors:
   - family-names: Wetzler
     given-names: Aaron

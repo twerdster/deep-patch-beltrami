@@ -5,7 +5,62 @@ Beltrami flow. It preserves the learned derivatives, local metric, flux,
 divergence and explicit update described in the thesis. The original inference
 package, released checkpoints and iOS app remain independently reproducible.
 
-## Held-out results at σ = 25
+The [32/64-stage study](docs/LONG_ROLLOUTS.md), **Deep Beltrami: Geometric
+Diffusion as a Learnt Operator**, extends the discrete operator with untied,
+identity-initialized refinements, a new five-stage protocol control and
+progressive training. All three arms completed training; validation selected
+and froze every checkpoint before new scoring. The historical v1.2.0 results
+below remain unchanged. New weights use `beltrami-rollout-denoise`.
+
+## 32/64-stage results on reused BSD68 at σ = 25
+
+The 32-stage operator scores **28.922632 dB**, **+0.007363 dB** over the new
+five-stage control (52/68 improved images; conditional paired-image 95%
+interval [+0.003968, +0.011675] dB). It takes about **6.4×** the control's
+forward time. The 64-stage operator is slower and slightly worse than 32
+stages: −0.001759 dB, with 58/68 worse images. The new control already gains
++0.007054 dB over released reaction; the total 32-stage gain of +0.014417 dB
+cannot be attributed entirely to the additional stages.
+
+| Frozen model | Parameters | Selected update | PSNR (dB) | Median forward (ms) |
+| --- | ---: | ---: | ---: | ---: |
+| New five-stage control | 3,195,605 | 12,750 | 28.915269 | 87.071 |
+| 32 stages | 20,451,872 | 2,959 | 28.922632 | 557.607 |
+| 64 stages | 40,903,744 | 1,803 | 28.920873 | 1,110.835 |
+| Released v1.2.0 reaction | 3,195,605 | 52,000 in prior study | 28.908215 | 59.333 |
+
+Timing is synchronized whole-image forward on a shared RTX 4090 with PyTorch
+2.7.1, two warmups and three repeats; transfers, clipping and scoring are
+excluded. BSD68 was already observed in the previous round, so these are
+**reused-benchmark results**, not newly untouched held-out evidence. The six
+comparisons were fixed before scoring; no score triggered tuning or extensions.
+Intervals condition on one training seed, fixed noise and selected checkpoints.
+
+![Independent validation32 selection curves](docs/validation-rollouts.png)
+
+The plot shows validation selection, separate from the benchmark table. Equal
+1.25-hour caps yielded 16,286/2,959/1,803 terminal updates, with 16,286/2,209/1,002
+at full depth and 63/9/4 eligible validation opportunities. Depth, curriculum,
+identity refinements and auxiliary loss form a combined recipe. The 180px crops
+lack full nominal 32/64-stage context; finite execution and positive metrics
+are not convergence guarantees. These small gains do not establish modern
+state of the art or new mobile performance. The original iOS models are unchanged.
+
+[Protocol, all six comparisons and weight downloads](docs/LONG_ROLLOUTS.md) ·
+[Full reproduction instructions](docs/ROLLOUT_REPRODUCTION.md) ·
+[Machine-readable model pins](docs/results/rollout-sigma25/models.json)
+
+All three tensor exports pass exact CPU tensor/raw/safe/adapter checks. A
+separate public-weight replay matches all **272** input/label hashes, shapes,
+MSE, PSNR and clipping records and all six paired summaries exactly; see the
+[reproduction receipt](docs/rollout-released-weight-reproduction.json). It does
+not establish prediction-array or timing identity. Aggregate charged process
+wall time across both research rounds was **10.794593 hours of the original
+12-hour ceiling**, including startup, historical failures and both final
+evaluations/replays. It is not GPU busy time. This study accompanies repository
+version 1.3.0 and research package 0.2.0.
+
+## v1.2.0 held-out results at σ = 25
 
 A small fidelity reaction improves the five-stage operator by **+0.010271 dB**
 over its matched continued-training control on the 68 archived BSD68 inputs
@@ -60,7 +115,7 @@ python -m pip install -e . -e ./research
 cd research
 ```
 
-A separate research wheel contains the three research namespaces; the parent
+A separate research wheel contains the four research namespaces; the parent
 inference package supplies the original Caffe tensor reader. For development,
 install `'.[test]'` and `'./research[test,datasets,plots]'` from the repository
 root. The optional `datasets` dependencies reconstruct validation images;
@@ -201,7 +256,9 @@ the runtime duplicate hash check cannot establish crop/source independence.
 
 Configs record sigma 25, offset +25, Adam 1e-5, fresh noise and rotation/flip
 augmentation, batch 2, gradient clipping at 1 and 60,000-step ceilings.
-Most use 160×160 crops; the separate 100×100 control isolates patch-size effects.
+Most use 160×160 crops; the separate 100×100 arm provides a patch-size comparison.
+Unequal updates and checkpoint-selection opportunities prevent isolating the
+effect of patch size.
 An eight-stage operator has a 145-pixel receptive field, versus 91 for five
 stages, so crop size affects boundary exposure.
 

@@ -35,8 +35,15 @@ jobs:
       - run: python research/tools/test_summarize_lineage.py
       - run: python research/tools/build_public_report.py --help
       - run: python research/tools/evaluate_released.py --help
+      - run: python research/tools/build_rollout_report.py --help
+      - run: python research/tools/evaluate_rollout_released.py --help
+      - run: python research/tools/export_rollout.py --help
+      - run: python research/tools/report_rollout_validation.py --help
+      - run: python research/tools/verify_rollout_export_cpu.py --help
       - run: beltrami-train --help
       - run: beltrami-precision-train --help
+      - run: beltrami-rollout-train --help
+      - run: beltrami-rollout-denoise --help
       - run: beltrami-operator-denoise --help
 
   ios-build:

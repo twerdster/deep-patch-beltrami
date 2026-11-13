@@ -3,9 +3,95 @@
 `deep-patch-beltrami` is a standalone Python/PyTorch inference and reproduction
 package for the original Deep Patch-Beltrami models from Aaron Wetzler's
 2017 PhD thesis, *Topics in Computational Geometric Vision*, Chapter 4 §4.5.
-The preferred citation is the thesis. Package version: 1.2.0.
+The preferred citation is the thesis. Prepared package version: 1.3.0;
+scientific evaluation and safe-weight replay are complete. Publication/CI
+checks remain pending.
 
-## Learned-operator study
+## 32/64-stage study
+
+The `research/long-rollouts` branch adds a separate `beltrami_rollout`
+namespace for the five-stage protocol control and 32-/64-stage operators.
+Its source is byte-identical to the frozen training implementation, SHA256
+`dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad`.
+`research/docs/rollout-source-hashes.json` pins all three numerical namespaces
+without changing v1.2.0 source/result manifests. Planned repository release
+v1.3.0 contains research package 0.2.0; publication is pending.
+
+All three bounded training arms completed cleanly. Terminal/selected updates
+are 16,286/12,750 (five stages), 2,959/2,959 (32) and 1,803/1,803 (64).
+The deeper arms performed 2,209 and 1,002 full-target-depth updates. Independent
+CPU review verified all validation observations, exact source/config/data and
+parent identities, and finite BEST/LAST model and optimizer state. Joint
+selection was frozen before new scoring, SHA256
+`f04055857467714db43f4776ade676310945c2478cd4303b9c9c498a3f3f0733`.
+All three tensor-only exports preserve every tensor byte. Independent CPU
+checks match raw/safe/adapter outputs exactly on the fixed hash-verified
+validation crop, singleton geometries and derived RGB. Benchmark evaluation
+completed for all four models and 68 images each. A separate safe-weight
+replay and exact comparator passed all 272 input/label hashes, shapes, MSE,
+PSNR and clipping records and all six paired summaries. The receipt is
+`research/docs/rollout-released-weight-reproduction.json`; prediction pixel
+arrays and timing identity were not checked. Publication/CI remain pending.
+
+The reused BSD68 benchmark at sigma 25 scores the new five-stage control
+28.915269 dB, 32 stages 28.922632 and 64 stages 28.920873; released reaction
+remains 28.908215. The 32−5 effect is +0.007363 dB, 52/68 wins, conditional
+95% image-bootstrap interval [0.003968, 0.011675]. The 64-stage model loses
+to 32 stages on 58/68 images (−0.001759 dB) at about twice the runtime.
+Median whole-image forwards are 87.071/557.607/1110.835/59.333 ms respectively
+on the shared RTX 4090, PyTorch 2.7.1, two warmups/three synchronized repeats,
+excluding transfers/clipping/scoring. The new 32-stage model costs about 6.4×
+the new control for a small conditional mean gain. The new control already
+gains +0.007054 dB over released reaction, so the 32-stage total +0.014417 dB
+also includes continued-training/arithmetic/metric/optimizer effects. No SOTA
+claim follows.
+
+The new model-manifest SHA256 is
+`93813fe42da42a749bcbf10e6c4e2cc1fef7dbea119171401f6553e83d236bba`.
+Stable numerical reference SHA256:
+`fb4e8fb8491373e117f038ea4578c6e39d7f09dbad88e48f721c36d080a02a54`.
+The final bundle is `research/docs/results/rollout-sigma25/`. Its manifest,
+stable reference and three scientific CSV files are byte-identical to the
+replayed draft. Replay result SHA256:
+`d5799050a548241eecbaff59827d9bce38d6f5f88567b883f145ea95ff9e30ea`.
+Final idle ledger SHA256:
+`ece58fba22c88a8f165f6b5bd5e9a52382e38f20fcbac05f73ff974e92229afb`.
+Aggregate charge across both rounds is 38,860.53637930413 seconds =
+10.7945934387 hours / original 12-hour cap, 29 leases including three historical
+failures. Private final evaluation used 390.749679 seconds and public replay
+395.106899 seconds. Startup/failures/waits/evaluations are included; this is
+not GPU busy time. No training/evaluation lease remains running and no more
+GPU work is planned for this study.
+
+Read `research/docs/LONG_ROLLOUTS.md` for the full protocol and limitations.
+The recipe combines positive trainable float64 metrics/flux with float32 dense
+operations, identity refinements, a depth curriculum, AdamW, warmup/cosine,
+annealed intermediate MSE and full-backpropagation checkpointing. This compares
+complete protocols, not depth alone. The 180px crop context, one seed/fixed
+noise, shared selected warmstart, unequal updates/selection opportunities and
+already-observed BSD68 benchmark limit interpretation. Positive metrics and
+finite execution do not prove convergence. New models are not deployed in iOS.
+
+Inference uses strict tensor-only safe readers and `beltrami-rollout-denoise`.
+RGB uses +25 per independent grayscale channel; historical CLI behavior is
+unchanged. `research/docs/ROLLOUT_REPRODUCTION.md` documents all four fixed models,
+six contrasts, the new bounded public replay and stable draft/final scientific
+bytes. Actual export/crop receipts use the pattern
+`research/docs/rollout-{5,32,64}-{export,crop}-verification.json`; they establish
+identity, not quality. The completed validation review and plot are
+`research/docs/validation-rollouts.*`.
+
+Final Linux checks passed 365 CPU tests with 17 optional skips, including the
+pinned author-weight 64-stage integration, plus five legacy helper checks.
+Root 1.3.0/research 0.2.0 wheels were rebuilt after the final README edits and
+installed noneditably into a separate environment, reusing PyTorch 2.7.1.
+Installed source files, numerical hashes and README bytes matched; six console
+commands, the root module command and five support tools passed help checks
+outside the checkout with `PYTHONPATH` unset and CUDA hidden. Receipt:
+`research/docs/rollout-final-wheel-verification.json`. Packaging verification
+is separate from the completed numerical replay. Publication/CI remain pending.
+
+## v1.2.0 learned-operator study
 
 The optional `research/` package evaluates width, depth, metric arithmetic and
 an explicit fidelity reaction while retaining the learned differential operator.
@@ -51,7 +137,7 @@ Install from root with `python -m pip install -e '.[test]' -e './research[test]'
 The combined CPU suite passes 174 tests with 17 optional archival checks skipped;
 source guards, artifact integrations and installed-wheel checks are recorded in
 `research/docs/VERIFICATION.md`. Wheel checks explicitly reused existing Torch.
-The optional research package is version 0.1.0. Numerical namespaces remain
+The published v1.2.0 research package was version 0.1.0. Numerical namespaces remain
 byte-frozen: `beltrami_operator` uses legacy float32; `beltrami_precision` uses
 float64 metric/flux with float32 parameters/dense operations, without epsilon
 or determinant clamp. Precision depth requires its matching precision control.

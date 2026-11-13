@@ -1,0 +1,459 @@
+{
+  "schema": "deep-beltrami-rollout-export-check-v1",
+  "verified_utc": "2026-11-13T16:55:19.337763+00:00",
+  "export_sha256": "88a6801b0dc157e51f8929cb6e018e3878e7407849a15247a90f5c0bf4547f52",
+  "export_bytes": 81887039,
+  "tensor_count": 256,
+  "all_tensor_bytes_preserved": true,
+  "raw_model_and_optimizer_finite": true,
+  "safe_weights_only_reader": true,
+  "cpu_geometry_checks": [
+    {
+      "native_shape": [
+        1,
+        1,
+        9,
+        13
+      ],
+      "finite": true,
+      "prediction_bytes_exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "native_shape": [
+        1,
+        1,
+        1,
+        11
+      ],
+      "finite": true,
+      "prediction_bytes_exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "native_shape": [
+        1,
+        1,
+        13,
+        1
+      ],
+      "finite": true,
+      "prediction_bytes_exact": true,
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "stage_activity": [
+    {
+      "stage": 1,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 2.0439224171190107,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0,
+      "fixture_update_rms_pixels": 25.13480905929943,
+      "fixture_update_max_abs_pixels": 80.2928695678711,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 2,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 1.3315676364810722,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0034947730600833893,
+      "fixture_update_rms_pixels": 13.902015022108118,
+      "fixture_update_max_abs_pixels": 47.22791290283203,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 3,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 0.7401615265186464,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.013617182150483131,
+      "fixture_update_rms_pixels": 7.955693653170679,
+      "fixture_update_max_abs_pixels": 23.74883270263672,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 4,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 0.37567250556746645,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.030029084533452988,
+      "fixture_update_rms_pixels": 5.536135237325546,
+      "fixture_update_max_abs_pixels": 14.704605102539062,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 5,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 0.19318038538264698,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.021251767873764038,
+      "fixture_update_rms_pixels": 3.3761491364210845,
+      "fixture_update_max_abs_pixels": 8.330345153808594,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 6,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.0356353671073161,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0042103794403374195,
+      "fixture_update_rms_pixels": 0.16064526517067532,
+      "fixture_update_max_abs_pixels": 0.4872283935546875,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 7,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.03265385522465604,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.004545385949313641,
+      "fixture_update_rms_pixels": 0.13841376746446285,
+      "fixture_update_max_abs_pixels": 0.389404296875,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 8,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.029655949145971274,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.004807213321328163,
+      "fixture_update_rms_pixels": 0.1268810535073373,
+      "fixture_update_max_abs_pixels": 0.32904052734375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 9,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.029424333418592474,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.00511126546189189,
+      "fixture_update_rms_pixels": 0.12905226055954203,
+      "fixture_update_max_abs_pixels": 0.33933258056640625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 10,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.026956636637953602,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.005503969732671976,
+      "fixture_update_rms_pixels": 0.12591833599551736,
+      "fixture_update_max_abs_pixels": 0.3051910400390625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 11,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.02836317343240632,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0058650546707212925,
+      "fixture_update_rms_pixels": 0.12445374616890406,
+      "fixture_update_max_abs_pixels": 0.28789520263671875,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 12,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.02696954556468394,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.006272671744227409,
+      "fixture_update_rms_pixels": 0.09385831162499421,
+      "fixture_update_max_abs_pixels": 0.2418365478515625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 13,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.02628127698275696,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.006664141546934843,
+      "fixture_update_rms_pixels": 0.09460902544744865,
+      "fixture_update_max_abs_pixels": 0.2453460693359375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 14,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.027509341083768603,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.007353111170232296,
+      "fixture_update_rms_pixels": 0.08973135845517118,
+      "fixture_update_max_abs_pixels": 0.20560455322265625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 15,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.027308565972056616,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.008072414435446262,
+      "fixture_update_rms_pixels": 0.08427235344562134,
+      "fixture_update_max_abs_pixels": 0.27866363525390625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 16,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.026979228566272904,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.009616765193641186,
+      "fixture_update_rms_pixels": 0.06076879200776724,
+      "fixture_update_max_abs_pixels": 0.1911773681640625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 17,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.012206554853036648,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.004790111910551786,
+      "fixture_update_rms_pixels": 0.018727482888041953,
+      "fixture_update_max_abs_pixels": 0.0496826171875,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 18,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.012116019042363702,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.004829775542020798,
+      "fixture_update_rms_pixels": 0.040474230442124295,
+      "fixture_update_max_abs_pixels": 0.251495361328125,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 19,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.011970090861046332,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.004893029574304819,
+      "fixture_update_rms_pixels": 0.02520441545301653,
+      "fixture_update_max_abs_pixels": 0.0811920166015625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 20,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.011630642215673616,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.00498144282028079,
+      "fixture_update_rms_pixels": 0.06206109630725113,
+      "fixture_update_max_abs_pixels": 0.3287200927734375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 21,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.0114866854486061,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.00508328340947628,
+      "fixture_update_rms_pixels": 0.029532036816611592,
+      "fixture_update_max_abs_pixels": 0.13387298583984375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 22,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.011353955634226474,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.005202222615480423,
+      "fixture_update_rms_pixels": 0.024962346709284874,
+      "fixture_update_max_abs_pixels": 0.08197784423828125,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 23,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.011070463671313974,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.00534016452729702,
+      "fixture_update_rms_pixels": 0.0317725174603396,
+      "fixture_update_max_abs_pixels": 0.0775909423828125,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 24,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.010902614985204692,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0055134412832558155,
+      "fixture_update_rms_pixels": 0.028828627173256006,
+      "fixture_update_max_abs_pixels": 0.093963623046875,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 25,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.010582650712734306,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.005719815380871296,
+      "fixture_update_rms_pixels": 0.026487799351937402,
+      "fixture_update_max_abs_pixels": 0.0738677978515625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 26,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.010282377597723547,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.005973097402602434,
+      "fixture_update_rms_pixels": 0.027111074163858693,
+      "fixture_update_max_abs_pixels": 0.10235595703125,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 27,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.009757833356636377,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.00631118007004261,
+      "fixture_update_rms_pixels": 0.030221925614637365,
+      "fixture_update_max_abs_pixels": 0.1166839599609375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 28,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.009542491540354331,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.006706065032631159,
+      "fixture_update_rms_pixels": 0.023622391147406215,
+      "fixture_update_max_abs_pixels": 0.0837249755859375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 29,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.008724885732278077,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.007213915698230267,
+      "fixture_update_rms_pixels": 0.022109553751682734,
+      "fixture_update_max_abs_pixels": 0.07268524169921875,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 30,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.008704910937965125,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.007625416852533817,
+      "fixture_update_rms_pixels": 0.020698829995614298,
+      "fixture_update_max_abs_pixels": 0.06685638427734375,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 31,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.00851736338609682,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.007990443147718906,
+      "fixture_update_rms_pixels": 0.03969444504862056,
+      "fixture_update_max_abs_pixels": 0.1215972900390625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 32,
+      "fixed_update_scale": 0.037037037037037035,
+      "projection_l2_norm": 0.008879942736098278,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.008358986116945744,
+      "fixture_update_rms_pixels": 0.053132757500118886,
+      "fixture_update_max_abs_pixels": 0.15752410888671875,
+      "exact_identity_on_this_fixture": false
+    }
+  ],
+  "stage_activity_scope": "Synthetic parameter/update diagnostics; not proof of useful denoising steps",
+  "torch": "2.7.1+cu126",
+  "cpu_threads": 1,
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false,
+  "asset_metadata": {
+    "format": "deep-beltrami-rollout-tensors-v1",
+    "implementation": "beltrami_rollout",
+    "source_pins": {
+      "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+    },
+    "model_config": {
+      "width": 80,
+      "stages": 32,
+      "metric": "positive",
+      "zero_dc": false,
+      "step_scale": 1000.0,
+      "reaction": true,
+      "metric_precision": "float64",
+      "checkpoint_blocks": 4,
+      "refinement_scale": 0.037037037037037035
+    },
+    "numerics": {
+      "parameters": "float32",
+      "dense_convolutions": "float32",
+      "metric_convolutions_determinant_flux": "float64",
+      "metric_parameterization": "softplus",
+      "native_axes": "N,C,W,H",
+      "intensity_scale": "0\u2013255",
+      "prefix_stages": 5,
+      "nominal_stages": 32,
+      "refinement_scale": 0.037037037037037035,
+      "output_clipping_in_model": false,
+      "determinant_clipping": false,
+      "global_stability_guarantee": false
+    },
+    "sigma": 25,
+    "grayscale_offset": 25,
+    "tensor_sha256": "7fa6deb71455cc296031cdd5d1d882f61024e6ad1d1f197d63f96637495b2026",
+    "parameters": 20451872,
+    "training_step": 2959,
+    "full_depth_updates": 2209,
+    "phase_updates": {
+      "16": 750,
+      "32": 2209
+    },
+    "provenance": {
+      "training_checkpoint_sha256": "0668da337a096a0daca4072544a03c773ead72a1a5fdc30e1986c4711ffdf322",
+      "training_config_sha256": "dea49d63b5a644326e7814b797b16d349b89c9e0aabe868042d98f33f07c5929",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "selection_validation_sha256": "96beb9b1781c1b847ce8b51adaae8d1c666fd02b73fef18098465511becdd3aa",
+      "warmstart_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+      "license": "MIT",
+      "citation": "Aaron Wetzler, Topics in Computational Geometric Vision, PhD thesis,2017,Chapter4."
+    }
+  }
+}

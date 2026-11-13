@@ -1,0 +1,28 @@
+{
+  "beltrami_operator": {
+    "sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+    "files": {
+      "__init__.py": "b4f6cb7b42e8d6261cd2f9c2c6cebc329930608d87cc83078c1a88a80d45c187",
+      "data.py": "8bc40e33f0b8b208d88c2aab5f09e618c0c40437635f21925b0dbcd849f24f24",
+      "model.py": "f257ede9e6e5b79bbd31df49a12247f1987681f40d66a51599e2898686bdda8d",
+      "train.py": "f87c34123d11c7a2b9a43076e09120c0d90b560c84727935f529ee83703bfff9"
+    }
+  },
+  "beltrami_precision": {
+    "sha256": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+    "files": {
+      "__init__.py": "c32e9c4ab3a6496ff2241ff808b1cc43b93f506d0266145fbc9f1f80d0404daf",
+      "data.py": "8bc40e33f0b8b208d88c2aab5f09e618c0c40437635f21925b0dbcd849f24f24",
+      "model.py": "85800906878744a4ebaa6ce174ea9663f694cdc6ffec54f3fa581d66e5a6e653",
+      "train.py": "e3ad3100f78066f462de7e7240c07a231d1c3a136719959ee5ef72b20bb50360"
+    }
+  },
+  "beltrami_rollout": {
+    "sha256": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad",
+    "files": {
+      "__init__.py": "8fa9f859d8c37105a7fe7913691297c99cb42a4f2c57fb508d94bb26a2eda350",
+      "model.py": "48c8c79fd6587938f409a3ebeae629cdec9a73b1b8d7bdb9a61adb4178f19ab7",
+      "train.py": "8c154cafe5bd07f1c281ae6c856835e586289e9f887e70ad59fcf68ad913867d"
+    }
+  }
+}

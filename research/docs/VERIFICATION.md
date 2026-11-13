@@ -1,4 +1,9 @@
-# Verification
+# v1.2.0 operator-study verification
+
+This record describes the five-model v1.2.0 study. The later 32/64-stage
+study has separate [results](results/rollout-sigma25/REPORT.md),
+[numerical replay evidence](rollout-released-weight-reproduction.json) and
+[final package verification](rollout-final-wheel-verification.json).
 
 ## Completed frozen evaluation and safe-weight reproduction
 

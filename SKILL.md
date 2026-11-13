@@ -4,6 +4,117 @@ Read `SUMMARY.md`, `README.md`, `docs/REPRODUCIBILITY.md`,
 `docs/reproduction.md` and `THIRD_PARTY_NOTICES.md` before changing numerical
 behavior or release workflows.
 
+## Long-rollout workflow
+
+Read `research/docs/LONG_ROLLOUTS.md` and
+`research/docs/rollout-source-hashes.json` before working with
+`beltrami_rollout`. This third numerical namespace and the two previous
+namespaces are byte-frozen independently. Support/CLI/export/evaluation code
+belongs outside them. Preserve previous release/result/asset bytes.
+
+`beltrami-rollout-train` or `python -m beltrami_rollout.train` accepts the
+new `research/configs/rollout-{5,32,64}-001.json` configurations and an explicit
+SHA-pinned reaction safe-weight warmstart. Use the dedicated
+`research/tools/export_rollout.py`, `beltrami-rollout-denoise` and
+`research/tools/evaluate_rollout_released.py` for the new format; retain v1.2.0
+tool implementation guards. Read `research/docs/ROLLOUT_REPRODUCTION.md` for
+draft/replay/final-report order. Never publish raw checkpoints containing
+optimizer/RNG/local-path metadata.
+
+Run the new synthetic CPU checks with `python -m pytest
+research/tests/test_rollout_model.py research/tests/test_rollout_training.py`.
+Set `BELTRAMI_REACTION_SAFE` to the pinned local reaction tensor-only asset for
+the optional actual-author-weight 64-stage CPU integration. Check the installed
+training CLI and wheel namespace/source hashes. No GPU or benchmark is required
+for packaging preparation; these checks do not establish trained quality.
+
+Use an existing aggregate budget/unique lease and shared GPU lock; never reset
+accounting. Reserve final evaluation and shutdown time, preflight actual target
+depth and full-image validation/save latency, then monitor actual identities,
+progress, checkpoints, full validation, finite states and machine resources.
+Keep the recurring monitor through failures/recovery and final evaluation.
+Selection requires at least 20 full-target-depth updates and independent
+validation32, earliest exact tie. Record curriculum/full-depth counts and
+actual exposure. Freeze all selection identities before benchmark scoring.
+BSD68 was already observed in v1.2.0: new scores are a reused benchmark, not
+a new untouched holdout. Report the training-protocol confound and 180px crop
+context limitation. The fixed training queue is complete and joint selection is
+frozen. All three selected exports and the four-model benchmark completed.
+The actual safe-weight replay and exact comparator now pass all 272 records
+and six paired summaries. Existing iOS models remain unchanged. Update
+SUMMARY/SKILL with publication status; publication/CI checks remain pending.
+
+The initial preparation receipt `research/docs/rollout-packaging-verification.json`
+records 200 combined CPU passes/17 optional skips, actual-author-weight
+integration, installed noneditable source/README checks and all five command
+helps. Dependencies were reused from an existing PyTorch 2.5.1 environment;
+do not describe it as a fresh dependency install or release acceptance. Rebuild
+the wheels after subsequent README/source changes before final release checks.
+Preparation passed 341 CPU tests with 17 optional skips before the later crop
+acceptance tool was added.
+All three actual selected exports and CPU crop/adapter identity checks pass;
+receipts are `research/docs/rollout-{5,32,64}-{export,crop}-verification.json`.
+The four-model reused-benchmark evaluation passed complete/finite guards.
+Public replay is complete; release acceptance/CI remain pending. Prepared
+versions are root 1.3.0/research 0.2.0; publication is pending.
+
+The fixed reused-benchmark means are 28.915269/28.922632/28.920873 dB for
+5/32/64, versus 28.908215 for the unchanged released reaction. The 32−5
+mean gain is +0.007363 dB (52/68 wins) at about 6.4× forward cost. The 64-stage
+model loses to 32 on 58/68 images at about twice the cost. Preserve every arm
+and all six comparisons; these scores do not authorize tuning or further
+training. The new control's +0.007054 dB gain over released reaction is part
+of the 32-stage total +0.014417 dB, not evidence solely for extra depth.
+
+The new manifest SHA256 is
+`93813fe42da42a749bcbf10e6c4e2cc1fef7dbea119171401f6553e83d236bba`;
+stable reference SHA256 is
+`fb4e8fb8491373e117f038ea4578c6e39d7f09dbad88e48f721c36d080a02a54`.
+Read `research/docs/results/rollout-sigma25/` with
+`research/docs/ROLLOUT_REPRODUCTION.md`. Final accounting was built only
+after the replay completed and the live ledger became idle. Manifest/reference
+and all three scientific CSV files remain byte-identical to the replayed
+draft. `research/docs/rollout-released-weight-reproduction.json` records exact
+comparison of 272 input/label hashes, shapes, MSE/PSNR, clipping and six paired
+summaries. It does not establish prediction-array or timing identity. Preserve
+these scientific bytes; do not repeat scoring to refresh bookkeeping.
+
+The completed aggregate ledger contains 29 leases, three historical failures,
+and 38,860.53637930413 charged seconds / 10.7945934387 hours of the original
+12-hour ceiling. It includes the 390.749679-second private final evaluation
+and 395.106899-second public replay. This is process wall time, not GPU busy
+time. No training/evaluation remains running and no additional GPU work is
+planned. Replay result SHA256:
+`d5799050a548241eecbaff59827d9bce38d6f5f88567b883f145ea95ff9e30ea`;
+completed ledger SHA256:
+`ece58fba22c88a8f165f6b5bd5e9a52382e38f20fcbac05f73ff974e92229afb`.
+
+The prepared Linux wheels reuse PyTorch 2.7.1 and verify six console commands,
+the root module command, four support-tool helps, all installed numerical
+source bytes and README metadata outside the checkout. See
+`research/docs/rollout-linux-wheel-preparation.json`. This supersedes the
+earlier Mac packaging receipt for the prepared versions; neither is final
+release acceptance. Rebuild after final documentation changes.
+
+Final Linux verification now passes 365 CPU tests with 17 optional skips and
+five legacy helper checks. Both wheels were rebuilt after the final packaged
+README edits and installed noneditably into a separate environment, explicitly
+reusing PyTorch 2.7.1. Installed file sets, source bytes, numerical hashes and
+README metadata match; six console commands, the root module and five support
+tools pass outside the checkout with `PYTHONPATH` unset and CUDA hidden.
+`research/docs/rollout-final-wheel-verification.json` records packaging only;
+the separate actual replay receipt establishes numerical reproduction. No
+numerical rerun is needed for later context-only publication status updates.
+
+After joint terminal selection is frozen, run
+`research/tools/verify_rollout_export_cpu.py` with independently pinned raw
+and safe SHA256 values, the validation root/manifest and a new receipt path.
+It checks every tensor and exact raw/safe/adapter predictions on the first
+verified validation image's fixed 17×19 crop, singleton geometries and derived
+RGB. Its 24 synthetic tests pass on Linux; require a separate actual selected
+author-weight receipt for each of the three assets. This CPU identity check
+does not score quality.
+
 ## Setup and verification
 
 ```bash
@@ -220,7 +331,7 @@ an independent review if directed, verify its factual suggestions and review
 the revision again. Never claim a review or runtime check that did not complete.
 Review and synchronize both context files before every commit.
 
-## Verified operator-study release
+## Verified v1.2.0 operator-study release
 
 Read `research/README.md`, `research/docs/RESULTS.md` and the pinned bundle at
 `research/docs/results/operator-sigma25/` before interpreting new weights.
@@ -234,7 +345,7 @@ one-seed, selection, training exposure and modern-baseline limitations explicit.
 Current model-manifest SHA256:
 `20a3ea6011dfde4facf8bbf94aad5ad71aff3bed006328a56c14e8ed2e83c40b`.
 Released assets are tensor-only and retain the source hashes from training.
-The separate research package is 0.1.0 within repository release 1.2.0; historical
+That release contains research package 0.1.0 within repository version 1.2.0; historical
 model/noise/iOS release URLs and existing model assumptions stay unchanged.
 The combined CPU suite is 174 passed/17 optional archival skips. Noneditable
 wheel checks explicitly reused system PyTorch 2.7.1. Full released-weight numerical

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "name": "REPORT.md",
+      "sha256": "65693f97ca71fb9de7308c6d3fdaab3fa0cad1fbe12d8c7b082217e58c39103a"
+    },
+    {
+      "name": "models.json",
+      "sha256": "93813fe42da42a749bcbf10e6c4e2cc1fef7dbea119171401f6553e83d236bba"
+    },
+    {
+      "name": "paired-per-image.csv",
+      "sha256": "f8fb0c110ec74f01887ebfd05046ecda1ac8022a751e847a3402926d0070293f"
+    },
+    {
+      "name": "per-image.csv",
+      "sha256": "facc3d8acbc7d62a2b372d1307236356f12c88ea1b071820f165a7fe3a766565"
+    },
+    {
+      "name": "reference-results.json",
+      "sha256": "fb4e8fb8491373e117f038ea4578c6e39d7f09dbad88e48f721c36d080a02a54"
+    },
+    {
+      "name": "results.json",
+      "sha256": "414065062a1b645820c9eeb78aa80e798fc4eeb13ef368d7bdd1308df8fff8fe"
+    },
+    {
+      "name": "runtime.csv",
+      "sha256": "5358c28140d6c8f06c4dcac2d937e19ee71f1db6750a2fc4be979efc58515878"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": "deep-beltrami-rollout-cpu-export-verification-v1",
+  "complete": true,
+  "verified_utc": "2026-11-13T16:55:17.437888+00:00",
+  "checkpoint_sha256": "c00a75e60d6367a370327515ed270da38cdab4fc307e42f804ac5ae5ee9eb14a",
+  "safe_sha256": "045689e8d4a834d762d02a2603ae6b77b26813e803712c5adcb978fdb208e55f",
+  "tensor_sha256": "255e731fcb131a556224b67ffe67b9d647e524cade834a83dd92601f72551827",
+  "tensor_count": 40,
+  "all_tensor_bytes_preserved": true,
+  "raw_model_and_optimizer_finite": true,
+  "source_pins": {
+    "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+    "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+    "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+  },
+  "model_config": {
+    "width": 80,
+    "stages": 5,
+    "metric": "positive",
+    "zero_dc": false,
+    "step_scale": 1000.0,
+    "reaction": true,
+    "metric_precision": "float64",
+    "checkpoint_blocks": 4,
+    "refinement_scale": 1.0
+  },
+  "training_step": 12750,
+  "full_depth_updates": 12750,
+  "phase_updates": {
+    "5": 12750
+  },
+  "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+  "selected_validation_sha256": "c84431e4cb740d9958bb85edd8833a61a06df7a6192e02c083211b9dd86969e0",
+  "fixture": {
+    "validation_record_index": 0,
+    "image_file_sha256": "e0a8417e1d1a0cf1336a7ab422c115100f28d5847ff468da981476e95122be1d",
+    "decoded_pixels_sha256": "4d8781999d80a6a30ed0276c83517c00c51d94291cf706128cdf9fd1654799a2",
+    "image_shape_hw": [
+      321,
+      481
+    ],
+    "crop": {
+      "row_start": 7,
+      "row_stop": 24,
+      "column_start": 11,
+      "column_stop": 30
+    },
+    "crop_uint8_sha256": "d4cd4063095559a14795df946866e132aa4e3ec6796b0e20986713f917c7edd1",
+    "rgb_scope": "three deterministic transforms of the same grayscale crop"
+  },
+  "checks": [
+    {
+      "pixel_shape": [
+        17,
+        19
+      ],
+      "native_shape": [
+        1,
+        1,
+        19,
+        17
+      ],
+      "per_channel_offset": 25,
+      "input_native_float32_sha256": "4ea03db76307fbaa844074767e5b7a23933a5810b928c90427cee19dcd88c812",
+      "raw_prediction_sha256": "d0320cc2156b5beaf3e8cad66670e617ac1a4af68c845515ea7184d567db039d",
+      "safe_prediction_sha256": "d0320cc2156b5beaf3e8cad66670e617ac1a4af68c845515ea7184d567db039d",
+      "prediction_bytes_exact": true,
+      "adapter_bytes_exact": true,
+      "finite_before_clip": true,
+      "clipped_pixels": 115
+    },
+    {
+      "pixel_shape": [
+        1,
+        19
+      ],
+      "native_shape": [
+        1,
+        1,
+        19,
+        1
+      ],
+      "per_channel_offset": 25,
+      "input_native_float32_sha256": "622e260827fbf76c48263069dc9a44a7471a1a3200587abf618b939e9d6b1178",
+      "raw_prediction_sha256": "1fdfce18a690267fd82350f3917f94732a92b3870de7d1d3c0cbb2bce9aef52a",
+      "safe_prediction_sha256": "1fdfce18a690267fd82350f3917f94732a92b3870de7d1d3c0cbb2bce9aef52a",
+      "prediction_bytes_exact": true,
+      "adapter_bytes_exact": true,
+      "finite_before_clip": true,
+      "clipped_pixels": 16
+    },
+    {
+      "pixel_shape": [
+        17,
+        1
+      ],
+      "native_shape": [
+        1,
+        1,
+        1,
+        17
+      ],
+      "per_channel_offset": 25,
+      "input_native_float32_sha256": "6ff93357952d8690a7b8747c086a02d0be66fbba52cd1ab884a4db9b66075590",
+      "raw_prediction_sha256": "82c99b7151fb77acf68de344137c46e05e54aa65e1d3d72b9b27da3dad45f3b4",
+      "safe_prediction_sha256": "82c99b7151fb77acf68de344137c46e05e54aa65e1d3d72b9b27da3dad45f3b4",
+      "prediction_bytes_exact": true,
+      "adapter_bytes_exact": true,
+      "finite_before_clip": true,
+      "clipped_pixels": 15
+    },
+    {
+      "pixel_shape": [
+        17,
+        19,
+        3
+      ],
+      "native_shape": [
+        3,
+        1,
+        19,
+        17
+      ],
+      "per_channel_offset": 25,
+      "input_native_float32_sha256": "71d59d4ead1f38a532e847b44ef5e61e23fd63efeaf2a1e42d3071b8466bfa9d",
+      "raw_prediction_sha256": "d998db9c650c06d28f11672e715af85114a54439f44b4d9f440cba17fc85e2b9",
+      "safe_prediction_sha256": "d998db9c650c06d28f11672e715af85114a54439f44b4d9f440cba17fc85e2b9",
+      "prediction_bytes_exact": true,
+      "adapter_bytes_exact": true,
+      "finite_before_clip": true,
+      "clipped_pixels": 362
+    }
+  ],
+  "python": "3.13.5",
+  "torch": "2.7.1+cu126",
+  "numpy": "2.1.3",
+  "device": "cpu",
+  "cpu_threads": 1,
+  "verification_tool_sha256": "4066517968ae24a25c8954e8a4f7588e882fa9ca1d18e8ccf1ad6a2db6c317f5",
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false,
+  "scope": "Export and image-adapter identity on a fixed hash-verified validation crop; no quality or useful-depth claim"
+}

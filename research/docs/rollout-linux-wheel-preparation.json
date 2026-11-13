@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "state": "prepared_not_release_acceptance",
+  "versions": {
+    "deep-patch-beltrami": "1.3.0",
+    "beltrami-operator-research": "0.2.0",
+    "torch": "2.7.1",
+    "numpy": "2.1.3",
+    "Pillow": "11.1.0"
+  },
+  "dependency_installation": "existing system Torch reused; task-only build tools recovered to setuptools84.2.1",
+  "noneditable": true,
+  "PYTHONPATH_unset": true,
+  "cwd_outside_checkout": true,
+  "source_files": {
+    "deep_patch_beltrami/__init__.py": "29f26f34ba4df90583e8c10e16d723905555e180dc093a556213c91a72d9aa4e",
+    "deep_patch_beltrami/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "deep_patch_beltrami/assets.py": "5a6b993e5d0d754ca17a51e4bbe28e0e8d279858eb459a66c8b5479294613a7c",
+    "deep_patch_beltrami/caffe_model.py": "5b10de77e124014da85dd6ab3b2b353d5fcce09e55695a86b623bc2f2a930fe2",
+    "deep_patch_beltrami/cli.py": "af0dc0423d0c5fffe77078e66d01c8f7ebb69578eeb832cd983582b6bc3c6e93",
+    "deep_patch_beltrami/data/bsd68.json": "47ee60d3d41c23b80d5586211e6352d12534a16ce4ed3b011a10a1a1a42818ec",
+    "deep_patch_beltrami/data/models.json": "940e70487e69f3da524576a675369c1378aeb68cc1ed0a20a9c2d5f2f5a99cd3",
+    "deep_patch_beltrami/data/release-assets.json": "a0497134c0f2b7b80669357d0f5bb3b0e955adf19d588757d9008a21a58e2eb6",
+    "deep_patch_beltrami/inference.py": "506ef3963f61dcae661f4efa624b9d49d8667039515e27f1fbfaebfdc2df76a8",
+    "deep_patch_beltrami/reproduce.py": "bf083b6dec43d479fd0f808d7686a303a72f6e22ff46895a908c8d781f853a6c",
+    "beltrami_operator/__init__.py": "b4f6cb7b42e8d6261cd2f9c2c6cebc329930608d87cc83078c1a88a80d45c187",
+    "beltrami_operator/data.py": "8bc40e33f0b8b208d88c2aab5f09e618c0c40437635f21925b0dbcd849f24f24",
+    "beltrami_operator/model.py": "f257ede9e6e5b79bbd31df49a12247f1987681f40d66a51599e2898686bdda8d",
+    "beltrami_operator/train.py": "f87c34123d11c7a2b9a43076e09120c0d90b560c84727935f529ee83703bfff9",
+    "beltrami_precision/__init__.py": "c32e9c4ab3a6496ff2241ff808b1cc43b93f506d0266145fbc9f1f80d0404daf",
+    "beltrami_precision/data.py": "8bc40e33f0b8b208d88c2aab5f09e618c0c40437635f21925b0dbcd849f24f24",
+    "beltrami_precision/model.py": "85800906878744a4ebaa6ce174ea9663f694cdc6ffec54f3fa581d66e5a6e653",
+    "beltrami_precision/train.py": "e3ad3100f78066f462de7e7240c07a231d1c3a136719959ee5ef72b20bb50360",
+    "beltrami_rollout/__init__.py": "8fa9f859d8c37105a7fe7913691297c99cb42a4f2c57fb508d94bb26a2eda350",
+    "beltrami_rollout/model.py": "48c8c79fd6587938f409a3ebeae629cdec9a73b1b8d7bdb9a61adb4178f19ab7",
+    "beltrami_rollout/train.py": "8c154cafe5bd07f1c281ae6c856835e586289e9f887e70ad59fcf68ad913867d",
+    "beltrami_research/__init__.py": "95fb72ab88f8797598e6a212e30e0fac05d2398098139669bc92c8829d32ba29",
+    "beltrami_research/artifacts.py": "16c705d8e710ecca20029e6d63190799620ee88a192ce4160c3f91b8d6acb7f7",
+    "beltrami_research/cli.py": "9bf1ee236358a50f07ed129dd16538c42869de5aae6a3c2bc4a581f7e7ba1a2a",
+    "beltrami_research/rollout_artifacts.py": "cf5e8f923be63fa8686fd55cef572057d5bd1ed8afae90675cbb512644e3dc60",
+    "beltrami_research/rollout_cli.py": "0a1e9b64be470785fc003fc7e489c3f369d340d256a47f741ea0bfc6606ae50c"
+  },
+  "source_pins": {
+    "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+    "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+    "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+  },
+  "installed_readme_sha256": {
+    "deep-patch-beltrami": "ed389d32cfb08ef61e4dcc29cbc37862e1522f089b02d247881062efa2e79256",
+    "beltrami-operator-research": "37ba38d5b92d606bd3112df67f771ea6b2bece590ac036602695da306b639729"
+  },
+  "console_helps": 6,
+  "module_helps": 1,
+  "tool_helps": 4,
+  "source_tests": {
+    "passed": 341,
+    "optional_skipped": 17,
+    "CPU_only": true
+  },
+  "GPU_or_BSD68_access": false,
+  "actual_selected_exports_or_replay": false
+}

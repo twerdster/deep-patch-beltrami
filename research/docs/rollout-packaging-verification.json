@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "scope": "unreleased long-rollout packaging preparation; no GPU or benchmark",
+  "combined_cpu_tests": {
+    "passed": 200,
+    "skipped": 17,
+    "subtests_passed": 27,
+    "actual_reaction64_integration": true
+  },
+  "installed_wheel_checks": {
+    "source_hashes": {
+      "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+    },
+    "torch": "2.5.1",
+    "root_version": "1.2.0",
+    "research_version": "0.1.0",
+    "installed_readme_matches": true,
+    "dependencies_reused": true
+  },
+  "cli_help_checks": 5,
+  "fresh_dependency_install": false
+}

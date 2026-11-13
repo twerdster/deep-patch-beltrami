@@ -1,0 +1,13 @@
+{
+  "schema": "deep-beltrami-rollout-reproduction-check-v1",
+  "complete": true,
+  "reference_sha256": "fb4e8fb8491373e117f038ea4578c6e39d7f09dbad88e48f721c36d080a02a54",
+  "replay_sha256": "d5799050a548241eecbaff59827d9bce38d6f5f88567b883f145ea95ff9e30ea",
+  "model_count": 4,
+  "image_count": 68,
+  "model_image_records": 272,
+  "exact_input_label_shape_mse_psnr_clipping_and_paired_statistics": true,
+  "prediction_pixel_arrays_compared": false,
+  "runtime_identity_required": false,
+  "evaluation_scope": "Reused BSD68 benchmark, already exposed in the previous research round; not untouched held-out evidence."
+}

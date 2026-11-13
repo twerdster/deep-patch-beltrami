@@ -1,0 +1,304 @@
+{
+  "schema": "deep-beltrami-rollout-released-v1",
+  "purpose": "bsd68",
+  "evaluation_scope": "Reused BSD68 benchmark, already exposed in the previous research round; not untouched held-out evidence.",
+  "sigma": 25,
+  "offset": 25,
+  "selection_sha256": "f04055857467714db43f4776ade676310945c2478cd4303b9c9c498a3f3f0733",
+  "results_sha256": "86bac2d5ce8aefa443f42a5568c9b5056a5f292598ebf005c843f99aefad0b83",
+  "private_evaluator_sha256": "ee7f757a2bc8d05146390e37d5a1833949b81f232340932843b909572901cbf3",
+  "protocol_helper_sha256": "0b77f7a8024135e76f8c1fc13a228983ff7a5017a91923867d1e2c9be26d68ff",
+  "source_pins": {
+    "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+    "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+    "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+  },
+  "selection_created_utc": "2026-11-13T16:54:24.264517+00:00",
+  "timing_warmup": 2,
+  "timing_repeats": 3,
+  "bootstrap_seed": 20261113,
+  "bootstrap_samples": 20000,
+  "assets": [
+    {
+      "model": "rollout-5",
+      "role": "control",
+      "filename": "dpb-rollout-5-sigma25-step12750.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.3.0/dpb-rollout-5-sigma25-step12750.pt",
+      "bytes": 12796715,
+      "sha256": "045689e8d4a834d762d02a2603ae6b77b26813e803712c5adcb978fdb208e55f",
+      "metadata": {
+        "format": "deep-beltrami-rollout-tensors-v1",
+        "implementation": "beltrami_rollout",
+        "source_pins": {
+          "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+          "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+          "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+        },
+        "model_config": {
+          "width": 80,
+          "stages": 5,
+          "metric": "positive",
+          "zero_dc": false,
+          "step_scale": 1000.0,
+          "reaction": true,
+          "metric_precision": "float64",
+          "checkpoint_blocks": 4,
+          "refinement_scale": 1.0
+        },
+        "numerics": {
+          "parameters": "float32",
+          "dense_convolutions": "float32",
+          "metric_convolutions_determinant_flux": "float64",
+          "metric_parameterization": "softplus",
+          "native_axes": "N,C,W,H",
+          "intensity_scale": "0\u2013255",
+          "prefix_stages": 5,
+          "nominal_stages": 5,
+          "refinement_scale": 1.0,
+          "output_clipping_in_model": false,
+          "determinant_clipping": false,
+          "global_stability_guarantee": false
+        },
+        "sigma": 25,
+        "grayscale_offset": 25,
+        "tensor_sha256": "255e731fcb131a556224b67ffe67b9d647e524cade834a83dd92601f72551827",
+        "parameters": 3195605,
+        "training_step": 12750,
+        "full_depth_updates": 12750,
+        "phase_updates": {
+          "5": 12750
+        },
+        "provenance": {
+          "training_checkpoint_sha256": "c00a75e60d6367a370327515ed270da38cdab4fc307e42f804ac5ae5ee9eb14a",
+          "training_config_sha256": "237bc19ad0d7c9de45a041afab8de23080a183a0308e80ce1e07243e8fbe2563",
+          "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+          "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+          "selection_validation_sha256": "c84431e4cb740d9958bb85edd8833a61a06df7a6192e02c083211b9dd86969e0",
+          "warmstart_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+          "license": "MIT",
+          "citation": "Aaron Wetzler, Topics in Computational Geometric Vision, PhD thesis,2017,Chapter4."
+        }
+      }
+    },
+    {
+      "model": "rollout-32",
+      "role": "candidate",
+      "filename": "dpb-rollout-32-sigma25-step2959.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.3.0/dpb-rollout-32-sigma25-step2959.pt",
+      "bytes": 81887039,
+      "sha256": "88a6801b0dc157e51f8929cb6e018e3878e7407849a15247a90f5c0bf4547f52",
+      "metadata": {
+        "format": "deep-beltrami-rollout-tensors-v1",
+        "implementation": "beltrami_rollout",
+        "source_pins": {
+          "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+          "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+          "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+        },
+        "model_config": {
+          "width": 80,
+          "stages": 32,
+          "metric": "positive",
+          "zero_dc": false,
+          "step_scale": 1000.0,
+          "reaction": true,
+          "metric_precision": "float64",
+          "checkpoint_blocks": 4,
+          "refinement_scale": 0.037037037037037035
+        },
+        "numerics": {
+          "parameters": "float32",
+          "dense_convolutions": "float32",
+          "metric_convolutions_determinant_flux": "float64",
+          "metric_parameterization": "softplus",
+          "native_axes": "N,C,W,H",
+          "intensity_scale": "0\u2013255",
+          "prefix_stages": 5,
+          "nominal_stages": 32,
+          "refinement_scale": 0.037037037037037035,
+          "output_clipping_in_model": false,
+          "determinant_clipping": false,
+          "global_stability_guarantee": false
+        },
+        "sigma": 25,
+        "grayscale_offset": 25,
+        "tensor_sha256": "7fa6deb71455cc296031cdd5d1d882f61024e6ad1d1f197d63f96637495b2026",
+        "parameters": 20451872,
+        "training_step": 2959,
+        "full_depth_updates": 2209,
+        "phase_updates": {
+          "16": 750,
+          "32": 2209
+        },
+        "provenance": {
+          "training_checkpoint_sha256": "0668da337a096a0daca4072544a03c773ead72a1a5fdc30e1986c4711ffdf322",
+          "training_config_sha256": "dea49d63b5a644326e7814b797b16d349b89c9e0aabe868042d98f33f07c5929",
+          "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+          "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+          "selection_validation_sha256": "96beb9b1781c1b847ce8b51adaae8d1c666fd02b73fef18098465511becdd3aa",
+          "warmstart_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+          "license": "MIT",
+          "citation": "Aaron Wetzler, Topics in Computational Geometric Vision, PhD thesis,2017,Chapter4."
+        }
+      }
+    },
+    {
+      "model": "rollout-64",
+      "role": "candidate",
+      "filename": "dpb-rollout-64-sigma25-step1803.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.3.0/dpb-rollout-64-sigma25-step1803.pt",
+      "bytes": 163772031,
+      "sha256": "bac50788c64e1174d2a76c802657faacef35b3be10faca9c8af2ca32b8f4a991",
+      "metadata": {
+        "format": "deep-beltrami-rollout-tensors-v1",
+        "implementation": "beltrami_rollout",
+        "source_pins": {
+          "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+          "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+          "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+        },
+        "model_config": {
+          "width": 80,
+          "stages": 64,
+          "metric": "positive",
+          "zero_dc": false,
+          "step_scale": 1000.0,
+          "reaction": true,
+          "metric_precision": "float64",
+          "checkpoint_blocks": 4,
+          "refinement_scale": 0.01694915254237288
+        },
+        "numerics": {
+          "parameters": "float32",
+          "dense_convolutions": "float32",
+          "metric_convolutions_determinant_flux": "float64",
+          "metric_parameterization": "softplus",
+          "native_axes": "N,C,W,H",
+          "intensity_scale": "0\u2013255",
+          "prefix_stages": 5,
+          "nominal_stages": 64,
+          "refinement_scale": 0.01694915254237288,
+          "output_clipping_in_model": false,
+          "determinant_clipping": false,
+          "global_stability_guarantee": false
+        },
+        "sigma": 25,
+        "grayscale_offset": 25,
+        "tensor_sha256": "094f56b0f2a7f3697ba8848d00c406a1401f9579ef13c90dc43ce21508f04258",
+        "parameters": 40903744,
+        "training_step": 1803,
+        "full_depth_updates": 1002,
+        "phase_updates": {
+          "16": 444,
+          "32": 357,
+          "64": 1002
+        },
+        "provenance": {
+          "training_checkpoint_sha256": "4b600003d78aabfb699aae14c55dff987fc885d9cb12de67c98c88ff892faf18",
+          "training_config_sha256": "e27a17334095750a9e4f957f6f0d5bb04b60770ee089bf1d55555cb091e992d3",
+          "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+          "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+          "selection_validation_sha256": "ab564be0b0b02204c7b3b6eb65010ab7293da5bc83211487717ddb5912f3ca8a",
+          "warmstart_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+          "license": "MIT",
+          "citation": "Aaron Wetzler, Topics in Computational Geometric Vision, PhD thesis,2017,Chapter4."
+        }
+      }
+    },
+    {
+      "model": "released-reaction",
+      "role": "benchmark",
+      "filename": "dpb-reaction-sigma25-step52000.pt",
+      "url": "https://github.com/twerdster/deep-patch-beltrami/releases/download/v1.2.0/dpb-reaction-sigma25-step52000.pt",
+      "bytes": 12795294,
+      "sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+      "metadata": {
+        "format": "beltrami-operator-tensors-v1",
+        "implementation": "beltrami_operator",
+        "source_sha256": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+        "model_config": {
+          "width": 80,
+          "stages": 5,
+          "metric": "frozen",
+          "zero_dc": false,
+          "step_scale": 1000.0,
+          "reaction": true
+        },
+        "sigma": 25,
+        "grayscale_offset": 25,
+        "tensor_sha256": "e70f948526b89fe7aeb569ef68b7f5721497868dccdbb8ad8a15a25a031d6264",
+        "parameters": 3195605,
+        "training_step": 52000,
+        "provenance": {
+          "training_checkpoint_sha256": "ffeeab6e16fcde8bf1e2e56bd69b897168b11d2250dd89cd45056c102787d769",
+          "training_config_sha256": "ec5e5a383ca7305662f7b6a3ce5f1aaec5e5e2effb4dff9b6a0b336e346fef0c",
+          "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+          "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+          "original_checkpoint_sha256": "2fb8787f1deedd94e8a238d21f9ac77a351be2e385aa910577e7aabf1241f415",
+          "license": "MIT",
+          "citation": "Wetzler, Topics in Computational Geometric Vision, 2017, Chapter 4 Section 4.5"
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "candidate": "rollout-32",
+      "reference": "rollout-5"
+    },
+    {
+      "candidate": "rollout-64",
+      "reference": "rollout-5"
+    },
+    {
+      "candidate": "rollout-64",
+      "reference": "rollout-32"
+    },
+    {
+      "candidate": "rollout-5",
+      "reference": "released-reaction"
+    },
+    {
+      "candidate": "rollout-32",
+      "reference": "released-reaction"
+    },
+    {
+      "candidate": "rollout-64",
+      "reference": "released-reaction"
+    }
+  ],
+  "lease_exclusions": [
+    "smoke-frozen-001",
+    "smoke-frozen-002",
+    "pilot-control-patch100-001",
+    "pilot-finetune-frozen-001",
+    "pilot-finetune-positive-001",
+    "pilot-deeper-positive-001",
+    "cuda-health-probe-001",
+    "cuda-health-probe-002",
+    "recovery-original-smoke-001",
+    "recovery-precision-control-smoke-001",
+    "recovery-precision-deeper-smoke-001",
+    "pilot-wider-positive-001",
+    "pilot-reaction-frozen-001",
+    "pilot-precision-control-positive-001",
+    "pilot-precision-deeper-positive-001",
+    "pilot-second-noise-001",
+    "promote-reaction-frozen-001",
+    "promote-finetune-frozen-001",
+    "promote-precision-deeper-positive-001",
+    "promote-precision-control-positive-001",
+    "final-bsd68-001",
+    "public-released-bsd68-001",
+    "rollout-preflight-001",
+    "rollout-validation-preflight-001",
+    "rollout-5-001",
+    "rollout-32-001",
+    "rollout-64-001",
+    "rollout-final-bsd68-001"
+  ],
+  "expected_results": {
+    "filename": "reference-results.json",
+    "sha256": "fb4e8fb8491373e117f038ea4578c6e39d7f09dbad88e48f721c36d080a02a54"
+  }
+}

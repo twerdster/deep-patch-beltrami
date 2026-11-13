@@ -1,0 +1,161 @@
+{
+  "schema": "deep-beltrami-rollout-export-check-v1",
+  "verified_utc": "2026-11-13T16:55:16.274857+00:00",
+  "export_sha256": "045689e8d4a834d762d02a2603ae6b77b26813e803712c5adcb978fdb208e55f",
+  "export_bytes": 12796715,
+  "tensor_count": 40,
+  "all_tensor_bytes_preserved": true,
+  "raw_model_and_optimizer_finite": true,
+  "safe_weights_only_reader": true,
+  "cpu_geometry_checks": [
+    {
+      "native_shape": [
+        1,
+        1,
+        9,
+        13
+      ],
+      "finite": true,
+      "prediction_bytes_exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "native_shape": [
+        1,
+        1,
+        1,
+        11
+      ],
+      "finite": true,
+      "prediction_bytes_exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "native_shape": [
+        1,
+        1,
+        13,
+        1
+      ],
+      "finite": true,
+      "prediction_bytes_exact": true,
+      "max_absolute_difference": 0.0
+    }
+  ],
+  "stage_activity": [
+    {
+      "stage": 1,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 2.047291977162289,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0,
+      "fixture_update_rms_pixels": 25.037358085169956,
+      "fixture_update_max_abs_pixels": 80.70206451416016,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 2,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 1.336667047484666,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.003262600861489773,
+      "fixture_update_rms_pixels": 14.004130169259158,
+      "fixture_update_max_abs_pixels": 49.24711608886719,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 3,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 0.7457618557901718,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.01369406282901764,
+      "fixture_update_rms_pixels": 8.426228906212032,
+      "fixture_update_max_abs_pixels": 26.507400512695312,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 4,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 0.3803235582373717,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.031891584396362305,
+      "fixture_update_rms_pixels": 5.507368736980982,
+      "fixture_update_max_abs_pixels": 15.724273681640625,
+      "exact_identity_on_this_fixture": false
+    },
+    {
+      "stage": 5,
+      "fixed_update_scale": 1.0,
+      "projection_l2_norm": 0.19620376315715626,
+      "nonzero_projection_channels": 80,
+      "width": 80,
+      "reaction": 0.0198000967502594,
+      "fixture_update_rms_pixels": 3.4366966753267323,
+      "fixture_update_max_abs_pixels": 8.278671264648438,
+      "exact_identity_on_this_fixture": false
+    }
+  ],
+  "stage_activity_scope": "Synthetic parameter/update diagnostics; not proof of useful denoising steps",
+  "torch": "2.7.1+cu126",
+  "cpu_threads": 1,
+  "cuda_initialized": false,
+  "bsd68_accessed": false,
+  "accuracy_scored": false,
+  "asset_metadata": {
+    "format": "deep-beltrami-rollout-tensors-v1",
+    "implementation": "beltrami_rollout",
+    "source_pins": {
+      "beltrami_operator": "6c2e5996b03d1521e56f098ec839efc7eb6ba366e3f0f0647f05461177c2c7c1",
+      "beltrami_precision": "300c797fde457bb053c37c449382ec1ff59ced938fdd35b35e4b27e760caeae2",
+      "beltrami_rollout": "dae895a39713ee4d3d6d64c35f8c3a9320c8ae98e8e8315c3c71585c7c2dbdad"
+    },
+    "model_config": {
+      "width": 80,
+      "stages": 5,
+      "metric": "positive",
+      "zero_dc": false,
+      "step_scale": 1000.0,
+      "reaction": true,
+      "metric_precision": "float64",
+      "checkpoint_blocks": 4,
+      "refinement_scale": 1.0
+    },
+    "numerics": {
+      "parameters": "float32",
+      "dense_convolutions": "float32",
+      "metric_convolutions_determinant_flux": "float64",
+      "metric_parameterization": "softplus",
+      "native_axes": "N,C,W,H",
+      "intensity_scale": "0\u2013255",
+      "prefix_stages": 5,
+      "nominal_stages": 5,
+      "refinement_scale": 1.0,
+      "output_clipping_in_model": false,
+      "determinant_clipping": false,
+      "global_stability_guarantee": false
+    },
+    "sigma": 25,
+    "grayscale_offset": 25,
+    "tensor_sha256": "255e731fcb131a556224b67ffe67b9d647e524cade834a83dd92601f72551827",
+    "parameters": 3195605,
+    "training_step": 12750,
+    "full_depth_updates": 12750,
+    "phase_updates": {
+      "5": 12750
+    },
+    "provenance": {
+      "training_checkpoint_sha256": "c00a75e60d6367a370327515ed270da38cdab4fc307e42f804ac5ae5ee9eb14a",
+      "training_config_sha256": "237bc19ad0d7c9de45a041afab8de23080a183a0308e80ce1e07243e8fbe2563",
+      "training_manifest_sha256": "f8a22e7177107990eff632eef8385a17e40398903bf2d6be0bc5a8cae448c8c0",
+      "validation_manifest_sha256": "27736aa4658ffbd9f072c8990b9d370ae8734431b70818edf5a04fbe4d59780e",
+      "selection_validation_sha256": "c84431e4cb740d9958bb85edd8833a61a06df7a6192e02c083211b9dd86969e0",
+      "warmstart_sha256": "9a085c0745136eaee86bfaf0b2e1eb31926eb3bb0526169134fa3a89cf2cfed5",
+      "license": "MIT",
+      "citation": "Aaron Wetzler, Topics in Computational Geometric Vision, PhD thesis,2017,Chapter4."
+    }
+  }
+}

@@ -19,6 +19,14 @@ repeat the historical training.
 
 The second figure is Python demo output; the first contains the phone app capture.
 
+The [32/64-stage Deep Beltrami study](research/docs/LONG_ROLLOUTS.md) adds
+trained geometric-diffusion operators. At sigma 25, 32 stages reach **28.9226 dB**
+on reused BSD68 inputs: **+0.00736 dB** over the new five-stage control at about
+**6.4×** its forward time. The 64-stage model scores slightly lower and takes
+about twice as long as 32 stages. [Results, weights and instructions](research/docs/LONG_ROLLOUTS.md)
+include the fixed comparisons and limitations. Tensor-only weights reproduced
+all 272 image/model metric records exactly. The iPhone app above uses the
+original models.
 
 ## iPhone app
 
@@ -204,7 +212,7 @@ Unit tests use synthetic arrays and need no model downloads. The full BSD68
 command separately verifies the released tensors and original experiment
 inputs. Models and noise residuals are attached to [release
 v1.0.0](https://github.com/twerdster/deep-patch-beltrami/releases/tag/v1.0.0)
-(the original model/noise assets are unchanged in package 1.2.0).
+(the original model/noise assets are unchanged in package 1.3.0).
 The recorded eight synthetic tests cover parsing, selected graph operators,
 axis/offset conventions, clipping and download integrity. They do not
 establish general graph correctness or numerical fidelity on every backend.
