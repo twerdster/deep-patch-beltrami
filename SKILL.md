@@ -374,3 +374,17 @@ Both distributions were rebuilt after the documentation integration. Installed
 root/research wheel README metadata matches the current source exactly; source
 hashes and four installed CLI checks pass with explicitly reused PyTorch. The
 path-free record is `research/docs/final-wheel-verification.json`.
+
+## Modern update navigation
+
+Keep the local New! badge and exact “Updated and ported for modern hardware”
+link immediately below the root README title. Put the brief change description
+and further update links in `updated/README.md` under the matching heading;
+retain the existing reference body and implementation paths. Check the badge,
+relative links and README body preservation after navigation-only changes.
+Do not reinterpret historical validation as a new runtime check.
+
+The root README is distribution metadata. Rebuild a private wheel after banner
+changes and compare its installed README payload and source/resource bytes;
+preserve existing public release assets and avoid numerical reruns for
+navigation-only edits.

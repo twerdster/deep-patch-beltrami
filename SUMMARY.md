@@ -315,3 +315,15 @@ Both distributions were rebuilt after the documentation integration. Installed
 root/research wheel README metadata matches the current source exactly; source
 hashes and four installed CLI checks pass with explicitly reused PyTorch. The
 path-free record is `research/docs/final-wheel-verification.json`.
+
+## Modern update navigation — 2026-11-14
+
+The root README adds only a local New! badge and the
+“Updated and ported for modern hardware” link. The existing README body is
+retained; `updated/README.md` briefly identifies the retained implementation,
+new code, repairs and evidence, then links to the existing setup and results.
+Implementation paths, numerical results and published release assets are unchanged.
+
+Private root/research wheel rebuilds and installs compared README metadata
+and all 26 source/resource files with this checkout. No project runtime dependencies were installed; no
+numerical runs or release uploads were performed for this navigation change.

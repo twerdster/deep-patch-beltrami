@@ -1,5 +1,7 @@
 # Deep Patch-Beltrami
 
+[![New!](updated/assets/new-badge.svg)](updated/README.md#updated-and-ported-for-modern-hardware) **[Updated and ported for modern hardware](updated/README.md#updated-and-ported-for-modern-hardware)**
+
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Python: Linux; app: iOS 18+](https://img.shields.io/badge/Python-Linux%20%7C%20app%3A%20iOS%2018%2B-555555)](ios/README.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
